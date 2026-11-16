@@ -131,16 +131,16 @@ recipes:
       domain: justonecookbook.com
       cuisine: japanese-deep-cuts
       category: Condiments
-    - url: https://www.recipetineats.com/potato-salad/
-      title: The best Potato Salad
-      domain: recipetineats.com
+    - url: https://www.justonecookbook.com/japanese-potato-salad/
+      title: Japanese Potato Salad
+      domain: justonecookbook.com
       cuisine: japanese-deep-cuts
       category: Salad
-    - url: https://www.recipetineats.com/chow-mein-ramen-noodles-recipe/
-      title: Chow Mein Ramen Noodles
-      domain: recipetineats.com
+    - url: https://www.justonecookbook.com/japanese-egg-sandwich-tamago-sando/
+      title: Japanese Egg Sandwich (Tamago Sando)
+      domain: justonecookbook.com
       cuisine: japanese-deep-cuts
-      category: Mains
+      category: Main Dish
     - url: https://www.recipetineats.com/teriyaki-chicken-meatballs/
       title: Teriyaki Chicken Meatballs
       domain: recipetineats.com
@@ -156,26 +156,26 @@ recipes:
       domain: recipetineats.com
       cuisine: japanese-deep-cuts
       category: Main
-    - url: https://www.seriouseats.com/mexican-potato-salad-recipe-12028631
-      title: Loaded Mexican Potato Salad
-      domain: seriouseats.com
+    - url: https://www.justonecookbook.com/yakitori/
+      title: Yakitori Recipe with Homemade Sauce
+      domain: justonecookbook.com
       cuisine: japanese-deep-cuts
-      category: Side Dish
-    - url: https://www.seriouseats.com/salatet-batates-egyptian-potato-salad-recipe-12010073
-      title: Salatet Batates (Egyptian Warm Potato Salad)
-      domain: seriouseats.com
+      category: Main Dish
+    - url: https://www.justonecookbook.com/sukiyaki/
+      title: Sukiyaki
+      domain: justonecookbook.com
       cuisine: japanese-deep-cuts
-      category: Side Dish
-    - url: https://www.seriouseats.com/tarragon-pesto-yellow-potato-salad-recipe-11985254
-      title: Potato Salad With Tarragon Pesto and Pickled Onions
-      domain: seriouseats.com
+      category: Main Dish
+    - url: https://www.justonecookbook.com/chawanmushi-savory-steamed-egg-custard/
+      title: Chawanmushi (Japanese Savory Steamed Egg Custard)
+      domain: justonecookbook.com
       cuisine: japanese-deep-cuts
-      category: Side Dish, Salads
-    - url: https://www.seriouseats.com/deviled-egg-potato-salad-recipe-11940468
-      title: Deviled Egg Potato Salad
-      domain: seriouseats.com
+      category: Appetizer
+    - url: https://www.justonecookbook.com/takoyaki-recipe/
+      title: Takoyaki (Grilled Octopus Balls)
+      domain: justonecookbook.com
       cuisine: japanese-deep-cuts
-      category: Side Dish
+      category: Main Dish, Snack
     - url: https://www.seriouseats.com/butter-mochi-recipe-11915061
       title: Butter Mochi
       domain: seriouseats.com
@@ -555,8 +555,8 @@ recipes:
       domain: kawalingpinoy.com
       cuisine: singaporean-malaysian-filipino
       category: Dessert
-    - url: https://www.kawalingpinoy.com/southwestern-chicken-egg-rolls/
-      title: Southwestern Chicken Egg Rolls
+    - url: https://www.kawalingpinoy.com/lumpia-shanghai/
+      title: Lumpiang Shanghai
       domain: kawalingpinoy.com
       cuisine: singaporean-malaysian-filipino
       category: Appetizer
@@ -640,11 +640,11 @@ recipes:
       domain: nyonyacooking.com
       cuisine: singaporean-malaysian-filipino
       category: Condiment
-    - url: https://www.nyonyacooking.com/recipes/stir-fried-glass-noodles-with-eggs-pad-woon-sen~EfEbYapP1V
-      title: Stir-Fried Glass Noodles with Eggs  ผัดวุ้นเส้น (Pad Woon Sen)
-      domain: nyonyacooking.com
+    - url: https://www.kawalingpinoy.com/kare-kare/
+      title: Kare-Kare
+      domain: kawalingpinoy.com
       cuisine: singaporean-malaysian-filipino
-      category: Main
+      category: Main Entree
     - url: https://www.nyonyacooking.com/recipes/sambal-ayam-authentic-malaysian-spicy-chicken~8EFG5z02XI
       title: 'Sambal Ayam: Authentic Malaysian Spicy Chicken'
       domain: nyonyacooking.com
@@ -695,11 +695,11 @@ recipes:
       domain: nyonyacooking.com
       cuisine: singaporean-malaysian-filipino
       category: Main
-    - url: https://www.nyonyacooking.com/recipes/steamed-broccoli-and-carrots~eaIp5hCpWA
-      title: Steamed Broccoli and Carrots
-      domain: nyonyacooking.com
+    - url: https://www.kawalingpinoy.com/sisig/
+      title: Sizzling Sisig
+      domain: kawalingpinoy.com
       cuisine: singaporean-malaysian-filipino
-      category: Side
+      category: Appetizer, Main Entree
     - url: https://www.nyonyacooking.com/recipes/red-bean-soup~tuVGqCVdrd
       title: Red Bean Soup
       domain: nyonyacooking.com
@@ -732,10 +732,11 @@ recipes:
       title: Thai Peppery Shrimp and Veggie Soup
       domain: hot-thai-kitchen.com
       cuisine: bangkok-thai-regional
-    - url: https://hot-thai-kitchen.com/beef-rendang/
-      title: Malaysian/Indonesian Beef Rendang
+    - url: https://hot-thai-kitchen.com/boat-noodles/
+      title: Authetic Thai Boat Noodles (guay tiew reua)
       domain: hot-thai-kitchen.com
       cuisine: bangkok-thai-regional
+      category: Main Course
     - url: https://hot-thai-kitchen.com/quick-congee/
       title: Quick and Easy Congee with Meatballs
       domain: hot-thai-kitchen.com
@@ -772,10 +773,11 @@ recipes:
       title: Almond Agar Jelly & Fruit Salad (Almond Float)
       domain: hot-thai-kitchen.com
       cuisine: bangkok-thai-regional
-    - url: https://hot-thai-kitchen.com/mango-pudding/
-      title: Mango Pudding (Hong Kong Style)
+    - url: https://hot-thai-kitchen.com/bbq-pork-skewers/
+      title: BBQ Pork Skewers หมูปิ้ง (moo ping)
       domain: hot-thai-kitchen.com
       cuisine: bangkok-thai-regional
+      category: Pork
     - url: https://hot-thai-kitchen.com/laab-kai-jiew/
       title: Spicy Omelette Salad ลาบไข่เจียว
       domain: hot-thai-kitchen.com
@@ -788,10 +790,11 @@ recipes:
       title: Instant Noodle Salad (Yum Mama) ยำมาม่า
       domain: hot-thai-kitchen.com
       cuisine: bangkok-thai-regional
-    - url: https://hot-thai-kitchen.com/toasted-coconut-cold-brew/
-      title: Toasted Coconut Cold Brew (Starbucks Copycat Recipe!)
+    - url: https://hot-thai-kitchen.com/mango-sticky-rice/
+      title: Thai Mango and Sticky Rice
       domain: hot-thai-kitchen.com
       cuisine: bangkok-thai-regional
+      category: Dessert
     - url: https://hot-thai-kitchen.com/durian-sticky-rice/
       title: Durian and Sticky Rice ข้าวเหนียวทุเรียน
       domain: hot-thai-kitchen.com
@@ -1228,11 +1231,11 @@ recipes:
       domain: bbcgoodfood.com
       cuisine: lima-peruvian-latin
       category: Dinner
-    - url: https://www.bbcgoodfood.com/recipes/mexican-pork-tamales
-      title: Mexican pork tamales
-      domain: bbcgoodfood.com
+    - url: https://www.eatperu.com/lomo-saltado-recipe/
+      title: Lomo saltado
+      domain: eatperu.com
       cuisine: lima-peruvian-latin
-      category: Dinner
+      category: Lunch, Main Course
     - url: https://www.africanbites.com/jamaican-curry-goat/
       title: Jamaican Curry Goat
       domain: africanbites.com
@@ -1248,11 +1251,11 @@ recipes:
       domain: africanbites.com
       cuisine: caribbean-diaspora
       category: Appetizer, Snack
-    - url: https://www.africanbites.com/moroccan-slow-cooker-chicken-stew-chick-peas/
-      title: Slow Cooker Chicken Thighs
+    - url: https://www.africanbites.com/jamaican-ackee-and-saltfish/
+      title: Jamaican Ackee and Saltfish
       domain: africanbites.com
       cuisine: caribbean-diaspora
-      category: Main
+      category: Breakfast
     - url: https://www.africanbites.com/plantain-frittersklako/
       title: Plantain Fritters (Klako)
       domain: africanbites.com
@@ -1318,92 +1321,100 @@ recipes:
       title: Mango Sour
       domain: alicaspepperpot.com
       cuisine: caribbean-diaspora
-    - url: https://www.alicaspepperpot.com/accordion-potatoes/
-      title: Accordion Potatoes
-      domain: alicaspepperpot.com
+    - url: https://www.africanbites.com/jerk-chicken/
+      title: Jamaican Jerk Chicken
+      domain: africanbites.com
       cuisine: caribbean-diaspora
+      category: Main
     - url: https://www.alicaspepperpot.com/tostones-with-a-garlic-dipping-sauce/
       title: Tostones with a Garlic Dipping Sauce
       domain: alicaspepperpot.com
       cuisine: caribbean-diaspora
-    - url: https://www.alicaspepperpot.com/spicy-scalloped-potatoes/
-      title: Spicy Scalloped Potatoes
+    - url: https://www.africanbites.com/jamaican-oxtail-stew-2/
+      title: Jamaican Oxtail Stew
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Main
+    - url: https://www.africanbites.com/jamaican-curry-chicken/
+      title: Jamaican Curry Chicken
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Main
+    - url: https://www.africanbites.com/jamaican-escovitched-fish/
+      title: Jamaican Escovitch Fish
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Main
+    - url: https://www.africanbites.com/jamaican-browned-chicken-stew/
+      title: Brown Stew Chicken
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Main
+    - url: https://www.africanbites.com/one-pot-caribbean-jerk-chicken-rice/
+      title: One Pot Caribbean Jerk Chicken & Rice
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Main
+    - url: https://www.alicaspepperpot.com/bake-and-saltfish-a-classic-caribbean-breakfast/
+      title: 'Bake and Saltfish: A classic Caribbean breakfast'
       domain: alicaspepperpot.com
       cuisine: caribbean-diaspora
-    - url: https://www.alicaspepperpot.com/roasted-dill-potatoes/
-      title: Roasted Dill Potatoes
+      category: Breakfast
+    - url: https://www.alicaspepperpot.com/small-batch-guyanese-oil-roti/
+      title: Small Batch Guyanese Oil/Paratha Roti
       domain: alicaspepperpot.com
       cuisine: caribbean-diaspora
-    - url: https://www.alicaspepperpot.com/superbowl-party-buffalo-chicken-dip/
-      title: 'Superbowl Party: Buffalo Chicken Dip'
+      category: Bread
+    - url: https://www.alicaspepperpot.com/small-batch-sada-roti/
+      title: Small Batch Sada Roti
       domain: alicaspepperpot.com
       cuisine: caribbean-diaspora
-    - url: https://www.alicaspepperpot.com/herb-roasted-cornish-hens/
-      title: Herb-Roasted Cornish Hens
-      domain: alicaspepperpot.com
-      cuisine: caribbean-diaspora
-    - url: https://www.alicaspepperpot.com/shepherds-pie/
-      title: Shepherd’s Pie
-      domain: alicaspepperpot.com
-      cuisine: caribbean-diaspora
-    - url: https://www.alicaspepperpot.com/baked-chicken-nuggets/
-      title: Baked Chicken Nuggets
-      domain: alicaspepperpot.com
-      cuisine: caribbean-diaspora
-    - url: https://www.seriouseats.com/basic-rotisserie-chicken-recipe
-      title: Rotisserie Chicken Recipe
-      domain: seriouseats.com
-      cuisine: caribbean-diaspora
-      category: Entree, Mains
-    - url: https://www.seriouseats.com/kedgeree-british-scottish-curry-rice-with-smoked-haddock-recipe-7198140
-      title: Kedgeree (British Curried Rice With Smoked Haddock)
-      domain: seriouseats.com
-      cuisine: caribbean-diaspora
-      category: Breakfast, Brunch, Dinner, Lunch, Entree
+      category: Bread
     - url: https://www.seriouseats.com/sweet-potato-spinach-curry-recipe
       title: Sweet Potato and Spinach Curry Recipe
       domain: seriouseats.com
       cuisine: caribbean-diaspora
       category: Entree
-    - url: https://www.seriouseats.com/beef-bourguignon-red-wine-stew-recipe
-      title: Boeuf Bourguignon (Beef Stew With Red Wine, Mushrooms, and Bacon)
-      domain: seriouseats.com
+    - url: https://www.alicaspepperpot.com/cassava-pone-yuca-cake/
+      title: Cassava Pone
+      domain: alicaspepperpot.com
       cuisine: caribbean-diaspora
-      category: Beef Stew, Mains
+      category: Caribbean Foods
     - url: https://www.seriouseats.com/nigerian-eggplant-stew-recipe-11797971
       title: Nigerian Eggplant Stew
       domain: seriouseats.com
       cuisine: caribbean-diaspora
       category: Dinner
-    - url: https://www.simplyrecipes.com/hawaiian-beef-stew-recipe-12147841
-      title: This Hawaiian Beef Stew Is Unlike Any Other Beef Stew I’ve Ever Made
-      domain: simplyrecipes.com
+    - url: https://www.alicaspepperpot.com/bounjal-shrimp-curry/
+      title: Bounjal Shrimp Curry
+      domain: alicaspepperpot.com
       cuisine: caribbean-diaspora
-      category: Dinner
-    - url: https://www.simplyrecipes.com/beef-caldereta-filipino-beef-stew-recipe-12150063
-      title: This Filipino Beef Stew Has the Most Tender, Flavorful Beef
-      domain: simplyrecipes.com
+      category: Main Dish
+    - url: https://www.seriouseats.com/arroz-con-gandules-recipe-7152325
+      title: Arroz con Gandules (Puerto Rican Rice With Pigeon Peas)
+      domain: seriouseats.com
       cuisine: caribbean-diaspora
-      category: Dinner
-    - url: https://www.simplyrecipes.com/slow-cooker-beef-stew-recipe-6541415
-      title: Slow Cooker Beef Stew
-      domain: simplyrecipes.com
+      category: Entree
+    - url: https://www.seriouseats.com/cuban-picadillo-recipe
+      title: Cuban Picadillo
+      domain: seriouseats.com
       cuisine: caribbean-diaspora
-      category: Dinner, Entree
-    - url: https://www.simplyrecipes.com/easy-chickpea-curry-recipe-11762133
-      title: The 20-Minute Dinner I Make Almost Every Week
-      domain: simplyrecipes.com
+      category: Dinner, Mains
+    - url: https://www.seriouseats.com/ropa-vieja-cuban-latin-american-beef-stew-recipe
+      title: Ropa Vieja Recipe
+      domain: seriouseats.com
       cuisine: caribbean-diaspora
-      category: Entree, Dinner, Lunch
+      category: Beef Stew, Mains
     - url: https://www.simplyrecipes.com/instant-pot-pernil-roast-pork-recipe-6735747
       title: Instant Pot Pernil (Roast Pork)
       domain: simplyrecipes.com
       cuisine: caribbean-diaspora
       category: Entree, Dinner
-    - url: https://www.davidlebovitz.com/kofta-with-yogurt-tahini-sauce-recipe-tartine/
-      title: Kofta with Yogurt-Tahini Sauce
-      domain: davidlebovitz.com
+    - url: https://www.seriouseats.com/kedgeree-british-scottish-curry-rice-with-smoked-haddock-recipe-7198140
+      title: Kedgeree (British Curried Rice With Smoked Haddock)
+      domain: seriouseats.com
       cuisine: paris-london-classics
+      category: Breakfast, Brunch, Dinner, Lunch, Entree
     - url: https://www.davidlebovitz.com/chicken-in-red-wine-vinegar-sauce-french-bistro-recipe/
       title: Chicken in Red Wine Vinegar Sauce
       domain: davidlebovitz.com
@@ -1412,10 +1423,11 @@ recipes:
       title: French Fried Chicken
       domain: davidlebovitz.com
       cuisine: paris-london-classics
-    - url: https://www.davidlebovitz.com/simplest-beef-curry-burma/
-      title: Simplest Beef Curry with Shallots
-      domain: davidlebovitz.com
+    - url: https://www.seriouseats.com/beef-bourguignon-red-wine-stew-recipe
+      title: Boeuf Bourguignon (Beef Stew With Red Wine, Mushrooms, and Bacon)
+      domain: seriouseats.com
       cuisine: paris-london-classics
+      category: Beef Stew, Mains
     - url: https://www.davidlebovitz.com/herbed-ricotta-tart/
       title: Herbed Ricotta Tart
       domain: davidlebovitz.com
@@ -1460,11 +1472,11 @@ recipes:
       title: French Manhattan
       domain: davidlebovitz.com
       cuisine: paris-london-classics
-    - url: https://www.davidlebovitz.com/thai-green-curry-recipe/
-      title: Green Curry with Chicken
+    - url: https://www.davidlebovitz.com/creme-brulee-french-custard-recipe-caramel/
+      title: Creme Brulee
       domain: davidlebovitz.com
       cuisine: paris-london-classics
-      category: Main Course
+      category: Dessert
     - url: https://www.davidlebovitz.com/summer-fruit-galette-frangipan-tart-recipe/
       title: Summer Fruit Galette
       domain: davidlebovitz.com
@@ -1560,11 +1572,11 @@ recipes:
       domain: recipetineats.com
       cuisine: paris-london-classics
       category: Dressing, Salad Dressing
-    - url: https://www.recipetineats.com/melting-afghani-chickpea-curry/
-      title: Melting Afghan chickpea curry
-      domain: recipetineats.com
+    - url: https://www.davidlebovitz.com/giant-gougeres-cheese-puffs-recipe/
+      title: Jumbo Gougeres
+      domain: davidlebovitz.com
       cuisine: paris-london-classics
-      category: Main
+      category: Appetizer
     - url: https://www.recipetineats.com/sweet-tartlet-shells-individual-tart-crusts/
       title: Sweet tartlet shells (individual tart crusts)
       domain: recipetineats.com
@@ -1675,11 +1687,11 @@ recipes:
       domain: seriouseats.com
       cuisine: nyc-sf-copenhagen-coastal
       category: Lunch, Dinner, Sandwich
-    - url: https://www.seriouseats.com/porcupine-meatballs-recipe-12196859
-      title: Porcupine Meatballs
-      domain: seriouseats.com
+    - url: https://true-north-kitchen.com/traditional-swedish-cardamom-buns-kardemummabullar/
+      title: Traditional Swedish Cardamom Buns (Kardemummabullar)
+      domain: true-north-kitchen.com
       cuisine: nyc-sf-copenhagen-coastal
-      category: Dinner
+      category: baking, Breads and Buns, Fika
     - url: https://www.seriouseats.com/poached-salmon-with-summer-vegetables-recipe-12066242
       title: Salmon à la Nage (Poached in Broth) With Summer Vegetables
       domain: seriouseats.com
@@ -1720,21 +1732,21 @@ recipes:
       title: Potato-Onion Rye Rolls
       domain: kingarthurbaking.com
       cuisine: nyc-sf-copenhagen-coastal
-    - url: https://www.simplyrecipes.com/beef-stroganoff-mini-meatball-soup-recipe-12186576
-      title: This Hearty Beef Stroganoff Soup Starts With Frozen Meatballs
-      domain: simplyrecipes.com
+    - url: https://www.seriouseats.com/cioppino-recipe-8766189
+      title: Cioppino
+      domain: seriouseats.com
       cuisine: nyc-sf-copenhagen-coastal
-      category: Dinner, Soup
-    - url: https://www.simplyrecipes.com/slow-cooker-cowboy-meatballs-recipe-12162742
-      title: These 5-Ingredient Slow Cooker Cowboy Meatballs Make It Easy To Lasso Up Dinner
-      domain: simplyrecipes.com
+      category: Entree, Dinner, Soup
+    - url: https://www.seriouseats.com/the-best-matzo-balls-recipe
+      title: The Best Matzo Ball Soup
+      domain: seriouseats.com
       cuisine: nyc-sf-copenhagen-coastal
-      category: Dinner
-    - url: https://www.simplyrecipes.com/homemade-pizza-bagels-recipe-5222871
-      title: Homemade Pizza Bagels
-      domain: simplyrecipes.com
+      category: Lunch, Dinner, Entree, Side Dish, Snack, Appetizer, Appetizers and Hors d'Oeuvres, Soups and Stews
+    - url: https://true-north-kitchen.com/easy-overnight-danish-rye-rugbrod/
+      title: Easy Overnight Danish Rye Bread (Rugbrød)
+      domain: true-north-kitchen.com
       cuisine: nyc-sf-copenhagen-coastal
-      category: Lunch, Snack, Ingredient
+      category: Bread
     - url: https://www.simplyrecipes.com/pasta-alla-vodka-with-mini-meatballs-recipe-12132542
       title: The Easy One-Pan Pasta I Make on Busy Weeknights (It Has Mini Meatballs)
       domain: simplyrecipes.com
