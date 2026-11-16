@@ -331,3 +331,266 @@ sources:
       - '^https?://(?:www\.)?thespruceeats\.com/.*-recipes-\d+$'
       - '^https?://(?:www\.)?thespruceeats\.com/(?:best-.*|about-us/|author/)'
     notes: "Disabled by default: upstream recipe-scrapers 15.12.0/15.13.0 TheSpruceEats.ingredients() relies on stale selector li.structured-ingredients__list-item p returning empty [] and Mealie clean_scraper() try_get_default checks value == [''] rather than not value, ingesting 0 ingredients under Mealie v3.25.1-v3.31.0."
+
+  # --- Group D: Top-10 Global Metropolis & Regional Asian Specialty Sources ---
+  - domain: justonecookbook.com
+    canonical_host: www.justonecookbook.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.justonecookbook.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://www.justonecookbook.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?justonecookbook\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?justonecookbook\.com/(?:category|tag|author|about|contact|shop|page|blog|travel)/'
+
+  - domain: thewoksoflife.com
+    canonical_host: thewoksoflife.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://thewoksoflife.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://thewoksoflife.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?thewoksoflife\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?thewoksoflife\.com/(?:category|tag|author|about|contact|shop|page|blog|visual-recipe-index)/'
+
+  - domain: omnivorescookbook.com
+    canonical_host: omnivorescookbook.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://omnivorescookbook.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://omnivorescookbook.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?omnivorescookbook\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?omnivorescookbook\.com/(?:category|tag|author|about|contact|shop|page|blog|travel)/'
+
+  - domain: madewithlau.com
+    canonical_host: www.madewithlau.com
+    enabled: true
+    tier: publisher_path_filtered
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.madewithlau.com/sitemap.xml
+    sitemap_include_patterns: []
+    rss_urls: []
+    allow_patterns:
+      - '^https?://(?:www\.)?madewithlau\.com/recipes/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?madewithlau\.com/(?:category|tag|author|about|contact|shop|page|club|family|collections)/'
+
+  - domain: maangchi.com
+    canonical_host: www.maangchi.com
+    enabled: true
+    tier: publisher_path_filtered
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.maangchi.com/sitemap.xml
+    sitemap_include_patterns:
+      - 'sitemap-posttype-post\.\d{4}\.xml$'
+    rss_urls:
+      - https://www.maangchi.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?maangchi\.com/recipe/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?maangchi\.com/(?:category|tag|author|about|contact|shop|page|blog)/'
+
+  - domain: hot-thai-kitchen.com
+    canonical_host: hot-thai-kitchen.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://hot-thai-kitchen.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://hot-thai-kitchen.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?hot-thai-kitchen\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?hot-thai-kitchen\.com/(?:category|tag|author|about|contact|shop|page|blog)/'
+
+  - domain: nyonyacooking.com
+    canonical_host: www.nyonyacooking.com
+    enabled: true
+    tier: publisher_path_filtered
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.nyonyacooking.com/sitemap.xml
+    sitemap_include_patterns: []
+    rss_urls: []
+    allow_patterns:
+      - '^https?://(?:www\.)?nyonyacooking\.com/recipes/[a-z0-9-]+(?:~[a-zA-Z0-9_-]+)?/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?nyonyacooking\.com/(?:recipes/categories|category|tag|author|about|contact|shop|page|blog|search|community)/'
+
+  - domain: kawalingpinoy.com
+    canonical_host: www.kawalingpinoy.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.kawalingpinoy.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://www.kawalingpinoy.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?kawalingpinoy\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?kawalingpinoy\.com/(?:category|tag|author|about|contact|shop|page|blog|recipe-index)/'
+
+  - domain: patijinich.com
+    canonical_host: patijinich.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://patijinich.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://patijinich.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?patijinich\.com/[a-z0-9_-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?patijinich\.com/(?:es/|category|tag|author|about|contact|shop|page|blog|recipes)/'
+
+  - domain: eatperu.com
+    canonical_host: www.eatperu.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.eatperu.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://www.eatperu.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?eatperu\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?eatperu\.com/(?:category|tag|author|about|contact|shop|page|blog|destinations)/'
+
+  - domain: davidlebovitz.com
+    canonical_host: www.davidlebovitz.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.davidlebovitz.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://www.davidlebovitz.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?davidlebovitz\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?davidlebovitz\.com/(?:category|tag|author|about|contact|shop|page|blog|books)/'
+
+  - domain: true-north-kitchen.com
+    canonical_host: true-north-kitchen.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://true-north-kitchen.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://true-north-kitchen.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?true-north-kitchen\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?true-north-kitchen\.com/(?:category|tag|author|about|contact|shop|page|blog|nordic-kitchen-basics)/'
+
+  - domain: africanbites.com
+    canonical_host: www.africanbites.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.africanbites.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://www.africanbites.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?africanbites\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?africanbites\.com/(?:category|tag|author|about|contact|shop|page|blog|recipes)/'
+
+  - domain: alicaspepperpot.com
+    canonical_host: www.alicaspepperpot.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.alicaspepperpot.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://www.alicaspepperpot.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?alicaspepperpot\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?alicaspepperpot\.com/(?:category|tag|author|about|contact|shop|page|blog|privacy-policy)/'

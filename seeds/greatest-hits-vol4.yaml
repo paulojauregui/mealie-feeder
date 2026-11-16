@@ -1,0 +1,1747 @@
+version: 1
+description: Curated live-verified Top-10 Global Metropolis and Asian deep-cut recipes (Volume 4)
+recipes:
+    - url: https://www.justonecookbook.com/matcha-gateau-au-chocolat/
+      title: Matcha Gateau au Chocolat
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Dessert
+    - url: https://www.justonecookbook.com/vegetarian-udon/
+      title: Vegetarian Udon
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Main Dish
+    - url: https://www.justonecookbook.com/pressure-cooker-potato-salad/
+      title: Instant Pot Potato Salad
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Salad
+    - url: https://www.justonecookbook.com/vegan-shiitake-kombu-dashi/
+      title: Vegan Dashi (Shiitake Kombu Dashi)
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Condiments
+    - url: https://www.justonecookbook.com/tonkatsu/
+      title: Tonkatsu (Japanese Pork Cutlet)
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Main Dish
+    - url: https://www.justonecookbook.com/how-to-make-mochi-with-a-stand-mixer/
+      title: How to Make Mochi with a Stand Mixer
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Dessert, How to
+    - url: https://www.justonecookbook.com/tempura-recipe/
+      title: Tempura
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Main Dish
+    - url: https://www.justonecookbook.com/dashi-packet/
+      title: How to Make Japanese Soup Stock with Dashi Packet
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: How to
+    - url: https://www.justonecookbook.com/udon-noodle-soup/
+      title: Udon Noodle Soup (Kake Udon)
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Soup
+    - url: https://www.justonecookbook.com/spicy-pork-and-bean-sprout-miso-soup/
+      title: Spicy Pork and Bean Sprout Miso Soup
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Main Dish, Soup
+    - url: https://www.justonecookbook.com/katsudon/
+      title: Katsudon
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Main Dish
+    - url: https://www.justonecookbook.com/soba-noodle-soup/
+      title: Soba Noodle Soup
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Main Dish
+    - url: https://www.justonecookbook.com/matcha-checkerboard-cookies/
+      title: Matcha Checkerboard Cookies
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Dessert
+    - url: https://www.justonecookbook.com/chicken-yakisoba/
+      title: Easy Chicken Yakisoba
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Main Dish
+    - url: https://www.justonecookbook.com/kale-daikon-miso-soup/
+      title: Kale Daikon Miso Soup
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Soup
+    - url: https://www.justonecookbook.com/spinach-and-mushroom-miso-soup/
+      title: Spinach and Mushroom Miso Soup
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Soup
+    - url: https://www.justonecookbook.com/pressure-cooker-japanese-curry/
+      title: Pressure Cooker Japanese Curry
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Main Dish
+    - url: https://www.justonecookbook.com/moms-korokke-croquette/
+      title: Japanese Croquettes (Mom‘s Korokke)
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Main Dish
+    - url: https://www.justonecookbook.com/karaage/
+      title: Karaage (Japanese Fried Chicken)
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Appetizer, Main Dish
+    - url: https://www.justonecookbook.com/how-to-make-matcha-japanese-green-tea/
+      title: How to Make Matcha (Japanese Green Tea)
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Drinks
+    - url: https://www.justonecookbook.com/udon-noodles/
+      title: Homemade Udon Noodles
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Main Dish
+    - url: https://www.justonecookbook.com/yaki-onigiri-grilled-rice-ball/
+      title: Yaki Onigiri (Grilled Rice Ball)
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Side Dish
+    - url: https://www.justonecookbook.com/strawberry-matcha-latte/
+      title: Strawberry Matcha Latte
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Drinks
+    - url: https://www.justonecookbook.com/beef-udon/
+      title: Beef Udon
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Main Dish
+    - url: https://www.justonecookbook.com/salmon-and-ikura-dashi-chazuke/
+      title: Salmon and Ikura Dashi Chazuke
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Soup
+    - url: https://www.justonecookbook.com/okonomiyaki-sauce/
+      title: Homemade Okonomiyaki Sauce
+      domain: justonecookbook.com
+      cuisine: japanese-deep-cuts
+      category: Condiments
+    - url: https://www.recipetineats.com/potato-salad/
+      title: The best Potato Salad
+      domain: recipetineats.com
+      cuisine: japanese-deep-cuts
+      category: Salad
+    - url: https://www.recipetineats.com/chow-mein-ramen-noodles-recipe/
+      title: Chow Mein Ramen Noodles
+      domain: recipetineats.com
+      cuisine: japanese-deep-cuts
+      category: Mains
+    - url: https://www.recipetineats.com/teriyaki-chicken-meatballs/
+      title: Teriyaki Chicken Meatballs
+      domain: recipetineats.com
+      cuisine: japanese-deep-cuts
+      category: Mains
+    - url: https://www.recipetineats.com/asian-mushroom-ramen-noodle-recipe/
+      title: Asian Mushroom Ramen Noodles
+      domain: recipetineats.com
+      cuisine: japanese-deep-cuts
+      category: Mains, Side
+    - url: https://www.recipetineats.com/beef-bean-soba/
+      title: Beef Soba Noodle Bowl with Green Beans
+      domain: recipetineats.com
+      cuisine: japanese-deep-cuts
+      category: Main
+    - url: https://www.seriouseats.com/mexican-potato-salad-recipe-12028631
+      title: Loaded Mexican Potato Salad
+      domain: seriouseats.com
+      cuisine: japanese-deep-cuts
+      category: Side Dish
+    - url: https://www.seriouseats.com/salatet-batates-egyptian-potato-salad-recipe-12010073
+      title: Salatet Batates (Egyptian Warm Potato Salad)
+      domain: seriouseats.com
+      cuisine: japanese-deep-cuts
+      category: Side Dish
+    - url: https://www.seriouseats.com/tarragon-pesto-yellow-potato-salad-recipe-11985254
+      title: Potato Salad With Tarragon Pesto and Pickled Onions
+      domain: seriouseats.com
+      cuisine: japanese-deep-cuts
+      category: Side Dish, Salads
+    - url: https://www.seriouseats.com/deviled-egg-potato-salad-recipe-11940468
+      title: Deviled Egg Potato Salad
+      domain: seriouseats.com
+      cuisine: japanese-deep-cuts
+      category: Side Dish
+    - url: https://www.seriouseats.com/butter-mochi-recipe-11915061
+      title: Butter Mochi
+      domain: seriouseats.com
+      cuisine: japanese-deep-cuts
+      category: Dessert, Snack
+    - url: https://thewoksoflife.com/steamed-whole-fish/
+      title: Chinese Steamed Whole Fish
+      domain: thewoksoflife.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Fish and Seafood
+    - url: https://thewoksoflife.com/scallion-ginger-beef-tofu/
+      title: Scallion Ginger Beef and Tofu Stir Fry
+      domain: thewoksoflife.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Beef
+    - url: https://thewoksoflife.com/braised-beef-noodle-soup/
+      title: Braised Beef Noodle Soup (红烧牛肉面)
+      domain: thewoksoflife.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Noodles and Pasta
+    - url: https://thewoksoflife.com/braised-pork-belly-arrowhead-root/
+      title: Cantonese Style Braised Pork Belly with Arrowhead Root
+      domain: thewoksoflife.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Pork
+    - url: https://thewoksoflife.com/chinese-braised-fish-hongshao-yu-2/
+      title: Chinese Braised Fish (Hongshao Yu)
+      domain: thewoksoflife.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Fish and Seafood
+    - url: https://thewoksoflife.com/chicken-chow-mein-2/
+      title: Chicken Chow Mein
+      domain: thewoksoflife.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Noodles
+    - url: https://thewoksoflife.com/dumpling-wrapper-recipe/
+      title: Homemade Dumpling Wrappers
+      domain: thewoksoflife.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Appetizers
+    - url: https://thewoksoflife.com/gluten-free-dumplings/
+      title: Gluten-free Dumplings
+      domain: thewoksoflife.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Dumplings
+    - url: https://thewoksoflife.com/takeout-egg-rolls/
+      title: Copycat Takeout Egg Rolls
+      domain: thewoksoflife.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Appetizers and Snacks
+    - url: https://thewoksoflife.com/cantonese-poached-chicken-w-ginger-scallion-oil-bai-qie-ji/
+      title: Cantonese Poached Chicken (Bai Qie Ji)
+      domain: thewoksoflife.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Chicken and Poultry
+    - url: https://thewoksoflife.com/cantonese-pork-knuckles-ginger-vinegar/
+      title: Cantonese Pork Knuckles with Ginger and Vinegar
+      domain: thewoksoflife.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Pork
+    - url: https://thewoksoflife.com/ginger-scallion-lobster-cantonese/
+      title: Cantonese-Style Ginger Scallion Lobster
+      domain: thewoksoflife.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Fish and Seafood
+    - url: https://omnivorescookbook.com/general-tso-sauce/
+      title: Homemade General Tso Sauce (Bulk Version)
+      domain: omnivorescookbook.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Sauce
+    - url: https://omnivorescookbook.com/sichuan-dry-rub-roast-chicken-breast/
+      title: Sichuan Dry Rub Roast Chicken Breast
+      domain: omnivorescookbook.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Main
+    - url: https://omnivorescookbook.com/sichuan-chicken-with-spicy-sesame-sauce/
+      title: Sichuan Chicken with Spicy Sesame Sauce (怪味鸡)
+      domain: omnivorescookbook.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Appetizer, Main
+    - url: https://omnivorescookbook.com/cantonese-roast-chicken/
+      title: The Best Cantonese Roast Chicken (广式烧鸡)
+      domain: omnivorescookbook.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Main
+    - url: https://omnivorescookbook.com/easy-kung-pao-chicken/
+      title: Easy Kung Pao Chicken
+      domain: omnivorescookbook.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Main
+    - url: https://omnivorescookbook.com/carrot-dumplings/
+      title: Carrot Dumplings
+      domain: omnivorescookbook.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Appetizer, Main
+    - url: https://omnivorescookbook.com/chinese-fish-en-papillote/
+      title: Chinese Fish En Papillote (Paper wrapped fish in sesame ginger sauce)
+      domain: omnivorescookbook.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Main
+    - url: https://omnivorescookbook.com/sweet-and-sour-salmon/
+      title: Sweet and Sour Salmon with Bok Choy
+      domain: omnivorescookbook.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Main
+    - url: https://omnivorescookbook.com/chinese-spicy-roast-fish/
+      title: Chinese Spicy Roast Fish (重庆烤鱼)
+      domain: omnivorescookbook.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Main
+    - url: https://omnivorescookbook.com/sheet-pan-vegetable-chow-mein/
+      title: Sheet Pan Vegetable Chow Mein
+      domain: omnivorescookbook.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Side
+    - url: https://omnivorescookbook.com/shrimp-baked-spring-rolls/
+      title: Cheesy Shrimp Baked Spring Rolls
+      domain: omnivorescookbook.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Appetizer
+    - url: https://omnivorescookbook.com/lu-rou-fan/
+      title: Lu Rou Fan (Taiwanses Pork Rice Bowl)
+      domain: omnivorescookbook.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Main
+    - url: https://www.madewithlau.com/recipes/chow-mein
+      title: 'Dad''s Chicken Chow Mein: The Chinese Restaurant Way'
+      domain: madewithlau.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: main course
+    - url: https://www.madewithlau.com/recipes/instant-soy-sauce-chow-mein
+      title: 'Dad''s Chow Mein (Instant Noodles): A Chinese Chef''s Secrets'
+      domain: madewithlau.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: main course
+    - url: https://www.madewithlau.com/recipes/pan-fried-fish-cakes
+      title: 'Dad''s Chinese Fish Cakes: A Chinese Chef''s Secrets'
+      domain: madewithlau.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: side dish
+    - url: https://www.madewithlau.com/recipes/dried-scallop-egg-white-fried-rice
+      title: 'Dad''s Dried Scallop & Egg White Fried Rice: A Chinese Chef''s Secrets'
+      domain: madewithlau.com
+      cuisine: cantonese-sichuan-taiwanese
+    - url: https://www.madewithlau.com/recipes/wonton-noodle-soup
+      title: 'Dad''s Wonton Noodle Soup: The Chinese Restaurant Way'
+      domain: madewithlau.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: main course
+    - url: https://www.madewithlau.com/recipes/cantonese-scrambled-eggs
+      title: 'Dad''s Scrambled Eggs & Shrimp: A Chinese Chef''s Secrets'
+      domain: madewithlau.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: side dish
+    - url: https://www.madewithlau.com/recipes/ginger-scallion-noodles
+      title: 'Dad''s Ginger Scallion Noodles: A Chinese Chef''s Secrets'
+      domain: madewithlau.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: main course
+    - url: https://www.madewithlau.com/recipes/combination-chow-mein
+      title: 'Dad''s Combo Chow Mein: The Chinese Restaurant Way'
+      domain: madewithlau.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: dinner
+    - url: https://www.madewithlau.com/recipes/char-siu-chinese-bbq-pork
+      title: 'Dad''s Char Siu Pork: The Chinese Restaurant Way'
+      domain: madewithlau.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: main course
+    - url: https://www.madewithlau.com/recipes/yangzhou-fried-rice
+      title: 'Dad''s Yangzhou Fried Rice: A Chinese Chef''s Secrets'
+      domain: madewithlau.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Dinner
+    - url: https://www.madewithlau.com/recipes/tomato-tofu-soup
+      title: 'Dad''s Tomato Tofu Soup: A Chinese Chef''s Secrets'
+      domain: madewithlau.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Entree, Soup, Dinner
+    - url: https://www.madewithlau.com/recipes/mushroom-tofu-claypot
+      title: 'Dad''s Clay Pot Mushroom & Tofu: A Chinese Chef''s Secrets'
+      domain: madewithlau.com
+      cuisine: cantonese-sichuan-taiwanese
+      category: Dinner
+    - url: https://www.maangchi.com/recipe/kimchi-jjigae
+      title: Kimchi stew (Kimchi-jjigae)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Stew
+    - url: https://www.maangchi.com/recipe/tteokbokki
+      title: Tteokbokki (Hot and spicy rice cakes)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Snack
+    - url: https://www.maangchi.com/recipe/chamchi-gimbap
+      title: Tuna gimbap
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Lunchbox
+    - url: https://www.maangchi.com/recipe/japchae
+      title: Japchae (Sweet potato starch noodles stir fried with vegetables)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Noodles
+    - url: https://www.maangchi.com/recipe/classic-mandu
+      title: Classic Korean mandu dumplings (만두)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Main
+    - url: https://www.maangchi.com/recipe/dakgangjeong
+      title: Sweet crispy fried chicken (Dakgangjeong)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Fried chicken
+    - url: https://www.maangchi.com/recipe/easy-bulgogi
+      title: 'Easy bulgogi (Mak-bulgogi: 막불고기)'
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Main dish
+    - url: https://www.maangchi.com/recipe/kimchi-bokkeumbap
+      title: Kimchi fried rice (Kimchi-bokkeumbap)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Fried rice
+    - url: https://www.maangchi.com/recipe/oisobagi-kimchi
+      title: Spicy stuffed cucumber kimchi (Oi-sobagi)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Kimchi
+    - url: https://www.maangchi.com/recipe/bibimbap
+      title: Bibimbap (Mixed rice with vegetables)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Main dish
+    - url: https://www.maangchi.com/recipe/baechu-doenjang-guk
+      title: Soybean paste soup with cabbage (Baechu-doenjangguk)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Soup
+    - url: https://www.maangchi.com/recipe/dububuchim-yangnyeomjang
+      title: Pan fried tofu with spicy sauce (Dububuchim-yangnyeomjang)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Lunchbox
+    - url: https://www.maangchi.com/recipe/budae-jjigae
+      title: Budae-jjigae (Army Base Stew)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Main dish
+    - url: https://www.maangchi.com/recipe/gimbap
+      title: Classic gimbap
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Lunchbox
+    - url: https://www.maangchi.com/recipe/bindaetteok
+      title: Mung Bean Pancakes (Bindaetteok)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Korean pancake
+    - url: https://www.maangchi.com/recipe/kimchijeon
+      title: 'Kimchi pancake (Kimchijeon: 김치전)'
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Main dish
+    - url: https://www.maangchi.com/recipe/jeukseok-tteokbokki
+      title: 'Jeukseok-tteokbokki (On-the-spot tteokbokki: 즉석떡볶이)'
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Main course
+    - url: https://www.maangchi.com/recipe/deungalbi-kimchijjim
+      title: 'Kimchi pork ribs (Deungalbi-kimchijjim: 등갈비김치찜)'
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Main dish
+    - url: https://www.maangchi.com/recipe/yangnyeom-gejang
+      title: 'Spicy raw crab (Yangnyeom-gejang: 양념게장)'
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Side dish
+    - url: https://www.maangchi.com/recipe/kongnamul-kimchiguk
+      title: 'Soybean sprout & kimchi soup (Kongnamul-kimchiguk: 콩나물김치국)'
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Side dish
+    - url: https://www.recipetineats.com/korean-kimchi-fried-rice/
+      title: Kimchi Fried Rice
+      domain: recipetineats.com
+      cuisine: korean-deep-cuts
+      category: Rice, Side Dish
+    - url: https://www.recipetineats.com/spicy-korean-pork-stir-fry/
+      title: Spicy Korean Pork Stir Fry
+      domain: recipetineats.com
+      cuisine: korean-deep-cuts
+      category: Stir Fry
+    - url: https://www.recipetineats.com/momofuku-bossam-korean-slow-cooked-pork/
+      title: Momofuku Bossam (Korean Slow Cooked Pork Shoulder Roast)
+      domain: recipetineats.com
+      cuisine: korean-deep-cuts
+      category: Mains
+    - url: https://www.recipetineats.com/korean-bbq-marinated-beef-short-ribs-galbi/
+      title: Galbi
+      domain: recipetineats.com
+      cuisine: korean-deep-cuts
+      category: Mains
+    - url: https://www.recipetineats.com/japchae-korean-noodles/
+      title: Japchae
+      domain: recipetineats.com
+      cuisine: korean-deep-cuts
+      category: Lunch, Mains
+    - url: https://www.seriouseats.com/kimchi-jam-recipe-11874034
+      title: Kimchi Jam
+      domain: seriouseats.com
+      cuisine: korean-deep-cuts
+      category: Side Dish, Snack, Jam / Jelly
+    - url: https://www.seriouseats.com/korean-braised-turkey-jjim-recipe-8750722
+      title: Braised Turkey Jjim With Bacon, Shiitakes, and Chestnuts
+      domain: seriouseats.com
+      cuisine: korean-deep-cuts
+      category: Entree, Soups and Stews
+    - url: https://www.seriouseats.com/oi-sobagi-stuffed-cucumber-kimchi-recipe-11783994
+      title: Oi-Sobagi Stuffed Cucumber Kimchi
+      domain: seriouseats.com
+      cuisine: korean-deep-cuts
+      category: Appetizer, Side Dish
+    - url: https://www.seriouseats.com/korean-kimchi-shrimp-pancakes-recipe
+      title: Crispy Kimchi Pancakes With Shrimp Recipe
+      domain: seriouseats.com
+      cuisine: korean-deep-cuts
+      category: Entree, Appetizer, Appetizers and Hors d'Oeuvres, Mains, Sides, Snacks
+    - url: https://www.seriouseats.com/kimchi-and-honey-dipping-sauce-for-dumplings-recipe
+      title: Kimchi and Honey Dipping Sauce Recipe
+      domain: seriouseats.com
+      cuisine: korean-deep-cuts
+      category: Condiments and Sauces, Condiment, Sauce
+    - url: https://www.seriouseats.com/grilled-cheese-with-kimchi-recipe
+      title: Grilled Cheese With Kimchi
+      domain: seriouseats.com
+      cuisine: korean-deep-cuts
+      category: Mains, Sandwiches, Sandwich
+    - url: https://www.maangchi.com/recipe/hotteok
+      title: Sweet pancakes with brown sugar syrup filling (Hotteok)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Snack
+    - url: https://www.maangchi.com/recipe/bulgogi
+      title: Bulgogi Korean beef BBQ
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Main dish
+    - url: https://www.maangchi.com/recipe/lobster-gimbap
+      title: Lobster gimbap (seaweed rice rolls)
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Lunchbox
+    - url: https://www.maangchi.com/recipe/ttukbaegi-bulgogi
+      title: 'Bulgogi stew in an earthenware pot (Ttukbaegi-bulgogi: 뚝배기불고기)'
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Main dish
+    - url: https://www.maangchi.com/recipe/triangle-gimbap
+      title: Bulgogi samgak-gimbap (Triangle gimbap) 삼각김밥
+      domain: maangchi.com
+      cuisine: korean-deep-cuts
+      category: Snack
+    - url: https://www.kawalingpinoy.com/puto-lanson/
+      title: Puto Lanson
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Snack
+    - url: https://www.kawalingpinoy.com/pancit-canton/
+      title: Pancit Canton
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Side Dish
+    - url: https://www.kawalingpinoy.com/leche-puto/
+      title: Leche Puto
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Dessert
+    - url: https://www.kawalingpinoy.com/southwestern-chicken-egg-rolls/
+      title: Southwestern Chicken Egg Rolls
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Appetizer
+    - url: https://www.kawalingpinoy.com/corned-beef-sinigang/
+      title: Corned Beef Sinigang
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main Entree, Soup
+    - url: https://www.kawalingpinoy.com/pinakbet-crispy-lechon-kawali/
+      title: Pinakbet with Crispy Lechon
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main Entree
+    - url: https://www.kawalingpinoy.com/chicken-adobo-with-liver-spread/
+      title: Chicken Adobo with Liver Spread
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main Entree
+    - url: https://www.kawalingpinoy.com/chicken-caldereta/
+      title: Chicken Caldereta
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main Entree
+    - url: https://www.kawalingpinoy.com/adobong-manok-sa-patis/
+      title: Adobong Manok sa Patis
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main Entree
+    - url: https://www.kawalingpinoy.com/ube-cassava-cake/
+      title: Ube Cassava Cake
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Dessert
+    - url: https://www.kawalingpinoy.com/tinolang-manok-chicken-tinola/
+      title: Tinolang Manok
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main Entree
+    - url: https://www.kawalingpinoy.com/cheese-dog-bread-rolls/
+      title: Cheese Dog Bread Rolls
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Snack
+    - url: https://www.kawalingpinoy.com/mango-bravo-cake/
+      title: Mango Bravo Cake
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Baked Goods, Dessert
+    - url: https://www.kawalingpinoy.com/bibingkang-malagkit/
+      title: Bibingkang Malagkit
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Dessert
+    - url: https://www.kawalingpinoy.com/adobong-paa-nang-manok-chicken-feet-adobo/
+      title: Adobong Paa nang Manok (Chicken Feet Adobo)
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Appetizer, Main Entree
+    - url: https://www.kawalingpinoy.com/easy-pancit-luglug/
+      title: Easy Pancit Luglug
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main Entree
+    - url: https://www.kawalingpinoy.com/pancit-upo/
+      title: Pancit Upo
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main Entree
+    - url: https://www.kawalingpinoy.com/chicken-adobo/
+      title: Chicken Adobo
+      domain: kawalingpinoy.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main Entree
+    - url: https://www.nyonyacooking.com/recipes/eggless-kaya-pumpkin-coconut-jam~P5NakKKpcK
+      title: Eggless Kaya
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Condiment
+    - url: https://www.nyonyacooking.com/recipes/pickled-cucumber-asian~syaXZNzv0n
+      title: Pickled Cucumber Asian
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Condiment
+    - url: https://www.nyonyacooking.com/recipes/stir-fried-glass-noodles-with-eggs-pad-woon-sen~EfEbYapP1V
+      title: Stir-Fried Glass Noodles with Eggs  ผัดวุ้นเส้น (Pad Woon Sen)
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main
+    - url: https://www.nyonyacooking.com/recipes/sambal-ayam-authentic-malaysian-spicy-chicken~8EFG5z02XI
+      title: 'Sambal Ayam: Authentic Malaysian Spicy Chicken'
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main, Side
+    - url: https://www.nyonyacooking.com/recipes/spiral-curry-puffs-karipap-pusing~9-UIxcbgW3
+      title: Spiral Curry Puffs (Karipap Pusing)
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Snack
+    - url: https://www.nyonyacooking.com/recipes/thai-basil-eggplant-stir-fry~TJn8cllt8C
+      title: Thai Basil Eggplant Stir-Fry
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Side
+    - url: https://www.nyonyacooking.com/recipes/malaysia-gula-melaka-kaya-coconut-jam~O3azoLtclq
+      title: Malaysia Gula Melaka Kaya / Coconut Jam
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Condiment
+    - url: https://www.nyonyacooking.com/recipes/kuih-bingka-baked-tapioca-cake-cassava~rKbfk55UtC
+      title: Kuih Bingka (Baked Tapioca Cake/ Cassava)
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Dessert, Snack
+    - url: https://www.nyonyacooking.com/recipes/chicken-macaroni-salad~2HdkQsiHKu
+      title: Chicken Macaroni Salad
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main
+    - url: https://www.nyonyacooking.com/recipes/penang-hokkien-mee-prawn-noodles~eOZKBUKuP0
+      title: Penang Hokkien Mee (Prawn Noodles)
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main, Soup
+    - url: https://www.nyonyacooking.com/recipes/bua-loy-rice-ball-in-sweet-coconut-milk~VuVstcc0fd
+      title: Bua Loy (Rice Ball in Sweet Coconut Milk)
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Dessert
+    - url: https://www.nyonyacooking.com/recipes/chili-garlic-prawns~sqjzxi0wq3
+      title: Chili Garlic Prawns
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Side
+    - url: https://www.nyonyacooking.com/recipes/ayam-percik~2JIHfE6OLH
+      title: Ayam Percik
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Main
+    - url: https://www.nyonyacooking.com/recipes/steamed-broccoli-and-carrots~eaIp5hCpWA
+      title: Steamed Broccoli and Carrots
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Side
+    - url: https://www.nyonyacooking.com/recipes/red-bean-soup~tuVGqCVdrd
+      title: Red Bean Soup
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Dessert, Soup
+    - url: https://www.nyonyacooking.com/recipes/coffee-butter-cookies-ala-jenny-bakery~3YvO8L4oGF
+      title: Coffee Butter Cookies alá Jenny Bakery
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Snack, Dessert
+    - url: https://www.nyonyacooking.com/recipes/kuih-semperit~iT_qhKSrJU
+      title: Kuih Semperit
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Snack, Dessert
+    - url: https://www.nyonyacooking.com/recipes/hakka-braised-pork~8ixDX6Dc_2
+      title: Hakka Braised Pork (客家木耳炸肉)
+      domain: nyonyacooking.com
+      cuisine: singaporean-malaysian-filipino
+      category: Side
+    - url: https://hot-thai-kitchen.com/egg-noodle-pad-see-ew/
+      title: Egg Noodle Pad See Ew หมี่เหลืองผัดซีอิ้ว
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/dry-tom-yum-seafood/
+      title: Dry Tom Yum Seafood ต้มยำทะเลแห้ง
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/kaeng-liang/
+      title: Thai Peppery Shrimp and Veggie Soup
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/beef-rendang/
+      title: Malaysian/Indonesian Beef Rendang
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/quick-congee/
+      title: Quick and Easy Congee with Meatballs
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/freezer-curry/
+      title: Freezer Red Curry with Chicken
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/laab-woonsen/
+      title: Spicy Thai Glass Noodle Salad (laab woonsen)
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/suki-hang/
+      title: Sukiyaki Stir-Fry (suki hang) สุกี้แห้ง
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/tom-yum-pizza/
+      title: Tom Yum Pizza  พิซซ่าต้มยำกุ้ง
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/vegan-laab/
+      title: Tofu & Corn Laab (Vegan)
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/chinese-roast-duck/
+      title: Chinese Roast Duck Thai Style (MK Duck) เป็ดย่าง MK
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/coffee-agar-jelly/
+      title: Coffee & Cream Agar Jelly
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/almond-jelly-fruit-salad/
+      title: Almond Agar Jelly & Fruit Salad (Almond Float)
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/mango-pudding/
+      title: Mango Pudding (Hong Kong Style)
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/laab-kai-jiew/
+      title: Spicy Omelette Salad ลาบไข่เจียว
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/coconut-longan-rice-pudding/
+      title: Coconut Rice Pudding w/ Longans ข้าวเหนียวเปียกลำไย
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/yum-mama/
+      title: Instant Noodle Salad (Yum Mama) ยำมาม่า
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/toasted-coconut-cold-brew/
+      title: Toasted Coconut Cold Brew (Starbucks Copycat Recipe!)
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/durian-sticky-rice/
+      title: Durian and Sticky Rice ข้าวเหนียวทุเรียน
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/galloping-horses/
+      title: Ancient Cookbook Recipe Experiment!
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/tom-yum-fish/
+      title: Tom Yum Fish Soup ต้มยำปลา
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/miang-kham/
+      title: '"Miang Kham" Wild Betel Leaf Wrap เมี่ยงคำ'
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/thai-waffles/
+      title: Coconut Waffle Recipe ขนมรังผึ้ง
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/salt-crusted-fish/
+      title: Baked Salt-Crusted Fish ปลาเผาเกลือ
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/kanom-ping/
+      title: Tapioca Coconut Mini Cookies (kanom ping) ขนมผิง
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://hot-thai-kitchen.com/mushroom-wonton-soup/
+      title: Vegetarian Mushroom Wonton Soup Recipe
+      domain: hot-thai-kitchen.com
+      cuisine: bangkok-thai-regional
+    - url: https://www.recipetineats.com/beef-satay-with-thai-peanut-sauce/
+      title: Beef Satay with Thai Peanut Sauce
+      domain: recipetineats.com
+      cuisine: bangkok-thai-regional
+      category: Mains, Starter
+    - url: https://www.recipetineats.com/southern-thai-tumeric-chicken-grilled-or-baked/
+      title: Thai Turmeric Chicken (Gai Yang Khamin)
+      domain: recipetineats.com
+      cuisine: bangkok-thai-regional
+      category: BBQ/Grilling, Dinner
+    - url: https://www.recipetineats.com/thai-black-sticky-rice-pudding/
+      title: Thai Black Sticky Rice Pudding
+      domain: recipetineats.com
+      cuisine: bangkok-thai-regional
+      category: Dessert
+    - url: https://www.recipetineats.com/thai-coconut-chicken/
+      title: Thai Coconut Marinated Chicken
+      domain: recipetineats.com
+      cuisine: bangkok-thai-regional
+      category: Main
+    - url: https://www.recipetineats.com/thai-yellow-curry/
+      title: Thai Yellow Curry (from scratch!)
+      domain: recipetineats.com
+      cuisine: bangkok-thai-regional
+      category: Mains
+    - url: https://www.seriouseats.com/thai-coconut-sticky-rice-mango-recipe
+      title: Khao Niao Mamuang (Thai Coconut Sticky Rice With Mango) Recipe
+      domain: seriouseats.com
+      cuisine: bangkok-thai-regional
+      category: Desserts, Fruit Desserts
+    - url: https://www.seriouseats.com/mango-sticky-rice-horchata-recipe-12019028
+      title: Mango Sticky Rice Horchata
+      domain: seriouseats.com
+      cuisine: bangkok-thai-regional
+      category: Beverage
+    - url: https://www.seriouseats.com/pad-kee-mao-drunken-noodles-recipe-8782198
+      title: Pad Kee Mao (Thai Drunken Noodles)
+      domain: seriouseats.com
+      cuisine: bangkok-thai-regional
+      category: Dinner
+    - url: https://www.seriouseats.com/sheet-pan-chicken-and-vegetables-red-curry-and-peanut-sauce-recipe-11885258
+      title: Sheet-Pan Chicken and Vegetables With Thai Red Curry and Peanut-Lime Sauce
+      domain: seriouseats.com
+      cuisine: bangkok-thai-regional
+      category: Dinner, Entree
+    - url: https://www.seriouseats.com/pad-see-ew-recipe-8784741
+      title: Pad See Ew (Thai Stir-Fried Noodles)
+      domain: seriouseats.com
+      cuisine: bangkok-thai-regional
+      category: Dinner
+    - url: https://patijinich.com/salsa-de-chipotle-y-cacahuate/
+      title: Salsa de Chipotle y Cacahuate
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Antojos, Sauce
+    - url: https://patijinich.com/tacos-arabes/
+      title: Tacos Árabes
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Main Course
+    - url: https://patijinich.com/sonoran-roasted-salsa/
+      title: Sonoran Roasted Salsa
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Dip
+    - url: https://patijinich.com/tacos-de-papa-nopal-y-huevo/
+      title: Tacos de Papa, Nopal y Huevo
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Breakfast, Main Dish
+    - url: https://patijinich.com/tlacoyos-de-masa-azul-de-haba-con-huevo-y-nopales/
+      title: Tlacoyos de Masa Azul de Haba con Huevo y Nopales
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Antojos, Main Course
+    - url: https://patijinich.com/tacos-de-suadero-con-salsa-verde-con-chiles-mixtos/
+      title: Tacos de Suadero con Salsa Verde con Chiles Mixtos
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Antojos, Main Course
+    - url: https://patijinich.com/salsa-roja-con-chile-de-arbol-y-ajo/
+      title: Salsa Roja con Chile de Árbol y Ajo
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Salsa
+    - url: https://patijinich.com/tlapique-de-pescado-con-nopales/
+      title: Tlapique de Pescado con Nopales (Tamales)
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Antojos, Main Dish
+    - url: https://patijinich.com/tacos-de-lengua-en-salsa-martajada/
+      title: Tacos de Lengua en Salsa Martajada
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Main Dish
+    - url: https://patijinich.com/guacamole-con-todo/
+      title: Guacamole con Todo
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Antojos, Side Dish
+    - url: https://patijinich.com/salsa-verde-con-chiles-mixtos/
+      title: Salsa Verde con Chiles Mixtos
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Salsa
+    - url: https://patijinich.com/salsa-tatemada-de-guacamole-con-chile-de-arbol/
+      title: Salsa Tatemada de Guacamole con Chile de Árbol
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Antojos, Salsa
+    - url: https://patijinich.com/tequila_mexican_cream_and_chipotle_shrimp/
+      title: Tequila, Mexican Cream and Chipotle Shrimp
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Antojos, Main Course
+    - url: https://patijinich.com/esquites-con-pepitas-y-chile-de-arbol/
+      title: Esquites con Pepitas y Chile de Árbol
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Antojos, Snack
+    - url: https://patijinich.com/tacos-de-alambre-de-carne-con-chorizo-y-queso/
+      title: Tacos de Alambre de Carne con Chorizo y Queso
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Antojos, Main Course
+    - url: https://patijinich.com/lamb-barbacoa-mixiote/
+      title: Lamb Barbacoa Mixiote
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Main Course
+    - url: https://patijinich.com/picadillo-stuffed-jalapenos-tacos/
+      title: Picadillo Stuffed Jalapeños Tacos
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Antojos, Main Course
+    - url: https://patijinich.com/sunny-side-up-eggs-with-salsa-de-chorizo/
+      title: Sunny Side Up Eggs with Salsa de Chorizo
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Breakfast
+    - url: https://patijinich.com/piquin-and-agave-guacamole/
+      title: Piquín and Agave Guacamole
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Appetizer, Dip, Side Dish
+    - url: https://patijinich.com/pine-nut-mole-with-roasted-chicken/
+      title: Pine Nut Mole with Roasted Chicken
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Main Course
+    - url: https://patijinich.com/salsa-roja-del-jacalito/
+      title: Salsa Roja del Jacalito
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Appetizer, Dip, Salsa
+    - url: https://patijinich.com/coahuila-style-barbacoa-on-pita-bread/
+      title: Coahuila-Style Barbacoa on Pita Bread
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Main Course
+    - url: https://patijinich.com/scallop-aguachile-at-the-james-beard-house-2/
+      title: Scallop Aguachile
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Appetizer
+    - url: https://patijinich.com/a_true_mexican_collectible_versatile_summertime_salsas/
+      title: Raw Tomatillo and Chipotle Salsa Verde
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Appetizer, Sauce
+    - url: https://patijinich.com/mexican_style_eggs/
+      title: Eggs a la Mexicana
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Breakfast
+    - url: https://patijinich.com/beachside_coconut_flan/
+      title: Beachside coconut flan
+      domain: patijinich.com
+      cuisine: mexico-city-oaxacan
+      category: Dessert
+    - url: https://www.seriouseats.com/menudo-mexican-soup-red-chile-tripe-recipe
+      title: Menudo Rojo (Mexican Red-Chile Tripe Soup)
+      domain: seriouseats.com
+      cuisine: mexico-city-oaxacan
+      category: Soups and Stews
+    - url: https://www.seriouseats.com/tacos-al-pastor-recipe
+      title: Homemade Tacos Al Pastor
+      domain: seriouseats.com
+      cuisine: mexico-city-oaxacan
+      category: Mains, Tacos
+    - url: https://www.seriouseats.com/poc-chuc-yucatan-style-grilled-pork-tacos-recipe-12019252
+      title: Poc Chuc (Yucatán-Style Grilled Pork Tacos)
+      domain: seriouseats.com
+      cuisine: mexico-city-oaxacan
+      category: Dinner
+    - url: https://www.seriouseats.com/grilled-queso-panela-with-roasted-salsa-recipe-12004111
+      title: Grilled Queso Panela With Roasted Tomatillo and Poblano Salsa
+      domain: seriouseats.com
+      cuisine: mexico-city-oaxacan
+      category: Appetizer, Entree, Snack
+    - url: https://www.seriouseats.com/pay-de-queso-mexican-cheese-pie-recipe-6829247
+      title: Pay De Queso (Mexican Cheese Pie)
+      domain: seriouseats.com
+      cuisine: mexico-city-oaxacan
+      category: Dessert, Pie
+    - url: https://www.simplyrecipes.com/taco-spaghetti-recipe-12184497
+      title: The One-Pot Taco Spaghetti I Could Eat Every Night of the Week
+      domain: simplyrecipes.com
+      cuisine: mexico-city-oaxacan
+      category: Dinner, Entree
+    - url: https://www.simplyrecipes.com/easy-chicken-enchilada-casserole-recipe-7105222
+      title: Easy Chicken Enchilada Casserole
+      domain: simplyrecipes.com
+      cuisine: mexico-city-oaxacan
+      category: Entree, Dinner, Lunch
+    - url: https://www.simplyrecipes.com/chile-relleno-casserole-recipe-11927461
+      title: My Grandfather’s 5-Ingredient Chile Relleno Casserole Has Big Flavor
+      domain: simplyrecipes.com
+      cuisine: mexico-city-oaxacan
+      category: Dinner, Entree, Lunch
+    - url: https://www.simplyrecipes.com/loaded-sheet-pan-quesadillas-recipe-6751293
+      title: Loaded Sheet Pan Quesadillas
+      domain: simplyrecipes.com
+      cuisine: mexico-city-oaxacan
+      category: Entree, Dinner, Lunch, Appetizer
+    - url: https://www.simplyrecipes.com/impossible-cake-easy-chocoflan-recipe-12115631
+      title: This “Impossible Cake” Flips Its Layers as It Bakes
+      domain: simplyrecipes.com
+      cuisine: mexico-city-oaxacan
+      category: Dessert, Cake
+    - url: https://www.eatperu.com/salmon-ceviche/
+      title: Salmon Ceviche
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Appetizer, Main Course
+    - url: https://www.eatperu.com/what-is-ceviche/
+      title: Fish Ceviche Recipe
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Lunch, Main Course, Main Dish, Starter
+    - url: https://www.eatperu.com/jamon-del-pais-peruvian-country-ham/
+      title: Jamón del País (Peruvian Country Ham)
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Main Course, Snack / Sandwich
+    - url: https://www.eatperu.com/saltado-de-vainitas/
+      title: Saltado De Vainitas
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Main Course
+    - url: https://www.eatperu.com/sopa-de-quinoa/
+      title: Sopa de Quinoa
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Lunch, Starter
+    - url: https://www.eatperu.com/quinoa-con-leche-pudding/
+      title: Peruvian Quinoa Milk Pudding (Quinua con Leche)
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Breakfast, Dessert, Snack
+    - url: https://www.eatperu.com/quinoa-fried-rice/
+      title: 'Quinoa Fried Rice: A Nutritious Peruvian Twist on a Classic Dish'
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Main Course
+    - url: https://www.eatperu.com/chupe-de-camarones-peruvian-shrimp-chowder/
+      title: Chupe de Camarones (Peruvian Shrimp Chowder)
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Main Course, Soup, Starter
+    - url: https://www.eatperu.com/solterito/
+      title: Solterito Corn Salad
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Salad, Side Dish
+    - url: https://www.eatperu.com/arroz-con-pollo/
+      title: 'Arroz Con Pollo Peruano: Peruvian Rice With Chicken'
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Lunch, Main Course
+    - url: https://www.eatperu.com/arroz-con-mariscos/
+      title: 'Arroz con Mariscos: Peruvian Rice with Seafood'
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Lunch, Main Course
+    - url: https://www.eatperu.com/arroz-con-camarones/
+      title: Authentic Peruvian Arroz con Camarones
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Main Course, Side Dish
+    - url: https://www.eatperu.com/peruvian-jalea/
+      title: Peruvian Jalea
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Appetizer, Main Course
+    - url: https://www.eatperu.com/sweet-potato-quinoa-salad/
+      title: Quinoa rainbow fiesta with roasted sweet potatoes & zesty vinaigrette
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Main Course
+    - url: https://www.eatperu.com/banana-bread-queque-de-platano/
+      title: Peruvian banana bread
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Dessert, Snack
+    - url: https://www.eatperu.com/conchitas-parmesana/
+      title: Conchitas a la Parmesana
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Appetizer, Side Dish
+    - url: https://www.eatperu.com/scallop-ceviche/
+      title: Scallop ceviche
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Appetizer
+    - url: https://www.eatperu.com/aji-amarillo-sauce-recipe/
+      title: Ají Amarillo Sauce Recipe
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Side Dish
+    - url: https://www.eatperu.com/shrimp-ceviche-recipe/
+      title: Shrimp Ceviche
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Main Dish, Starter
+    - url: https://www.eatperu.com/tallarin-saltado-peruvian-noodles/
+      title: Tallarin Saltado
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Lunch, Main Course, Main Dish
+    - url: https://www.eatperu.com/vegetarian-palta-rellena/
+      title: Vegetarian Palta Rellena Recipe (Peruvian Stuffed Avocado Starter)
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Starter
+    - url: https://www.eatperu.com/shrimp-stuffed-avocado/
+      title: Peruvian Shrimp-Stuffed Avocado
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+    - url: https://www.eatperu.com/pepian-de-choclo/
+      title: Pepián de Choclo
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Main Dish
+    - url: https://www.eatperu.com/cocadas/
+      title: Peruvian Cocadas
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Dessert, Snack
+    - url: https://www.eatperu.com/seco-de-chabelo/
+      title: Seco de Chabelo
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Main Course
+    - url: https://www.eatperu.com/chicken-quinoa-soup/
+      title: Chicken Quinoa Soup
+      domain: eatperu.com
+      cuisine: lima-peruvian-latin
+      category: Main Course, Soup
+    - url: https://www.seriouseats.com/the-nasty-bits-how-to-make-chicharrones-recipe
+      title: How to Make Colombian-Style Chicharrones
+      domain: seriouseats.com
+      cuisine: lima-peruvian-latin
+      category: Snack, Side Dish
+    - url: https://www.seriouseats.com/peruvian-style-grilled-chicken-with-green-sauce-recipe
+      title: Peruvian-Style Grilled Chicken With Green Sauce Recipe
+      domain: seriouseats.com
+      cuisine: lima-peruvian-latin
+      category: Mains
+    - url: https://www.seriouseats.com/beef-jerky-empanadas-recipe-11750972
+      title: Beef Jerky Empanadas
+      domain: seriouseats.com
+      cuisine: lima-peruvian-latin
+      category: Snack
+    - url: https://www.seriouseats.com/chilean-beef-empanadas-recipe-11711441
+      title: Chilean Beef Empanadas
+      domain: seriouseats.com
+      cuisine: lima-peruvian-latin
+      category: Appetizer, Snack
+    - url: https://www.seriouseats.com/potato-and-corn-empanadas-with-aji-recipe
+      title: Potato and Corn Empanadas With Aji Recipe
+      domain: seriouseats.com
+      cuisine: lima-peruvian-latin
+      category: Appetizer, Snack, Lunch, Brunch, Entree, Sides, Pie
+    - url: https://www.bbcgoodfood.com/recipes/corn-cheese-chilli-empanadas
+      title: Corn, cheese & chilli empanadas
+      domain: bbcgoodfood.com
+      cuisine: lima-peruvian-latin
+      category: Lunch, Side dish, Starter
+    - url: https://www.bbcgoodfood.com/recipes/tuna-empanada-pie
+      title: Tuna empanada pie
+      domain: bbcgoodfood.com
+      cuisine: lima-peruvian-latin
+      category: Dinner, Main course
+    - url: https://www.bbcgoodfood.com/recipes/cabbage-pork-empanadas
+      title: Cabbage & pork empanadas
+      domain: bbcgoodfood.com
+      cuisine: lima-peruvian-latin
+      category: Dinner, Starter
+    - url: https://www.bbcgoodfood.com/recipes/ceviche
+      title: Ceviche
+      domain: bbcgoodfood.com
+      cuisine: lima-peruvian-latin
+      category: Dinner
+    - url: https://www.bbcgoodfood.com/recipes/mexican-pork-tamales
+      title: Mexican pork tamales
+      domain: bbcgoodfood.com
+      cuisine: lima-peruvian-latin
+      category: Dinner
+    - url: https://www.africanbites.com/jamaican-curry-goat/
+      title: Jamaican Curry Goat
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Main Course
+    - url: https://www.africanbites.com/plantain-chips/
+      title: Plantain Chips With Mango Salsa
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Appetizer, Snacks
+    - url: https://www.africanbites.com/air-fryer-plantains/
+      title: Air-Fryer Plantains
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Appetizer, Snack
+    - url: https://www.africanbites.com/moroccan-slow-cooker-chicken-stew-chick-peas/
+      title: Slow Cooker Chicken Thighs
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Main
+    - url: https://www.africanbites.com/plantain-frittersklako/
+      title: Plantain Fritters (Klako)
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Snack
+    - url: https://www.africanbites.com/baked-plantain-chips-2/
+      title: Baked Plantain Chips
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Appetizers
+    - url: https://www.africanbites.com/slow-cooker-oxtail-soup/
+      title: Slow Cooker Oxtail Soup
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Soup
+    - url: https://www.africanbites.com/crockpot-jerk-chicken/
+      title: Slow Cooker Jerk Chicken
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Main
+    - url: https://www.africanbites.com/caribbean-corn-beef-and-cabbage-4/
+      title: Caribbean Corn Beef and Cabbage
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Main
+    - url: https://www.africanbites.com/kelewele-or-alocospicy-fried-plantains/
+      title: Kelewele
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Appetiser
+    - url: https://www.africanbites.com/african-spicy-oxtail-stew/
+      title: African Spicy Oxtail Stew
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Main
+    - url: https://www.africanbites.com/cassava-coconut-cake/
+      title: Cassava Coconut Cake
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Dessert/Snack
+    - url: https://www.africanbites.com/african-caribbean-shrimp-fried-rice/
+      title: African Caribbean Shrimp Fried Rice
+      domain: africanbites.com
+      cuisine: caribbean-diaspora
+      category: Main
+    - url: https://www.alicaspepperpot.com/guyanese-style-chicken-patties/
+      title: Guyanese Style Chicken Patties
+      domain: alicaspepperpot.com
+      cuisine: caribbean-diaspora
+    - url: https://www.alicaspepperpot.com/stewed-red-snapper-fillets/
+      title: Stewed Red Snapper fillets
+      domain: alicaspepperpot.com
+      cuisine: caribbean-diaspora
+    - url: https://www.alicaspepperpot.com/holiday-appetizer-fried-plantain-cups-saltfish-filling/
+      title: 'Holiday Appetizer: Fried Plantain Cups + Saltfish Filling'
+      domain: alicaspepperpot.com
+      cuisine: caribbean-diaspora
+    - url: https://www.alicaspepperpot.com/green-seasoning/
+      title: Green Seasoning
+      domain: alicaspepperpot.com
+      cuisine: caribbean-diaspora
+    - url: https://www.alicaspepperpot.com/mango-sour/
+      title: Mango Sour
+      domain: alicaspepperpot.com
+      cuisine: caribbean-diaspora
+    - url: https://www.alicaspepperpot.com/accordion-potatoes/
+      title: Accordion Potatoes
+      domain: alicaspepperpot.com
+      cuisine: caribbean-diaspora
+    - url: https://www.alicaspepperpot.com/tostones-with-a-garlic-dipping-sauce/
+      title: Tostones with a Garlic Dipping Sauce
+      domain: alicaspepperpot.com
+      cuisine: caribbean-diaspora
+    - url: https://www.alicaspepperpot.com/spicy-scalloped-potatoes/
+      title: Spicy Scalloped Potatoes
+      domain: alicaspepperpot.com
+      cuisine: caribbean-diaspora
+    - url: https://www.alicaspepperpot.com/roasted-dill-potatoes/
+      title: Roasted Dill Potatoes
+      domain: alicaspepperpot.com
+      cuisine: caribbean-diaspora
+    - url: https://www.alicaspepperpot.com/superbowl-party-buffalo-chicken-dip/
+      title: 'Superbowl Party: Buffalo Chicken Dip'
+      domain: alicaspepperpot.com
+      cuisine: caribbean-diaspora
+    - url: https://www.alicaspepperpot.com/herb-roasted-cornish-hens/
+      title: Herb-Roasted Cornish Hens
+      domain: alicaspepperpot.com
+      cuisine: caribbean-diaspora
+    - url: https://www.alicaspepperpot.com/shepherds-pie/
+      title: Shepherd’s Pie
+      domain: alicaspepperpot.com
+      cuisine: caribbean-diaspora
+    - url: https://www.alicaspepperpot.com/baked-chicken-nuggets/
+      title: Baked Chicken Nuggets
+      domain: alicaspepperpot.com
+      cuisine: caribbean-diaspora
+    - url: https://www.seriouseats.com/basic-rotisserie-chicken-recipe
+      title: Rotisserie Chicken Recipe
+      domain: seriouseats.com
+      cuisine: caribbean-diaspora
+      category: Entree, Mains
+    - url: https://www.seriouseats.com/kedgeree-british-scottish-curry-rice-with-smoked-haddock-recipe-7198140
+      title: Kedgeree (British Curried Rice With Smoked Haddock)
+      domain: seriouseats.com
+      cuisine: caribbean-diaspora
+      category: Breakfast, Brunch, Dinner, Lunch, Entree
+    - url: https://www.seriouseats.com/sweet-potato-spinach-curry-recipe
+      title: Sweet Potato and Spinach Curry Recipe
+      domain: seriouseats.com
+      cuisine: caribbean-diaspora
+      category: Entree
+    - url: https://www.seriouseats.com/beef-bourguignon-red-wine-stew-recipe
+      title: Boeuf Bourguignon (Beef Stew With Red Wine, Mushrooms, and Bacon)
+      domain: seriouseats.com
+      cuisine: caribbean-diaspora
+      category: Beef Stew, Mains
+    - url: https://www.seriouseats.com/nigerian-eggplant-stew-recipe-11797971
+      title: Nigerian Eggplant Stew
+      domain: seriouseats.com
+      cuisine: caribbean-diaspora
+      category: Dinner
+    - url: https://www.simplyrecipes.com/hawaiian-beef-stew-recipe-12147841
+      title: This Hawaiian Beef Stew Is Unlike Any Other Beef Stew I’ve Ever Made
+      domain: simplyrecipes.com
+      cuisine: caribbean-diaspora
+      category: Dinner
+    - url: https://www.simplyrecipes.com/beef-caldereta-filipino-beef-stew-recipe-12150063
+      title: This Filipino Beef Stew Has the Most Tender, Flavorful Beef
+      domain: simplyrecipes.com
+      cuisine: caribbean-diaspora
+      category: Dinner
+    - url: https://www.simplyrecipes.com/slow-cooker-beef-stew-recipe-6541415
+      title: Slow Cooker Beef Stew
+      domain: simplyrecipes.com
+      cuisine: caribbean-diaspora
+      category: Dinner, Entree
+    - url: https://www.simplyrecipes.com/easy-chickpea-curry-recipe-11762133
+      title: The 20-Minute Dinner I Make Almost Every Week
+      domain: simplyrecipes.com
+      cuisine: caribbean-diaspora
+      category: Entree, Dinner, Lunch
+    - url: https://www.simplyrecipes.com/instant-pot-pernil-roast-pork-recipe-6735747
+      title: Instant Pot Pernil (Roast Pork)
+      domain: simplyrecipes.com
+      cuisine: caribbean-diaspora
+      category: Entree, Dinner
+    - url: https://www.davidlebovitz.com/kofta-with-yogurt-tahini-sauce-recipe-tartine/
+      title: Kofta with Yogurt-Tahini Sauce
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+    - url: https://www.davidlebovitz.com/chicken-in-red-wine-vinegar-sauce-french-bistro-recipe/
+      title: Chicken in Red Wine Vinegar Sauce
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+    - url: https://www.davidlebovitz.com/french-fried-chicken-recipe/
+      title: French Fried Chicken
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+    - url: https://www.davidlebovitz.com/simplest-beef-curry-burma/
+      title: Simplest Beef Curry with Shallots
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+    - url: https://www.davidlebovitz.com/herbed-ricotta-tart/
+      title: Herbed Ricotta Tart
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+    - url: https://www.davidlebovitz.com/galette-des-rois-kings-cake-recipe/
+      title: Galette des rois
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+    - url: https://www.davidlebovitz.com/panettone-french-toast-recipe/
+      title: Panettone French Toast
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+      category: Breakfast
+    - url: https://www.davidlebovitz.com/strawberry-rhubarb-tart-crostata-galette-recipe/
+      title: Strawberry Rhubarb Tart
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+    - url: https://www.davidlebovitz.com/gougeres-french-cheese-puffs/
+      title: Gougeres
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+      category: Appetizer
+    - url: https://www.davidlebovitz.com/tart-au-citron-french-lemon-tart/
+      title: Lemon Tart
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+    - url: https://www.davidlebovitz.com/moules-frites-mussels-french-fries/
+      title: Moules-frites
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+      category: Main Course
+    - url: https://www.davidlebovitz.com/blacker-blackberry-cherry-jerrelle-guy-black-girl-baking-berry-crostata-galette-tart-tarte/
+      title: Blacker Berry Galette
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+      category: Dessert
+    - url: https://www.davidlebovitz.com/yeasted-plum-tart-recipe/
+      title: Yeasted Plum Tart
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+    - url: https://www.davidlebovitz.com/french-manhattan-cocktail-cognac-vermouth-drinking-french-recipe-orange-liqueur-triple-sec-vermouth-grand-marnier-cointreau/
+      title: French Manhattan
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+    - url: https://www.davidlebovitz.com/thai-green-curry-recipe/
+      title: Green Curry with Chicken
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+      category: Main Course
+    - url: https://www.davidlebovitz.com/summer-fruit-galette-frangipan-tart-recipe/
+      title: Summer Fruit Galette
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+      category: Dessert
+    - url: https://www.davidlebovitz.com/cherry-jam-recipe-jelly-confiture-cerises-recette-fruit/
+      title: Cherry Jam
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+      category: Breakfast
+    - url: https://www.davidlebovitz.com/cherry-clafoutis-recipe/
+      title: Cherry Clafoutis
+      domain: davidlebovitz.com
+      cuisine: paris-london-classics
+      category: Dessert
+    - url: https://www.bbcgoodfood.com/recipes/aromatic-chicken-curry
+      title: Aromatic chicken curry
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Buffet, Dinner, Main course, Side dish, Snack, Supper
+    - url: https://www.bbcgoodfood.com/recipes/squashed-peach-almond-tarts
+      title: Squashed peach & almond tarts
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Afternoon tea, Dessert, Lunch, Snack, Supper, Treat
+    - url: https://www.bbcgoodfood.com/recipes/chocolate-hazelnut-praline-tart
+      title: Chocolate & hazelnut praline tart
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Dessert, Treat
+    - url: https://www.bbcgoodfood.com/recipes/melting-goats-cheese-chutney-tarts
+      title: Melting goat’s cheese & chutney tarts
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Dinner, Main course, Starter, Supper
+    - url: https://www.bbcgoodfood.com/recipes/ultimate-crepes-suzette
+      title: Ultimate Crêpes Suzette
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Dessert, Dinner, Lunch, Supper, Treat
+    - url: https://www.bbcgoodfood.com/recipes/ultimate-scones
+      title: Ultimate scones
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Afternoon tea, Treat
+    - url: https://www.bbcgoodfood.com/recipes/fragrant-shepherds-pie-apricots
+      title: Fragrant shepherd’s pie with apricots
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Dinner, Main course
+    - url: https://www.bbcgoodfood.com/recipes/creamy-rhubarb-tarts
+      title: Creamy rhubarb tarts
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Afternoon tea, Dessert, Treat
+    - url: https://www.bbcgoodfood.com/recipes/cauliflower-egg-potato-curry
+      title: Cauliflower, egg & potato curry
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Dinner, Main course
+    - url: https://www.bbcgoodfood.com/recipes/prawn-coconut-curry
+      title: Prawn & coconut curry
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Buffet, Dinner, Main course, Side dish
+    - url: https://www.bbcgoodfood.com/recipes/fragrant-chicken-curry-chick-peas
+      title: Fragrant chicken curry with chick peas
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Dinner, Lunch, Main course, Supper
+    - url: https://www.bbcgoodfood.com/recipes/goats-cheese-potato-onion-tart
+      title: Goat's cheese, potato & onion tart
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Buffet, Lunch, Starter, Supper
+    - url: https://www.bbcgoodfood.com/recipes/sole-meuniere
+      title: Sole meunière
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Dinner, Supper
+    - url: https://www.bbcgoodfood.com/recipes/cheese-marmite-scones-0
+      title: Wholemeal cheese & Marmite scones
+      domain: bbcgoodfood.com
+      cuisine: paris-london-classics
+      category: Afternoon tea, Buffet, Side dish, Snack, Supper, Treat
+    - url: https://www.recipetineats.com/bangers-and-mash-sausage-with-onion-gravy/
+      title: Bangers & Mash (Sausage with Onion Gravy)
+      domain: recipetineats.com
+      cuisine: paris-london-classics
+      category: Dinner
+    - url: https://www.recipetineats.com/creamy-french-dressing/
+      title: Creamy French Dressing
+      domain: recipetineats.com
+      cuisine: paris-london-classics
+      category: Dressing, Salad Dressing
+    - url: https://www.recipetineats.com/melting-afghani-chickpea-curry/
+      title: Melting Afghan chickpea curry
+      domain: recipetineats.com
+      cuisine: paris-london-classics
+      category: Main
+    - url: https://www.recipetineats.com/sweet-tartlet-shells-individual-tart-crusts/
+      title: Sweet tartlet shells (individual tart crusts)
+      domain: recipetineats.com
+      cuisine: paris-london-classics
+      category: Sweet Baking
+    - url: https://true-north-kitchen.com/easy-finnish-flatbread-with-oats-and-barley-rieska/
+      title: Quick Finnish Flatbread with Oats and Barley (Rieska)
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Breads and Buns
+    - url: https://true-north-kitchen.com/rye-berry-salad-with-chickpeas-roasted-red-peppers-and-arugula/
+      title: Rye Berry Salad with Chickpeas, Roasted Red Peppers and Arugula
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: salads
+    - url: https://true-north-kitchen.com/blueberry-creme-fraiche-tart-with-rye/
+      title: Blueberry Creme Fraiche Tart with Rye
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: bake, Dessert, Fika
+    - url: https://true-north-kitchen.com/swedish-pancakes-with-vanilla-pastry-cream-and-blueberry-cardamom-compote/
+      title: Swedish Pancakes with Vanilla Pastry Cream and Blueberry Cardamom Compote
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: berries, Dessert, summer
+    - url: https://true-north-kitchen.com/spiced-salmon-skewers-with-lemon/
+      title: Spiced Salmon Skewers with Lemon
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: dinner, summer
+    - url: https://true-north-kitchen.com/nordic-wild-berry-frozen-skyr/
+      title: Nordic Wildberry Frozen Skyr
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: berries, Dessert, summer
+    - url: https://true-north-kitchen.com/grilled-summer-squash-smorrebrod-with-basil-mayonnaise/
+      title: Grilled Summer Squash Smørrebrød with Basil Mayonnaise
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Danish reipes, dinner, lunch, smørrebrød
+    - url: https://true-north-kitchen.com/easy-grilled-cedar-plank-salmon-with-creamy-horseradish-sauce/
+      title: Easy Grilled Cedar Plank Salmon with Creamy Horseradish Sauce
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: dinner
+    - url: https://true-north-kitchen.com/simple-roasted-salmon-with-cucumber-radish-relish/
+      title: Simple Roasted Salmon with Cucumber-Radish Relish
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: dinner
+    - url: https://true-north-kitchen.com/simple-egg-salad-smorrebrod/
+      title: Simple Egg Salad Smørrebrød
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: smørrebrød
+    - url: https://true-north-kitchen.com/roasted-broccoli-smorrebrod-with-whipped-ricotta/
+      title: Roasted Broccoli Smørrebrød with Whipped Ricotta
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: smørrebrød
+    - url: https://true-north-kitchen.com/roasted-beet-hummus-smorrebrod-with-avocado-and-pickled-onions/
+      title: Roasted Beet Hummus Smørrebrød with Avocado and Pickled Onions
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Appetizer, smørrebrød, Snack
+    - url: https://true-north-kitchen.com/danish-oat-bread/
+      title: Danish Oat Bread
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: breads
+    - url: https://true-north-kitchen.com/roasted-salmon-salad-with-capers-and-parsley/
+      title: Roasted Salmon Salad with Capers and Parsley
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: dinner
+    - url: https://true-north-kitchen.com/potato-and-pickled-herring-bites-with-remoulade/
+      title: Potato and Pickled Herring Bites with Remoulade
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: appetizers
+    - url: https://true-north-kitchen.com/swedish-meatball-smorrebrod-with-creamy-pickled-beet-salad/
+      title: Swedish Meatball Smørrebrød with Creamy Pickled Beet Salad
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: smørrebrød
+    - url: https://true-north-kitchen.com/grilled-summer-squash-salad-with-rye-berries-and-sun-dried-tomato-vinaigrette/
+      title: Grilled Summer Squash Salad with Rye Berries and Sun-Dried Tomato Vinaigrette
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Salad
+    - url: https://true-north-kitchen.com/rustic-tomato-tart-with-rye-crust/
+      title: Rustic Tomato Tart with Rye Crust
+      domain: true-north-kitchen.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: summer, tomatoes
+    - url: https://www.seriouseats.com/miso-glazed-salmon-in-the-toaster-oven-recipe
+      title: 5-Minute Miso Glazed Salmon Recipe
+      domain: seriouseats.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Entree, Mains
+    - url: https://www.seriouseats.com/scallop-crudo-recipe-7566506
+      title: Scallop Crudo
+      domain: seriouseats.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Appetizer
+    - url: https://www.seriouseats.com/pastrami-sandwich-on-rye-recipe-8605307
+      title: Pastrami on Rye
+      domain: seriouseats.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Lunch, Dinner, Sandwich
+    - url: https://www.seriouseats.com/porcupine-meatballs-recipe-12196859
+      title: Porcupine Meatballs
+      domain: seriouseats.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Dinner
+    - url: https://www.seriouseats.com/poached-salmon-with-summer-vegetables-recipe-12066242
+      title: Salmon à la Nage (Poached in Broth) With Summer Vegetables
+      domain: seriouseats.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Entree, Dinner, Mains
+    - url: https://www.seriouseats.com/slow-roasted-salmon-with-tartar-sauce-recipe-12037639
+      title: Slow Roasted Salmon with Tartar Sauce
+      domain: seriouseats.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Dinner
+    - url: https://www.seriouseats.com/creme-caramel-with-saffron-rose-and-cardamom-recipe-12035231
+      title: Crème Caramel With Saffron, Rose and Cardamom
+      domain: seriouseats.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Dessert
+    - url: https://www.seriouseats.com/cardamom-tres-leches-recipe-12033978
+      title: Cardamom Tres Leches
+      domain: seriouseats.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Dessert
+    - url: https://www.kingarthurbaking.com/recipes/a-smaller-sourdough-starter-recipe
+      title: A Smaller Sourdough Starter
+      domain: kingarthurbaking.com
+      cuisine: nyc-sf-copenhagen-coastal
+    - url: https://www.kingarthurbaking.com/recipes/cranberry-orange-babka-recipe
+      title: Cranberry-Orange Babka
+      domain: kingarthurbaking.com
+      cuisine: nyc-sf-copenhagen-coastal
+    - url: https://www.kingarthurbaking.com/recipes/no-knead-sourdough-bread-recipe
+      title: No-Knead Sourdough Bread
+      domain: kingarthurbaking.com
+      cuisine: nyc-sf-copenhagen-coastal
+    - url: https://www.kingarthurbaking.com/recipes/stuffed-bagel-buns-recipe
+      title: Stuffed Bagel Buns
+      domain: kingarthurbaking.com
+      cuisine: nyc-sf-copenhagen-coastal
+    - url: https://www.kingarthurbaking.com/recipes/potato-onion-rye-rolls-recipe
+      title: Potato-Onion Rye Rolls
+      domain: kingarthurbaking.com
+      cuisine: nyc-sf-copenhagen-coastal
+    - url: https://www.simplyrecipes.com/beef-stroganoff-mini-meatball-soup-recipe-12186576
+      title: This Hearty Beef Stroganoff Soup Starts With Frozen Meatballs
+      domain: simplyrecipes.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Dinner, Soup
+    - url: https://www.simplyrecipes.com/slow-cooker-cowboy-meatballs-recipe-12162742
+      title: These 5-Ingredient Slow Cooker Cowboy Meatballs Make It Easy To Lasso Up Dinner
+      domain: simplyrecipes.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Dinner
+    - url: https://www.simplyrecipes.com/homemade-pizza-bagels-recipe-5222871
+      title: Homemade Pizza Bagels
+      domain: simplyrecipes.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Lunch, Snack, Ingredient
+    - url: https://www.simplyrecipes.com/pasta-alla-vodka-with-mini-meatballs-recipe-12132542
+      title: The Easy One-Pan Pasta I Make on Busy Weeknights (It Has Mini Meatballs)
+      domain: simplyrecipes.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Dinner, Pasta
+    - url: https://www.simplyrecipes.com/salmon-with-brown-sugar-glaze-recipe-5496354
+      title: Salmon with Brown Sugar Glaze
+      domain: simplyrecipes.com
+      cuisine: nyc-sf-copenhagen-coastal
+      category: Dinner, Lunch, Entree
