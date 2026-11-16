@@ -6,6 +6,7 @@ require (
 	github.com/mmcdole/gofeed v1.5.0
 	github.com/refraction-networking/utls v1.8.2
 	golang.org/x/net v0.62.0
+	golang.org/x/sync v0.25.0
 	gopkg.in/yaml.v3 v3.0.1
 	modernc.org/sqlite v1.62.0
 )
