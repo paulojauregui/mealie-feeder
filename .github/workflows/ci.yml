@@ -23,6 +23,9 @@ jobs:
   quality:
     name: Lint, Validate & Unit Tests
     runs-on: ubuntu-latest
+    outputs:
+      has_go: ${{ steps.lang.outputs.has_go }}
+      has_docker: ${{ steps.lang.outputs.has_docker }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -35,15 +38,11 @@ jobs:
 
       - name: Validate YAML seeds and configs
         run: |
-          pip install pyyaml
-          python3 -c '
-          import glob, sys, yaml
-          files = sorted(glob.glob("seeds/**/*.yaml", recursive=True) + glob.glob("configs/**/*.yaml", recursive=True))
-          for path in files:
-              with open(path, "r", encoding="utf-8") as f:
-                  yaml.safe_load(f)
-              print(f"Valid YAML: {path}")
-          '
+          shopt -s globstar nullglob
+          for f in seeds/**/*.yaml configs/**/*.yaml; do
+            yq '.' "$f" >/dev/null
+            echo "Valid YAML: $f"
+          done
 
       - name: Set up Go
         if: steps.lang.outputs.has_go == 'true'
@@ -62,7 +61,7 @@ jobs:
   build-and-push:
     name: Build & Push Container Image
     needs: quality
-    if: ${{ hashFiles('Dockerfile') != '' }}
+    if: needs.quality.outputs.has_docker == 'true'
     runs-on: ubuntu-latest
     env:
       DOCKER_METADATA_PR_HEAD_SHA: true
@@ -93,7 +92,7 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract Docker metadata
+      - name: Extract Docker metadata (tags, labels)
         id: meta
         uses: docker/metadata-action@v5
         with:
