@@ -152,7 +152,7 @@ func (e *Engine) Status(ctx context.Context, reconcileMealie bool) (*StatusRepor
 ## 3. Orchestration Rules & Edge Cases
 
 1. **Global & Per-Domain Budget Allocation:** `Sync` honors `min(source.MaxPerRun, remainingGlobalBudget)` per domain while ensuring every domain gets fair progress if `opts.MaxPerRun` is set.
-2. **Post-Ingest OpenGraph Stub Guard:** After `CreateFromHTML` returns `slug`, if `src.AllowURLFallback` or `src.PurgeStubs` is enabled, verify `GetRecipe(ctx, slug)` with `preflight.IsOpenGraphStub`; if `PurgeStubs` is true and a stub was created, delete it and mark `skipped_non_recipe`.
+2. **Post-Ingest Incomplete & OpenGraph Stub Guard:** After `CreateFromHTML` returns `slug`, if `src.AllowURLFallback` or `src.PurgeStubs` is enabled, verify `GetRecipe(ctx, slug)` with `preflight.IsOpenGraphStub` (detecting `"could not detect ingredients"` or `len(ingredients) == 0 || len(instructions) == 0`); if `PurgeStubs` is true and an incomplete stub was created, delete it and mark `skipped_non_recipe`.
 3. **Zero Duplicate Imports:** Because `ReconcileMealieOrgURLs` executes before candidate processing and `ListPendingByDomain` returns only `discovered` or due `failed_retryable`, already-imported recipes are never re-fetched or re-posted.
 4. **Resilient Domain Isolation:** An `ErrChallengeDetected` or transient failure on domain A updates domain A's ledger entries and records domain error without aborting domain B.
 

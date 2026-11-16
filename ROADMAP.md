@@ -40,7 +40,7 @@ flowchart LR
 | Milestone | Scope Summary | Target Files | Verification Gate |
 | :--- | :--- | :--- | :--- |
 | [M01](docs/specs/M01_SPEC.md) | Go module definition (`1.27.4`), config structs, and invariant validation | `go.mod`, `internal/config/config.go`, `internal/config/config_test.go` | `go test -v -race -cover ./internal/config` |
-| [M02](docs/specs/M02_SPEC.md) | YAML file loaders, env resolution, and 16-domain `configs/sources.yaml` | `internal/config/loader.go`, `configs/sources.yaml`, `internal/config/loader_test.go` | `go test -v -race -cover ./internal/config` |
+| [M02](docs/specs/M02_SPEC.md) | YAML file loaders, env resolution, and 16-domain `configs/sources.yaml` (14 enabled, 2 disabled) | `internal/config/loader.go`, `configs/sources.yaml`, `internal/config/loader_test.go` | `go test -v -race -cover ./internal/config` |
 | [M03](docs/specs/M03_SPEC.md) | Canonical URL normalizer, state transition rules, and ledger domain models | `internal/ledger/models.go`, `internal/ledger/normalize.go`, `internal/ledger/normalize_test.go` | `go test -v -race -cover ./internal/ledger` |
 | [M04](docs/specs/M04_SPEC.md) | Pure-Go `modernc.org/sqlite` DDL, transactions, `orgURL` reconciliation, and queries | `internal/ledger/sqlite.go`, `internal/ledger/sqlite_test.go` | `go test -v -race -cover ./internal/ledger` |
 | [M05](docs/specs/M05_SPEC.md) | `refraction-networking/utls` transport, browser headers, per-domain rate limiter, challenge guard | `internal/fetch/ratelimit.go`, `internal/fetch/client.go`, `internal/fetch/client_test.go` | `go test -v -race -cover ./internal/fetch` |

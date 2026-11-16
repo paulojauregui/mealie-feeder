@@ -2,7 +2,7 @@
 
 ## 1. Objective & Target Files
 
-Implement deterministic YAML loaders and environment variable resolution in `internal/config`, and materialize the vetted 16-domain starter registry `configs/sources.yaml`.
+Implement deterministic YAML loaders and environment variable resolution in `internal/config`, and materialize the vetted 16-domain starter registry `configs/sources.yaml` (14 enabled starter domains, 2 disabled domains due to upstream scraper bugs, 4 excluded domains).
 
 **Target Files (strict scope):**
 1. `internal/config/loader.go`
@@ -59,7 +59,7 @@ func ResolveEnvFromOS() EnvConfig
 Must match Section 5 of `docs/ARCHITECTURE.md` verbatim:
 - `version: 1`
 - `excluded_domains`: `foodnetwork.com`, `food52.com`, `cooking.nytimes.com`, `americastestkitchen.com`
-- `sources`: All 16 empirically verified starter domains (`recipetineats.com`, `budgetbytes.com`, `sallysbakingaddiction.com`, `onceuponachef.com`, `minimalistbaker.com`, `cookieandkate.com`, `smittenkitchen.com`, `loveandlemons.com`, `bonappetit.com`, `epicurious.com`, `kingarthurbaking.com`, `bbcgoodfood.com`, `seriouseats.com`, `allrecipes.com`, `simplyrecipes.com`, `thespruceeats.com`).
+- `sources`: All 16 empirically verified starter domains (14 active enabled starter domains: `recipetineats.com`, `budgetbytes.com`, `sallysbakingaddiction.com`, `onceuponachef.com`, `minimalistbaker.com`, `cookieandkate.com`, `loveandlemons.com`, `bonappetit.com`, `epicurious.com`, `kingarthurbaking.com`, `bbcgoodfood.com`, `seriouseats.com`, `allrecipes.com`, `simplyrecipes.com`; and 2 temporarily disabled starter domains with `enabled: false`: `smittenkitchen.com`, `thespruceeats.com`).
 - Unknown YAML fields must be rejected via `yaml.NewDecoder` with `dec.KnownFields(true)` so typos like `allow_pattern` (singular) fail fast.
 
 ---
@@ -69,7 +69,7 @@ Must match Section 5 of `docs/ARCHITECTURE.md` verbatim:
 1. `LoadSources` parses valid YAML into `*SourceRegistry`, applies defaults, and returns an error on missing file, malformed YAML, unknown YAML field, or failed `Validate()`.
 2. `LoadSeeds` parses valid seed YAML, rejects unknown YAML fields, and returns an error on duplicate URLs.
 3. `ResolveEnv` uses defaults when env vars are unset or whitespace-only, trims trailing `/` from `MEALIE_URL`, and respects explicit overrides.
-4. Regression test loading `../../configs/sources.yaml` (if present in repo tree) confirming `LoadSources` succeeds, lists 16 active sources, and lists 4 excluded domains.
+4. Regression test loading `../../configs/sources.yaml` (if present in repo tree) confirming `LoadSources` succeeds, lists 14 enabled active sources, 2 disabled sources (`smittenkitchen.com`, `thespruceeats.com`), and 4 excluded domains.
 
 ---
 

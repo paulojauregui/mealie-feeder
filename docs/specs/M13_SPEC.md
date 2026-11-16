@@ -45,9 +45,9 @@ package config_test
 
 Deterministic assertions executed offline against `../../configs/sources.yaml` and `../../seeds/greatest-hits.yaml`:
 1. `LoadSources` parses `configs/sources.yaml` with zero unknown fields and passes `Validate()`.
-2. Verifies exact count of 16 enabled starter sources and 4 excluded domains (`foodnetwork.com`, `food52.com`, `cooking.nytimes.com`, `americastestkitchen.com`).
+2. Verifies exact count of 14 enabled starter sources, 2 disabled starter sources (`smittenkitchen.com`, `thespruceeats.com`), and 4 excluded domains (`foodnetwork.com`, `food52.com`, `cooking.nytimes.com`, `americastestkitchen.com`).
 3. `LoadSeeds` parses `seeds/greatest-hits.yaml` with zero unknown fields and passes `Validate()`.
-4. Verifies every seed entry's `Domain` resolves to an enabled, non-excluded source in `configs/sources.yaml`, every seed URL passes regex matching (`allow_patterns` / `!deny_patterns`) of its corresponding source, zero duplicate URLs exist, and all 10 culinary traditions have `>= 25` entries (`250 <= total <= 380`).
+4. Verifies every seed entry's `Domain` resolves to an enabled, non-excluded source in `configs/sources.yaml` (all 320 entries resolve to enabled sources; the 23 `thespruceeats.com` entries removed/replaced), every seed URL passes regex matching (`allow_patterns` / `!deny_patterns`) of its corresponding source, zero duplicate URLs exist, and all 10 culinary traditions have exact count of 32 entries (320 total).
 
 ---
 

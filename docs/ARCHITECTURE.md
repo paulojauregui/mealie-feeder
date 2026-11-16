@@ -12,7 +12,7 @@ Rather than re-implementing recipe parsing, ingredient normalization, or image p
 
 1. **Single-Fetch Ingestion (`POST /api/recipes/create/html-or-json`):** Mealie's `create_from_html()` endpoint accepts pre-fetched HTML plus the canonical `url`, bypassing Mealie's internal `safe_scrape_html()` HTTP client while still executing the full `recipe_scrapers` extractor, tag/category organizer (`includeTags: true`, `includeCategories: true`), and image downloader (`finalize_scraped_recipe`). Using `create/url/bulk` is avoided because `RecipeBulkScraperService` hardcodes `include_tags=False` and `include_categories=False` and lacks per-domain rate control.
 2. **Pre-Flight Schema Verification Prevents LLM Fallback & OpenGraph Stubs:** When Mealie's `recipe_scrapers` cannot extract ingredients or instructions (such as on roundups, gear reviews, or paywalled pages), Mealie falls back to `RecipeScraperOpenAI` (90-180s remote vLLM call on DGX Spark) and then `RecipeScraperOpenGraph`, persisting broken stub recipes containing `"Could not detect ingredients"`. `mealie-feeder` therefore validates Schema.org `Recipe` markup locally *before* calling Mealie.
-3. **Microdata Exception (`smittenkitchen.com`):** Live probing of all 16 starter domains proved that 15 emit `<script type="application/ld+json">` (`@type: "Recipe"`), whereas `smittenkitchen.com` emits exclusively Schema.org Microdata (`itemscope itemtype="http://schema.org/Recipe"`). `internal/preflight` must support both JSON-LD and Microdata inspection while allowing per-source policy enforcement.
+3. **Microdata Exception & Upstream Scraper Bug Mitigation:** Live probing proved that 15 of 16 starter domains emit `<script type="application/ld+json">` (`@type: "Recipe"`), whereas `smittenkitchen.com` emits exclusively Schema.org Microdata (`itemscope itemtype="http://schema.org/Recipe"`). However, upstream check verified that neither Mealie `v3.25.1` (`recipe-scrapers==15.12.0`) nor Mealie `v3.31.0` (`recipe-scrapers==15.13.0`) cleanly ingests `smittenkitchen.com` (parses 0 steps under `RecipeScraperPackage`) or `thespruceeats.com` (`TheSpruceEats.ingredients()` uses stale selector `li.structured-ingredients__list-item p` returning `[]`, and Mealie `clean_scraper()` `try_get_default` checks `value == [""]` rather than `not value`, storing 0 ingredients). Consequently, `configs/sources.yaml` manages **14 active enabled starter domains**, keeps **2 temporarily disabled starter domains** (`smittenkitchen.com`, `thespruceeats.com` with `enabled: false`), and maintains **4 excluded domains** (`foodnetwork.com`, `food52.com`, `cooking.nytimes.com`, `americastestkitchen.com`).
 4. **Canonical `orgURL` Deduplication:** Mealie enforces uniqueness only on `(slug, group_id)` and permits duplicate `orgURL` imports (`Name (1)` .. `Name (10)`). `mealie-feeder` must reconcile Mealie's existing `orgURL` inventory via paginated `GET /api/recipes` and persist canonicalized URL state in SQLite (`modernc.org/sqlite`).
 5. **Browser-TLS Fingerprinting + Header Consistency:** Dotdash Meredith properties (`seriouseats.com`, `allrecipes.com`, `simplyrecipes.com`, `thespruceeats.com`) sit behind Cloudflare TLS (`JA3`/`JA4`) + HTTP header checks. Plain `net/http` receives `HTTP 403` without browser TLS and consistent desktop headers (`User-Agent`, `Accept`, `Accept-Language`, `Sec-Ch-Ua*`, `Sec-Fetch-*`), whereas `refraction-networking/utls` with Chrome/Safari profiles negotiates TLS 1.3 + HTTP/2 (`h2`) and resolves `HTTP 200 OK`.
 6. **Strict Anti-Challenge & Containment Boundaries:** `mealie-feeder` never solves or bypasses CAPTCHAs, proof-of-work gates (e.g., Turnstile or hashcash JS challenges), or paywalls; encountering one fails closed cleanly. Furthermore, `agent-workshop` runs under `isolate-agent-workshop` (`CiliumNetworkPolicy` blocking cluster/RFC1918 traffic), so Phase B execution runs either from an operator workstation (`https://mealie.paulojauregui.com`) or as an in-cluster Kubernetes `CronJob` in namespace `mealie` targeting `http://mealie.mealie.svc.cluster.local:9000`.
@@ -62,7 +62,7 @@ mealie-feeder/
 │   ├── cli.go               # Subcommand flagsets (seed, sync, inspect, status, version) & slog setup
 │   └── cli_test.go
 ├── configs/
-│   └── sources.yaml         # Production 16-domain starter registry & exclusions
+│   └── sources.yaml         # Production 16-domain starter registry (14 enabled, 2 disabled) & exclusions
 ├── seeds/
 │   └── greatest-hits.yaml   # Live-verified multi-cuisine starter catalog
 ├── internal/
@@ -81,7 +81,7 @@ mealie-feeder/
 
 ### 3.2 Acyclic Dependency Graph
 
-Layer 0 packages have **zero dependencies on sibling `internal/*` packages**, guaranteeing clean compilation units and small specification scopes for autonomous execution.
+Layer 0 foundation packages maintain a strictly acyclic dependency structure: `config` has **zero dependencies on any internal packages**, serving as the root schema contract. Sibling Layer 0 infrastructure packages (`fetch`, `ledger`, `mealie`) similarly avoid cross-dependencies, while `preflight` depends solely on `config` (`preflight -> config`) to consume typed `config.SchemaMode` definitions. All specification scopes remain minimal and cleanly compilable for autonomous execution.
 
 ```mermaid
 flowchart TD
@@ -111,6 +111,8 @@ flowchart TD
 
     Discover --> Config
     Discover -.->|"Consumer Fetcher interface"| Fetch
+
+    Preflight --> Config
 ```
 
 ### 3.3 End-to-End Ingestion Data Flow
@@ -249,8 +251,8 @@ Uses `golang.org/x/net/html.NewTokenizer` exclusively (zero regexes over HTML):
    * `VerdictNonRecipe`: Roundup, gear review, or blog post lacking valid `Recipe` schema (`skipped_non_recipe`).
    * `VerdictEmptyRecipe`: Schema header exists, but ingredients or instructions are empty (`skipped_non_recipe`).
    * `VerdictPaywall`: Paywall DOM indicator detected alongside missing/truncated schema (`skipped_paywall`).
-4. **Post-Ingest OpenGraph Stub Guard:**
-   * Helper `IsOpenGraphStub(ingredients []string, instructions []string, description string) bool` checks Mealie's returned recipe if post-ingest verification is enabled, matching `"Could not detect ingredients"` or empty ingredient + instruction slices so stubs never go undetected.
+4. **Post-Ingest Incomplete & OpenGraph Stub Guard:**
+   * Helper `IsOpenGraphStub(ingredients []string, instructions []string, description string) bool` checks Mealie's returned recipe if post-ingest verification is enabled. It returns `true` if `description` contains `"could not detect ingredients"` (case-insensitive) OR `len(ingredients) == 0 || len(instructions) == 0`, catching half-broken `recipe_scrapers` adapters with 0 ingredients OR 0 steps cleanly (e.g., TheSpruceEats 0 ingredients bug or SmittenKitchen 0 steps bug) as well as OpenGraph fallback stubs.
 
 ### 4.6 `internal/ledger` (Canonicalizer, State Machine & SQLite DDL)
 
@@ -361,7 +363,7 @@ Uses standard `net/http.Client` (no TLS fingerprint spoofing needed for internal
 
 ## 5. Starter Source Registry (`configs/sources.yaml` Blueprint)
 
-The following complete `configs/sources.yaml` blueprint encodes all **16 empirically verified starter domains** and the **4 explicit exclusions**. Every `sitemap_urls`, `rss_urls`, `allow_patterns`, `deny_patterns`, and `schema_mode` value below was validated live against origin endpoints during Phase 1 reconnaissance.
+The following complete `configs/sources.yaml` blueprint encodes all **16 empirically verified starter domains** (14 active enabled starter domains, 2 temporarily disabled starter domains: `smittenkitchen.com`, `thespruceeats.com`) and the **4 explicit exclusions** (`foodnetwork.com`, `food52.com`, `cooking.nytimes.com`, `americastestkitchen.com`). Every `sitemap_urls`, `rss_urls`, `allow_patterns`, `deny_patterns`, and `schema_mode` value below was validated live against origin endpoints during Phase 1 reconnaissance.
 
 ```yaml
 version: 1
@@ -503,7 +505,7 @@ sources:
 
   - domain: smittenkitchen.com
     canonical_host: smittenkitchen.com
-    enabled: true
+    enabled: false
     tier: wordpress_microdata
     tls_mode: chrome_auto
     schema_mode: microdata
@@ -517,7 +519,7 @@ sources:
       - '^https?://(?:www\.)?smittenkitchen\.com/\d{4}/\d{2}/[a-z0-9-]+/?$'
     deny_patterns:
       - '^https?://(?:www\.)?smittenkitchen\.com/(?:category|tag|author|about|contact|recipes|events|page)/'
-    notes: "Uses Schema.org Microdata (not JSON-LD); robots.txt has malformed http:///sitemap.xml so explicit sitemap_urls takes precedence; conservative 4s interval avoids Cloudflare hashcash mitigation."
+    notes: "Disabled by default: upstream recipe-scrapers 15.12.0/15.13.0 under Mealie v3.25.1-v3.31.0 RecipeScraperPackage parses 0 instructions/steps from Schema.org Microdata. Uses Schema.org Microdata (not JSON-LD); robots.txt has malformed http:///sitemap.xml so explicit sitemap_urls takes precedence; conservative 4s interval avoids Cloudflare hashcash mitigation."
 
   - domain: loveandlemons.com
     canonical_host: www.loveandlemons.com
@@ -679,7 +681,7 @@ sources:
 
   - domain: thespruceeats.com
     canonical_host: www.thespruceeats.com
-    enabled: true
+    enabled: false
     tier: dotdash_meredith
     tls_mode: chrome_auto
     schema_mode: jsonld
@@ -696,6 +698,7 @@ sources:
     deny_patterns:
       - '^https?://(?:www\.)?thespruceeats\.com/.*-recipes-\d+$'
       - '^https?://(?:www\.)?thespruceeats\.com/(?:best-.*|about-us/|author/)'
+    notes: "Disabled by default: upstream recipe-scrapers 15.12.0/15.13.0 TheSpruceEats.ingredients() relies on stale selector li.structured-ingredients__list-item p returning empty [] and Mealie clean_scraper() try_get_default checks value == [''] rather than not value, ingesting 0 ingredients under Mealie v3.25.1-v3.31.0."
 ```
 
 ---

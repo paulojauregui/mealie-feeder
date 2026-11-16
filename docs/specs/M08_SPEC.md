@@ -78,9 +78,9 @@ type Result struct {
 // Post-conditions: Rejects roundups, gear reviews, empty schemas, and paywalled pages deterministically without calling external services.
 func InspectHTML(rawHTML []byte, schemaMode config.SchemaMode) Result
 
-// IsOpenGraphStub detects Mealie RecipeScraperOpenGraph fallback stubs after ingestion.
+// IsOpenGraphStub detects Mealie RecipeScraperOpenGraph fallback stubs and incomplete scraped recipes after ingestion.
 // Pre-conditions: Arguments come from Mealie GET /api/recipes/{slug}.
-// Post-conditions: Returns true if description contains "Could not detect ingredients" (case-insensitive) OR both ingredients and instructions are empty.
+// Post-conditions: Returns true if description contains "could not detect ingredients" (case-insensitive) OR len(ingredients) == 0 || len(instructions) == 0.
 func IsOpenGraphStub(ingredients []string, instructions []string, description string) bool
 ```
 
@@ -107,7 +107,7 @@ func IsOpenGraphStub(ingredients []string, instructions []string, description st
 4. Roundup / gear review HTML lacking `Recipe` schema returns `VerdictNonRecipe`.
 5. Microdata HTML fixture (modeling `smittenkitchen.com`) returns `VerdictNonRecipe` under `SchemaModeJSONLD` and `VerdictValid` under `SchemaModeMicrodata` and `SchemaModeAuto`.
 6. Paywall HTML without recipe schema returns `VerdictPaywall`.
-7. `IsOpenGraphStub` detects `"Could not detect ingredients"` and empty ingredient/instruction recipes while passing normal recipes.
+7. `IsOpenGraphStub` detects `"could not detect ingredients"` (case-insensitive), both slices empty, ingredients empty with instructions non-empty (e.g., 0-ingredient scraper bugs), and instructions empty with ingredients non-empty (e.g., 0-step scraper bugs), while returning false for complete recipes with both slices populated.
 
 ---
 

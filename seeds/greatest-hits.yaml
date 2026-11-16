@@ -140,16 +140,16 @@ recipes:
   domain: simplyrecipes.com
   cuisine: american-comfort-weeknight
   category: Dinner, Lunch, Entree, Sandwich
-- url: https://www.thespruceeats.com/baked-bean-sloppy-joes-recipe-480952
-  title: Baked Bean Sloppy Joes
-  domain: thespruceeats.com
+- url: https://www.onceuponachef.com/recipes/sloppy-joes.html
+  title: Homemade Sloppy Joes
+  domain: onceuponachef.com
   cuisine: american-comfort-weeknight
-  category: Entree
-- url: https://www.thespruceeats.com/chicken-noodle-soup-recipe-1809174
-  title: Chicken Noodle Soup
-  domain: thespruceeats.com
+  category: Main Course, Sandwiches
+- url: https://www.allrecipes.com/recipe/26460/quick-and-easy-chicken-noodle-soup/
+  title: Quick and Easy Chicken Noodle Soup
+  domain: allrecipes.com
   cuisine: american-comfort-weeknight
-  category: Entree
+  category: Soup
 - url: https://www.allrecipes.com/recipe/16722/fudgy-brownies-i/
   title: Fudgy Brownies
   domain: allrecipes.com
@@ -293,14 +293,14 @@ recipes:
   domain: simplyrecipes.com
   cuisine: baking-pastry-desserts
   category: Dessert
-- url: https://www.thespruceeats.com/shortbread-cookies-recipe-1000812
-  title: Dairy-Free Shortbread Cookies
-  domain: thespruceeats.com
+- url: https://www.kingarthurbaking.com/recipes/shortbread-recipe
+  title: Shortbread Cookies
+  domain: kingarthurbaking.com
   cuisine: baking-pastry-desserts
   category: Dessert
-- url: https://www.thespruceeats.com/juniors-original-new-york-cheesecake-recipe-1135432
+- url: https://www.bbcgoodfood.com/recipes/new-york-cheesecake
   title: New York Cheesecake
-  domain: thespruceeats.com
+  domain: bbcgoodfood.com
   cuisine: baking-pastry-desserts
   category: Dessert
 - url: https://www.allrecipes.com/recipe/13185/chinese-spicy-hot-and-sour-soup/
@@ -400,7 +400,7 @@ recipes:
   cuisine: chinese
   category: Chicken
 - url: https://www.onceuponachef.com/recipes/general-tsos-chicken.html
-  title: General Tso's Chicken
+  title: "General Tso's Chicken"
   domain: onceuponachef.com
   cuisine: chinese
   category: Chicken
@@ -444,21 +444,21 @@ recipes:
   domain: seriouseats.com
   cuisine: chinese
   category: Side Dish
-- url: https://www.thespruceeats.com/stir-fry-baby-bok-choy-recipe-695307
-  title: Chinese Stir-Fried Baby Bok Choy
-  domain: thespruceeats.com
+- url: https://www.recipetineats.com/bok-choy-in-ginger-sauce/
+  title: Bok Choy in Ginger Sauce
+  domain: recipetineats.com
   cuisine: chinese
   category: Side Dish
-- url: https://www.thespruceeats.com/tomato-egg-fried-rice-recipe-695053
-  title: Tomato Egg Fried Rice
-  domain: thespruceeats.com
+- url: https://www.onceuponachef.com/recipes/fried-rice.html
+  title: Fried Rice
+  domain: onceuponachef.com
   cuisine: chinese
-  category: Side Dish
-- url: https://www.thespruceeats.com/yuanxiao-chinese-dumplings-recipe-694274
-  title: Yuanxiao Dumplings for Lunar New Year
-  domain: thespruceeats.com
+  category: Main Course, Side Dish
+- url: https://www.recipetineats.com/potstickers-chinese-pan-fried-dumplings/
+  title: Chinese Dumplings (Potstickers)
+  domain: recipetineats.com
   cuisine: chinese
-  category: Appetizer
+  category: Mains
 - url: https://www.allrecipes.com/recipe/21742/steamed-mussels-ii/
   title: Steamed Mussels II
   domain: allrecipes.com
@@ -574,7 +574,7 @@ recipes:
   cuisine: french-classic-european
   category: Breakfast
 - url: https://sallysbakingaddiction.com/vegetarian-shepherds-pie/
-  title: Vegetarian Shepherd's Pie
+  title: "Vegetarian Shepherd's Pie"
   domain: sallysbakingaddiction.com
   cuisine: french-classic-european
   category: Dinner
@@ -603,14 +603,14 @@ recipes:
   domain: simplyrecipes.com
   cuisine: french-classic-european
   category: Entree
-- url: https://www.thespruceeats.com/beef-wellington-for-two-recipe-912521
-  title: 'A Romantic Dinner for Two: Beef Wellington'
-  domain: thespruceeats.com
+- url: https://www.bbcgoodfood.com/recipes/beef-wellington
+  title: Beef Wellington
+  domain: bbcgoodfood.com
   cuisine: french-classic-european
-  category: Entree
-- url: https://www.thespruceeats.com/steak-frites-recipe-8600699
-  title: Steak Frites
-  domain: thespruceeats.com
+  category: Dinner
+- url: https://www.bbcgoodfood.com/recipes/next-level-steak-frites
+  title: Next Level Steak Frites
+  domain: bbcgoodfood.com
   cuisine: french-classic-european
   category: Dinner
 - url: https://www.allrecipes.com/recipe/210530/kheema-malai-kofta/
@@ -748,26 +748,26 @@ recipes:
   domain: simplyrecipes.com
   cuisine: indian-south-asian
   category: Side Dish
-- url: https://www.thespruceeats.com/authentic-chicken-vindaloo-recipe-4687120
-  title: Classic Chicken Vindaloo Curry
-  domain: thespruceeats.com
+- url: https://www.bbcgoodfood.com/recipes/chicken-vindaloo
+  title: Chicken Vindaloo
+  domain: bbcgoodfood.com
   cuisine: indian-south-asian
-  category: Entree
-- url: https://www.thespruceeats.com/fish-pakora-recipe-1957611
-  title: Fish Pakora
-  domain: thespruceeats.com
+  category: Dinner, Main Course
+- url: https://www.allrecipes.com/recipe/23595/crispy-vegetable-pakoras/
+  title: Crispy Vegetable Pakoras
+  domain: allrecipes.com
   cuisine: indian-south-asian
-  category: Appetizer
-- url: https://www.thespruceeats.com/mango-lassi-recipe-7153415
+  category: Dinner, Appetizer
+- url: https://www.bbcgoodfood.com/recipes/mango-lassi
   title: Mango Lassi
-  domain: thespruceeats.com
+  domain: bbcgoodfood.com
   cuisine: indian-south-asian
-  category: Snack
-- url: https://www.thespruceeats.com/rogan-josh-recipe-1957574
-  title: 'Rogan Josh: An Indian Lamb Dish'
-  domain: thespruceeats.com
+  category: Drink
+- url: https://www.recipetineats.com/rogan-josh/
+  title: Rogan Josh (Indian Lamb Curry)
+  domain: recipetineats.com
   cuisine: indian-south-asian
-  category: Entree
+  category: Mains
 - url: https://www.allrecipes.com/chef-john-s-chicken-saltimbocca-recipe-8642251
   title: Chicken Saltimbocca
   domain: allrecipes.com
@@ -909,16 +909,16 @@ recipes:
   domain: simplyrecipes.com
   cuisine: italian
   category: Entree
-- url: https://www.thespruceeats.com/osso-buco-recipe-995279
+- url: https://www.recipetineats.com/osso-buco/
   title: Osso Buco
-  domain: thespruceeats.com
+  domain: recipetineats.com
   cuisine: italian
-  category: Entree
-- url: https://www.thespruceeats.com/penne-all-amatriciana-recipe-4685621
-  title: Penne all’ Amatriciana
-  domain: thespruceeats.com
+  category: Mains
+- url: https://www.bonappetit.com/recipe/bucatini-all-amatriciana
+  title: "Bucatini all'Amatriciana"
+  domain: bonappetit.com
   cuisine: italian
-  category: Entree
+  category: Dinner
 - url: https://www.allrecipes.com/recipe/8465165/chef-johns-shrimp-tempura/
   title: Chef John’s Shrimp Tempura
   domain: allrecipes.com
@@ -940,7 +940,7 @@ recipes:
   cuisine: japanese
   category: Entree
 - url: https://www.bbcgoodfood.com/recipes/japanese-ramen-noodle-soup
-  title: Cheat's ramen noodle soup
+  title: "Cheat's ramen noodle soup"
   domain: bbcgoodfood.com
   cuisine: japanese
   category: Main course
@@ -1052,26 +1052,26 @@ recipes:
   domain: simplyrecipes.com
   cuisine: japanese
   category: Breakfast
-- url: https://www.thespruceeats.com/chicken-yaki-udon-recipe-8574974
-  title: Chicken Yaki Udon
-  domain: thespruceeats.com
+- url: https://www.bbcgoodfood.com/recipes/yaki-udon
+  title: Yaki Udon
+  domain: bbcgoodfood.com
+  cuisine: japanese
+  category: Dinner, Lunch
+- url: https://www.bbcgoodfood.com/recipes/miso-ramen
+  title: Miso Ramen
+  domain: bbcgoodfood.com
+  cuisine: japanese
+  category: Dinner, Soup
+- url: https://www.allrecipes.com/recipe/129467/crispy-shrimp-tempura/
+  title: Crispy Shrimp Tempura
+  domain: allrecipes.com
   cuisine: japanese
   category: Dinner
-- url: https://www.thespruceeats.com/creamy-vegan-miso-butter-ramen-recipe-6754158
-  title: Creamy Vegan Miso Butter Ramen
-  domain: thespruceeats.com
+- url: https://www.allrecipes.com/recipe/276781/chicken-udon-noodle-soup/
+  title: Chicken Udon Noodle Soup
+  domain: allrecipes.com
   cuisine: japanese
-  category: Soup
-- url: https://www.thespruceeats.com/kabocha-tempura-recipe-2031602
-  title: Kabocha Tempura
-  domain: thespruceeats.com
-  cuisine: japanese
-  category: Appetizer
-- url: https://www.thespruceeats.com/nabeyaki-udon-recipe-2031628
-  title: Nabeyaki Udon
-  domain: thespruceeats.com
-  cuisine: japanese
-  category: Entree
+  category: Dinner
 - url: https://www.allrecipes.com/easy-doner-style-gyros-recipe-11948932
   title: Easy Doner-Style Gyros
   domain: allrecipes.com
@@ -1220,11 +1220,11 @@ recipes:
   domain: simplyrecipes.com
   cuisine: mediterranean-middle-eastern
   category: Side Dish
-- url: https://www.thespruceeats.com/fattoush-recipe-2355947
-  title: Fattoush
-  domain: thespruceeats.com
+- url: https://www.onceuponachef.com/recipes/fattoush-middle-eastern-bread-salad.html
+  title: Fattoush (Middle Eastern Bread Salad)
+  domain: onceuponachef.com
   cuisine: mediterranean-middle-eastern
-  category: Appetizer, Lunch, Side Dish, Salad
+  category: Salad
 - url: https://www.allrecipes.com/pozole-verde-with-chicken-recipe-11860684
   title: Pozole Verde with Chicken
   domain: allrecipes.com
@@ -1373,11 +1373,11 @@ recipes:
   domain: simplyrecipes.com
   cuisine: mexican-latin
   category: Breakfast
-- url: https://www.thespruceeats.com/churros-recipe-3029721
-  title: Churros (Cinnamon Sugar Fried Doughnut Sticks)
-  domain: thespruceeats.com
+- url: https://www.kingarthurbaking.com/recipes/churros-recipe
+  title: Churros
+  domain: kingarthurbaking.com
   cuisine: mexican-latin
-  category: Dessert, Snack, Bread
+  category: Dessert
 - url: https://www.allrecipes.com/recipe/107366/my-chicken-pho-recipe/
   title: Chicken Pho
   domain: allrecipes.com
@@ -1522,13 +1522,13 @@ recipes:
   domain: seriouseats.com
   cuisine: thai-southeast-asian
   category: Dinner
-- url: https://www.thespruceeats.com/hainanese-chicken-rice-very-detailed-recipe-3030408
+- url: https://www.bbcgoodfood.com/recipes/hainanese-chicken-rice
   title: Hainanese Chicken Rice
-  domain: thespruceeats.com
+  domain: bbcgoodfood.com
   cuisine: thai-southeast-asian
-  category: Entree
-- url: https://www.thespruceeats.com/tom-yum-talay-soup-recipe-3217648
-  title: 'Tom Yum Talay: Thai Seafood Soup'
-  domain: thespruceeats.com
+  category: Dinner
+- url: https://www.recipetineats.com/tom-yum-soup-thai/
+  title: Tom Yum Soup
+  domain: recipetineats.com
   cuisine: thai-southeast-asian
-  category: Side Dish
+  category: Mains, Starter
