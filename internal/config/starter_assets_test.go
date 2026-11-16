@@ -1,10 +1,13 @@
 package config_test
 
 import (
+	"net/url"
 	"os"
 	"path/filepath"
 	"regexp"
+	"strings"
 	"testing"
+	"unicode/utf8"
 
 	"github.com/paulojauregui/mealie-feeder/internal/config"
 )
@@ -184,6 +187,197 @@ func TestStarterAssetsContract(t *testing.T) {
 		count := cuisineCounts[cuisine]
 		if count != 32 {
 			t.Errorf("expected cuisine %q to have 32 recipes, got %d", cuisine, count)
+		}
+	}
+}
+
+// TestVol2SeedsContract verifies the curated Volume 2 seed manifest (seeds/greatest-hits-vol2.yaml)
+// against sources.yaml schema invariants and strict disjointness from Volume 1 (seeds/greatest-hits.yaml).
+// Pre-conditions: configs/sources.yaml, seeds/greatest-hits.yaml, and seeds/greatest-hits-vol2.yaml exist on disk and are readable.
+// Post-conditions: Asserts strict YAML decoding, total recipe count (320), exact 8 gap-fill cuisines (40 recipes each),
+// resolution to enabled sources, allow/deny regex compliance, zero URL overlap with Volume 1, zero internal duplicates,
+// and complete absence of emoji characters.
+func TestVol2SeedsContract(t *testing.T) {
+	sourcesPath := resolveAssetPath("configs/sources.yaml")
+	vol1Path := resolveAssetPath("seeds/greatest-hits.yaml")
+	vol2Path := resolveAssetPath("seeds/greatest-hits-vol2.yaml")
+
+	// 1. Load sources.yaml
+	registry, err := config.LoadSources(sourcesPath)
+	if err != nil {
+		t.Fatalf("LoadSources(%q) failed: %v", sourcesPath, err)
+	}
+	if registry == nil {
+		t.Fatal("LoadSources returned nil registry")
+	}
+
+	// 2. Load Volume 1 seeds to assert disjointness
+	vol1Manifest, err := config.LoadSeeds(vol1Path)
+	if err != nil {
+		t.Fatalf("LoadSeeds(%q) failed: %v", vol1Path, err)
+	}
+	if vol1Manifest == nil {
+		t.Fatal("LoadSeeds returned nil Volume 1 manifest")
+	}
+
+	canonicalURLKey := func(rawURL string) string {
+		u, parseErr := url.Parse(strings.TrimSpace(rawURL))
+		if parseErr != nil {
+			return strings.ToLower(rawURL)
+		}
+		host := config.NormalizeDomain(u.Hostname())
+		path := strings.TrimRight(u.Path, "/")
+		return strings.ToLower(host + path)
+	}
+
+	vol1Exact := make(map[string]bool, len(vol1Manifest.Recipes))
+	vol1Canon := make(map[string]bool, len(vol1Manifest.Recipes))
+	for _, r := range vol1Manifest.Recipes {
+		vol1Exact[r.URL] = true
+		vol1Canon[canonicalURLKey(r.URL)] = true
+	}
+
+	// 3. Load Volume 2 seeds
+	vol2Manifest, err := config.LoadSeeds(vol2Path)
+	if err != nil {
+		t.Fatalf("LoadSeeds(%q) failed: %v", vol2Path, err)
+	}
+	if vol2Manifest == nil {
+		t.Fatal("LoadSeeds returned nil Volume 2 manifest")
+	}
+
+	if len(vol2Manifest.Recipes) != 320 {
+		t.Fatalf("expected 320 recipes in Volume 2, got %d", len(vol2Manifest.Recipes))
+	}
+
+	// 4. Verify each recipe entry in Volume 2
+	seenURLs := make(map[string]bool, len(vol2Manifest.Recipes))
+	seenCanon := make(map[string]bool, len(vol2Manifest.Recipes))
+	cuisineCounts := make(map[string]int)
+
+	expectedCuisines := map[string]int{
+		"korean":           40,
+		"vietnamese":       40,
+		"spanish":          40,
+		"breakfast-brunch": 40,
+		"soups-stews":      40,
+		"grilling-bbq":     40,
+		"weeknight-30min":  40,
+		"drinks-cocktails": 40,
+	}
+
+	isRuneEmoji := func(r rune) bool {
+		if r > 0xFFFF {
+			return true
+		}
+		if r >= 0x2600 && r <= 0x27BF {
+			return true
+		}
+		if r >= 0xFE00 && r <= 0xFE0F {
+			return true
+		}
+		return false
+	}
+
+	hasEmojiOrInvalidUTF8 := func(s string) bool {
+		if !utf8.ValidString(s) {
+			return true
+		}
+		for _, r := range s {
+			if isRuneEmoji(r) {
+				return true
+			}
+		}
+		return false
+	}
+
+	for i, recipe := range vol2Manifest.Recipes {
+		// Verify zero duplicates within Volume 2
+		if seenURLs[recipe.URL] {
+			t.Errorf("duplicate recipe URL in Volume 2 [%d]: %s", i, recipe.URL)
+		}
+		seenURLs[recipe.URL] = true
+
+		cKey := canonicalURLKey(recipe.URL)
+		if seenCanon[cKey] {
+			t.Errorf("duplicate canonical recipe URL in Volume 2 [%d]: %s (%s)", i, recipe.URL, cKey)
+		}
+		seenCanon[cKey] = true
+
+		// Verify zero overlap with Volume 1
+		if vol1Exact[recipe.URL] {
+			t.Errorf("recipe [%d] (%s) overlaps exactly with Volume 1 seed: %s", i, recipe.Title, recipe.URL)
+		}
+		if vol1Canon[cKey] {
+			t.Errorf("recipe [%d] (%s) overlaps canonically with Volume 1 seed: %s (%s)", i, recipe.Title, recipe.URL, cKey)
+		}
+
+		// Verify zero emojis and valid UTF-8
+		if hasEmojiOrInvalidUTF8(recipe.Title) {
+			t.Errorf("recipe [%d] title contains emojis or invalid UTF-8: %q", i, recipe.Title)
+		}
+		if hasEmojiOrInvalidUTF8(recipe.Cuisine) {
+			t.Errorf("recipe [%d] cuisine contains emojis or invalid UTF-8: %q", i, recipe.Cuisine)
+		}
+		if hasEmojiOrInvalidUTF8(recipe.Category) {
+			t.Errorf("recipe [%d] category contains emojis or invalid UTF-8: %q", i, recipe.Category)
+		}
+
+		// Verify domain resolves to an enabled, non-excluded source
+		src, ok := registry.SourceByDomain(recipe.Domain)
+		if !ok {
+			t.Errorf("recipe [%d] (%s) domain %q not found in sources.yaml", i, recipe.Title, recipe.Domain)
+			continue
+		}
+		if !src.Enabled {
+			t.Errorf("recipe [%d] (%s) domain %q is disabled in sources.yaml", i, recipe.Title, recipe.Domain)
+		}
+		if ex, isExcluded := registry.IsExcluded(recipe.Domain); isExcluded {
+			t.Errorf("recipe [%d] (%s) domain %q is in excluded_domains: %s", i, recipe.Title, recipe.Domain, ex.Reason)
+		}
+
+		// Verify recipe URL against deny patterns
+		for _, denyPat := range src.DenyPatterns {
+			re, err := regexp.Compile(denyPat)
+			if err != nil {
+				t.Fatalf("invalid deny pattern %q for domain %q: %v", denyPat, src.Domain, err)
+			}
+			if re.MatchString(recipe.URL) {
+				t.Errorf("recipe [%d] (%s) URL %s matches deny pattern %q", i, recipe.Title, recipe.URL, denyPat)
+			}
+		}
+
+		// Verify recipe URL against allow patterns
+		if len(src.AllowPatterns) > 0 {
+			matched := false
+			for _, allowPat := range src.AllowPatterns {
+				re, err := regexp.Compile(allowPat)
+				if err != nil {
+					t.Fatalf("invalid allow pattern %q for domain %q: %v", allowPat, src.Domain, err)
+				}
+				if re.MatchString(recipe.URL) {
+					matched = true
+					break
+				}
+			}
+			if !matched {
+				t.Errorf("recipe [%d] (%s) URL %s does not match any allow pattern for domain %q (patterns: %v)",
+					i, recipe.Title, recipe.URL, src.Domain, src.AllowPatterns)
+			}
+		}
+
+		// Track cuisine distribution
+		cuisineCounts[recipe.Cuisine]++
+	}
+
+	// 5. Verify all 8 gap categories have exactly 40 entries
+	if len(cuisineCounts) != len(expectedCuisines) {
+		t.Errorf("expected %d cuisines in Volume 2, got %d: %v", len(expectedCuisines), len(cuisineCounts), cuisineCounts)
+	}
+	for cuisine, expectedCount := range expectedCuisines {
+		count := cuisineCounts[cuisine]
+		if count != expectedCount {
+			t.Errorf("expected cuisine %q to have %d recipes, got %d", cuisine, expectedCount, count)
 		}
 	}
 }
