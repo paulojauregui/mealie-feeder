@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"net"
 	"net/url"
-	"os"
 	"regexp"
 	"strings"
 	"time"
@@ -442,30 +441,6 @@ func (m *SeedManifest) Validate() error {
 	}
 
 	return nil
-}
-
-// ResolveEnv inspects the runtime environment and populates an EnvConfig instance.
-// Pre-conditions: None. Reads environment variables MEALIE_URL, MEALIE_API_TOKEN,
-// MEALIE_DB_PATH, MEALIE_SOURCES_PATH, and MEALIE_SEEDS_PATH.
-// Post-conditions: Returns an EnvConfig with defaults applied for unset or empty paths.
-func ResolveEnv() EnvConfig {
-	cfg := EnvConfig{
-		MealieURL:      os.Getenv("MEALIE_URL"),
-		MealieAPIToken: os.Getenv("MEALIE_API_TOKEN"),
-		DBPath:         os.Getenv("MEALIE_DB_PATH"),
-		SourcesPath:    os.Getenv("MEALIE_SOURCES_PATH"),
-		SeedsPath:      os.Getenv("MEALIE_SEEDS_PATH"),
-	}
-	if cfg.DBPath == "" {
-		cfg.DBPath = "data/feeder.db"
-	}
-	if cfg.SourcesPath == "" {
-		cfg.SourcesPath = "configs/sources.yaml"
-	}
-	if cfg.SeedsPath == "" {
-		cfg.SeedsPath = "seeds/greatest-hits.yaml"
-	}
-	return cfg
 }
 
 func validateHTTPURL(raw string) error {

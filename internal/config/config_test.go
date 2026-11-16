@@ -806,19 +806,19 @@ func TestResolveEnv(t *testing.T) {
 	t.Run("default paths when unset", func(t *testing.T) {
 		t.Setenv("MEALIE_URL", "")
 		t.Setenv("MEALIE_API_TOKEN", "")
-		t.Setenv("MEALIE_DB_PATH", "")
-		t.Setenv("MEALIE_SOURCES_PATH", "")
-		t.Setenv("MEALIE_SEEDS_PATH", "")
+		t.Setenv("MEALIE_FEEDER_DB", "")
+		t.Setenv("MEALIE_FEEDER_SOURCES", "")
+		t.Setenv("MEALIE_FEEDER_SEEDS", "")
 
-		cfg := ResolveEnv()
-		if cfg.DBPath != "data/feeder.db" {
-			t.Errorf("DBPath = %q; want data/feeder.db", cfg.DBPath)
+		cfg := ResolveEnvFromOS()
+		if cfg.DBPath != DefaultDBPath {
+			t.Errorf("DBPath = %q; want %q", cfg.DBPath, DefaultDBPath)
 		}
-		if cfg.SourcesPath != "configs/sources.yaml" {
-			t.Errorf("SourcesPath = %q; want configs/sources.yaml", cfg.SourcesPath)
+		if cfg.SourcesPath != DefaultSourcesPath {
+			t.Errorf("SourcesPath = %q; want %q", cfg.SourcesPath, DefaultSourcesPath)
 		}
-		if cfg.SeedsPath != "seeds/greatest-hits.yaml" {
-			t.Errorf("SeedsPath = %q; want seeds/greatest-hits.yaml", cfg.SeedsPath)
+		if cfg.SeedsPath != DefaultSeedsPath {
+			t.Errorf("SeedsPath = %q; want %q", cfg.SeedsPath, DefaultSeedsPath)
 		}
 		if cfg.MealieURL != "" {
 			t.Errorf("MealieURL = %q; want empty", cfg.MealieURL)
@@ -829,13 +829,13 @@ func TestResolveEnv(t *testing.T) {
 	})
 
 	t.Run("custom env overrides", func(t *testing.T) {
-		t.Setenv("MEALIE_URL", "http://mealie.local:9000")
+		t.Setenv("MEALIE_URL", "http://mealie.local:9000/")
 		t.Setenv("MEALIE_API_TOKEN", "supersecret123")
-		t.Setenv("MEALIE_DB_PATH", "/tmp/custom.db")
-		t.Setenv("MEALIE_SOURCES_PATH", "/tmp/custom_sources.yaml")
-		t.Setenv("MEALIE_SEEDS_PATH", "/tmp/custom_seeds.yaml")
+		t.Setenv("MEALIE_FEEDER_DB", "/tmp/custom.db")
+		t.Setenv("MEALIE_FEEDER_SOURCES", "/tmp/custom_sources.yaml")
+		t.Setenv("MEALIE_FEEDER_SEEDS", "/tmp/custom_seeds.yaml")
 
-		cfg := ResolveEnv()
+		cfg := ResolveEnvFromOS()
 		if cfg.MealieURL != "http://mealie.local:9000" {
 			t.Errorf("MealieURL = %q; want http://mealie.local:9000", cfg.MealieURL)
 		}
