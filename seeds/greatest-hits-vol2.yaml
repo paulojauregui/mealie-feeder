@@ -1,0 +1,1540 @@
+version: 1
+description: Curated live-verified high-signal gap recipes across 8 cuisines and meal
+  categories (Volume 2)
+recipes:
+- url: https://www.onceuponachef.com/recipes/beef-bulgogi.html
+  title: Beef Bulgogi
+  domain: onceuponachef.com
+  cuisine: korean
+  category: Beef, Lamb, Veal & Pork, Main Course
+- url: https://www.bbcgoodfood.com/recipes/korean-bbq-sauce
+  title: Korean BBQ sauce
+  domain: bbcgoodfood.com
+  cuisine: korean
+  category: Condiment
+- url: https://www.loveandlemons.com/bibimbap-recipe/
+  title: Bibimbap
+  domain: loveandlemons.com
+  cuisine: korean
+  category: Main Course
+- url: https://minimalistbaker.com/easy-vegan-kimchi/
+  title: Easy Vegan Kimchi
+  domain: minimalistbaker.com
+  cuisine: korean
+  category: Side, Snack
+- url: https://www.kingarthurbaking.com/recipes/hotteok-korean-sweet-pancakes-recipe
+  title: Hotteok (Korean Sweet Pancakes)
+  domain: kingarthurbaking.com
+  cuisine: korean
+- url: https://www.epicurious.com/recipes/food/views/grilled-pork-belly-and-kimchi
+  title: Grilled Pork Belly and Kimchi
+  domain: epicurious.com
+  cuisine: korean
+- url: https://www.budgetbytes.com/kimchi-fried-rice/
+  title: Kimchi Fried Rice
+  domain: budgetbytes.com
+  cuisine: korean
+  category: Dinner, Lunch, Side Dish
+- url: https://www.simplyrecipes.com/doenjang-jjigae-recipe-7481604
+  title: Doenjang Jjigae (Korean Soybean Paste Stew)
+  domain: simplyrecipes.com
+  cuisine: korean
+  category: Entree, Side Dish, Lunch, Dinner, Soup, Ingredient
+- url: https://www.recipetineats.com/bibimbap/
+  title: Bibimbap
+  domain: recipetineats.com
+  cuisine: korean
+  category: Mains
+- url: https://www.bonappetit.com/recipe/bulgogi
+  title: Easy Bulgogi
+  domain: bonappetit.com
+  cuisine: korean
+- url: https://www.seriouseats.com/seriously-asian-korean-soondubu-jjigae-soft-tofu-stew-recipe
+  title: 'Seriously Asian: Korean Soondubu Jjigae (Soft Tofu Stew) Recipe'
+  domain: seriouseats.com
+  cuisine: korean
+  category: Entree, Soups and Stews
+- url: https://www.allrecipes.com/recipe/192812/kongnamool-korean-soybean-sprouts/
+  title: Kongnamool (Korean Soybean Sprouts)
+  domain: allrecipes.com
+  cuisine: korean
+  category: Dinner, Side Dish
+- url: https://www.recipetineats.com/korean-beef-bulgogi-rice-bowls-the-easy-way/
+  title: Korean Beef Bulgogi Rice Bowls - the easy way
+  domain: recipetineats.com
+  cuisine: korean
+  category: Dinner, Main
+- url: https://www.onceuponachef.com/recipes/korean-style-beef-bulgogi-burgers.html
+  title: Beef Bulgogi Burgers
+  domain: onceuponachef.com
+  cuisine: korean
+  category: Beef, Lamb, Veal & Pork, Main Course
+- url: https://minimalistbaker.com/spicy-korean-style-cauliflower-wings/
+  title: Spicy Korean Style Cauliflower Wings
+  domain: minimalistbaker.com
+  cuisine: korean
+  category: Side, Snack
+- url: https://www.loveandlemons.com/kimchi-brown-rice-bowls/
+  title: Kimchi Brown Rice Bliss Bowls
+  domain: loveandlemons.com
+  cuisine: korean
+  category: Main dish
+- url: https://www.kingarthurbaking.com/recipes/spicy-kimchi-cheddar-bread-recipe
+  title: Spicy Kimchi Cheddar Bread
+  domain: kingarthurbaking.com
+  cuisine: korean
+- url: https://www.budgetbytes.com/bibimbap/
+  title: Bibimbap Bowl
+  domain: budgetbytes.com
+  cuisine: korean
+  category: Main Course
+- url: https://www.bbcgoodfood.com/recipes/quick-kimchi
+  title: Easy kimchi
+  domain: bbcgoodfood.com
+  cuisine: korean
+  category: Side dish
+- url: https://www.epicurious.com/recipes/food/views/angel-hair-bibimguksu
+  title: Angel Hair Bibimguksu
+  domain: epicurious.com
+  cuisine: korean
+- url: https://www.bonappetit.com/recipe/tteokbokki
+  title: Tteokbokki (Spicy Korean Rice Cakes)
+  domain: bonappetit.com
+  cuisine: korean
+- url: https://www.seriouseats.com/korean-soy-glazed-potatoes-gamja-bokkeum-recipe
+  title: Gamja Bokkeum (Korean Sweet Soy-Glazed Potatoes)
+  domain: seriouseats.com
+  cuisine: korean
+  category: Quick and Easy, Sides
+- url: https://www.simplyrecipes.com/japchae-recipe-8636248
+  title: Japchae
+  domain: simplyrecipes.com
+  cuisine: korean
+  category: Entree, Side Dish, Dinner, Lunch
+- url: https://www.allrecipes.com/recipe/246594/slow-cooker-bulgogi/
+  title: Slow Cooker Bulgogi
+  domain: allrecipes.com
+  cuisine: korean
+  category: Dinner
+- url: https://www.loveandlemons.com/cauliflower-rice-kimchi-bowls/
+  title: Cauliflower Rice Kimchi Bowls
+  domain: loveandlemons.com
+  cuisine: korean
+  category: Main dish
+- url: https://www.recipetineats.com/korean-beef-bowl-bulgogi-korean-bbq-beef/
+  title: Korean Bulgogi Beef Stir Fry
+  domain: recipetineats.com
+  cuisine: korean
+  category: Dinner, Stir Fry
+- url: https://www.bbcgoodfood.com/recipes/korean-fried-chicken
+  title: Korean fried chicken
+  domain: bbcgoodfood.com
+  cuisine: korean
+- url: https://www.kingarthurbaking.com/recipes/pajeon-korean-scallion-pancakes-recipe
+  title: Pajeon (Korean Scallion Pancakes)
+  domain: kingarthurbaking.com
+  cuisine: korean
+- url: https://www.budgetbytes.com/fresh-kimchi-spring-rolls/
+  title: Fresh Kimchi Spring Rolls
+  domain: budgetbytes.com
+  cuisine: korean
+  category: Appetizer
+- url: https://www.bbcgoodfood.com/recipes/korean-corndogs
+  title: Korean corndogs
+  domain: bbcgoodfood.com
+  cuisine: korean
+  category: Dinner
+- url: https://www.bonappetit.com/recipe/korean-street-toast-breakfast-sandwich
+  title: Korean Street Toast Breakfast Sandwich
+  domain: bonappetit.com
+  cuisine: korean
+- url: https://www.recipetineats.com/easy-spicy-korean-noodle-soup/
+  title: Spicy Korean Noodle Soup (quick & healthy)
+  domain: recipetineats.com
+  cuisine: korean
+  category: Main
+- url: https://www.seriouseats.com/japchae-recipe
+  title: Japchae (Korean Glass Noodles With Pork and Vegetables) Recipe
+  domain: seriouseats.com
+  cuisine: korean
+- url: https://www.simplyrecipes.com/gyeran-jjim-korean-steamed-eggs-recipe-5222914
+  title: Gyeran Jjim (Korean Steamed Eggs)
+  domain: simplyrecipes.com
+  cuisine: korean
+  category: Side Dish, Ingredient
+- url: https://www.allrecipes.com/recipe/246247/quick-and-easy-kimchi-salad/
+  title: Quick and Easy Kimchi Salad
+  domain: allrecipes.com
+  cuisine: korean
+  category: Side Dish
+- url: https://minimalistbaker.com/easy-bibimbap-with-gochujang-sauce/
+  title: Easy Bibimbap with Gochujang Sauce
+  domain: minimalistbaker.com
+  cuisine: korean
+  category: Entrée
+- url: https://www.bbcgoodfood.com/recipes/korean-bbq-style-ribs-radish-slaw
+  title: Korean BBQ-style ribs & radish slaw
+  domain: bbcgoodfood.com
+  cuisine: korean
+- url: https://www.bonappetit.com/recipe/korean-style-stuffed-peppers
+  title: Korean-Style Stuffed Peppers
+  domain: bonappetit.com
+  cuisine: korean
+- url: https://minimalistbaker.com/kimchi-fried-rice-plant-based/
+  title: Kimchi Fried Rice (Plant-Based!)
+  domain: minimalistbaker.com
+  cuisine: korean
+  category: Entrée
+- url: https://www.seriouseats.com/korean-fried-chicken-recipe
+  title: The Best Korean Fried Chicken
+  domain: seriouseats.com
+  cuisine: korean
+  category: Appetizers and Hors d'Oeuvres, Mains
+- url: https://www.bbcgoodfood.com/recipes/picnic-banh-mi-baguette
+  title: Picnic banh mi baguette
+  domain: bbcgoodfood.com
+  cuisine: vietnamese
+- url: https://www.recipetineats.com/crispy-pork-belly-banh-mi/
+  title: Crispy Pork Belly Banh Mi
+  domain: recipetineats.com
+  cuisine: vietnamese
+  category: Main, Sandwich
+- url: https://www.budgetbytes.com/quickie-faux-pho/
+  title: Quickie Faux Phở
+  domain: budgetbytes.com
+  cuisine: vietnamese
+- url: https://www.onceuponachef.com/recipes/vietnamese-shredded-chicken-vegetable-salad.html
+  title: Vietnamese Chicken Salad
+  domain: onceuponachef.com
+  cuisine: vietnamese
+  category: Chicken, Lunch, Main Course, Salad
+- url: https://www.epicurious.com/recipes/food/views/stir-fried-pho-noodles-with-beef
+  title: Stir-Fried Phở Noodles With Beef
+  domain: epicurious.com
+  cuisine: vietnamese
+- url: https://www.loveandlemons.com/vegan-pho/
+  title: Vegan Pho
+  domain: loveandlemons.com
+  cuisine: vietnamese
+  category: Main Course, Soup
+- url: https://minimalistbaker.com/vietnamese-spring-rolls-with-crispy-tofu/
+  title: Vietnamese Spring Rolls with Crispy Tofu
+  domain: minimalistbaker.com
+  cuisine: vietnamese
+  category: Appetizer, Entrée
+- url: https://www.bonappetit.com/recipe/nuoc-cham-chicken-salad
+  title: Nuoc Cham Chicken Salad
+  domain: bonappetit.com
+  cuisine: vietnamese
+- url: https://www.simplyrecipes.com/chao-ga-vietnamese-chicken-and-rice-porridge-recipe-5324248
+  title: Cháo Gà (Vietnamese Chicken and Rice Porridge)
+  domain: simplyrecipes.com
+  cuisine: vietnamese
+  category: Entree, Dinner, Lunch, Breakfast
+- url: https://www.recipetineats.com/chicken-banh-mi-vietnamese-sandwich/
+  title: Chicken banh mi (Vietnamese sandwich)
+  domain: recipetineats.com
+  cuisine: vietnamese
+  category: Sandwich
+- url: https://minimalistbaker.com/cauliflower-banh-mi/
+  title: Cauliflower Banh Mi
+  domain: minimalistbaker.com
+  cuisine: vietnamese
+  category: Entrée
+- url: https://www.onceuponachef.com/recipes/vietnamese-summer-rolls.html
+  title: Vietnamese Summer Rolls
+  domain: onceuponachef.com
+  cuisine: vietnamese
+  category: Appetizer, Fish & Seafood
+- url: https://www.epicurious.com/recipes/food/views/hanoi-grilled-chicken-banh-mi
+  title: Hanoi Grilled Chicken Banh Mi
+  domain: epicurious.com
+  cuisine: vietnamese
+- url: https://www.bbcgoodfood.com/recipes/leftover-roast-pork-belly-banh-mi
+  title: Leftover roast pork belly bánh mì
+  domain: bbcgoodfood.com
+  cuisine: vietnamese
+- url: https://www.bonappetit.com/recipe/grilled-lemongrass-chicken-thighs
+  title: Grilled Lemongrass Chicken Thighs
+  domain: bonappetit.com
+  cuisine: vietnamese
+- url: https://www.allrecipes.com/recipe/187342/banh-mi/
+  title: Bánh Mì
+  domain: allrecipes.com
+  cuisine: vietnamese
+  category: Lunch
+- url: https://www.seriouseats.com/30-minute-pressure-cooker-pho-ga-recipe
+  title: 30-Minute Pressure Cooker Pho Ga (Vietnamese Chicken Noodle Soup) Recipe
+  domain: seriouseats.com
+  cuisine: vietnamese
+  category: Entree, Quick Dinners, Soups and Stews, Soup
+- url: https://www.simplyrecipes.com/banh-mi-salad-recipe-7814195
+  title: Banh Mi Salad
+  domain: simplyrecipes.com
+  cuisine: vietnamese
+  category: Entree, Lunch, Dinner, Salad
+- url: https://www.recipetineats.com/banh-mi-vietnamese-sandwich/
+  title: Banh Mi recipe
+  domain: recipetineats.com
+  cuisine: vietnamese
+  category: Sandwich
+- url: https://www.onceuponachef.com/recipes/quick-beef-pho.html
+  title: Quick & Easy Pho
+  domain: onceuponachef.com
+  cuisine: vietnamese
+  category: Beef, Lamb, Veal & Pork, Main Course, Soup
+- url: https://www.bbcgoodfood.com/recipes/vietnamese-chicken-noodle-soup
+  title: Vietnamese chicken noodle soup
+  domain: bbcgoodfood.com
+  cuisine: vietnamese
+  category: Lunch, Supper
+- url: https://www.seriouseats.com/vietnamese-grilled-pork-chop-thit-heo-nuong-xa-recipe
+  title: Thit Heo Nuong Xa (Vietnamese Grilled Lemongrass Pork Chops)
+  domain: seriouseats.com
+  cuisine: vietnamese
+  category: Mains, Quick Dinners
+- url: https://www.allrecipes.com/recipe/264516/authentic-oxtail-pho/
+  title: Authentic Oxtail Pho
+  domain: allrecipes.com
+  cuisine: vietnamese
+  category: Dinner
+- url: https://www.recipetineats.com/vietnamese-lemongrass-pork-steaks/
+  title: Vietnamese Lemongrass Pork steaks (tenderised!)
+  domain: recipetineats.com
+  cuisine: vietnamese
+  category: Main
+- url: https://www.onceuponachef.com/recipes/vietnamese-caramel-shrimp.html
+  title: Vietnamese Caramelized Shrimp
+  domain: onceuponachef.com
+  cuisine: vietnamese
+  category: Fish & Seafood, Main Course
+- url: https://www.simplyrecipes.com/lok-lak-shaking-beef-recipe-7089865
+  title: Lok Lak (Shaking Beef)
+  domain: simplyrecipes.com
+  cuisine: vietnamese
+  category: Entree, Dinner, Lunch
+- url: https://www.bbcgoodfood.com/recipes/vietnamese-caramel-trout
+  title: Vietnamese caramel trout
+  domain: bbcgoodfood.com
+  cuisine: vietnamese
+  category: Main course
+- url: https://www.recipetineats.com/vietnamese-pickled-carrots-daikon/
+  title: Vietnamese pickled carrots and daikon (radish)
+  domain: recipetineats.com
+  cuisine: vietnamese
+  category: pickles
+- url: https://www.onceuponachef.com/recipes/vietnamese-style-meatballs-with-chili-sauce.html
+  title: Vietnamese-Style Meatballs with Chili Sauce
+  domain: onceuponachef.com
+  cuisine: vietnamese
+  category: Beef, Lamb, Veal & Pork, Main Course
+- url: https://www.allrecipes.com/recipe/246028/roasted-pork-banh-mi-vietnamese-sandwich/
+  title: Roasted Pork Bánh Mì (Vietnamese Sandwich)
+  domain: allrecipes.com
+  cuisine: vietnamese
+  category: Lunch
+- url: https://www.seriouseats.com/traditional-beef-pho-recipe
+  title: The Food Lab's Beef Pho
+  domain: seriouseats.com
+  cuisine: vietnamese
+  category: Mains, Soups and Stews
+- url: https://www.simplyrecipes.com/easy-pork-banh-mi-recipe-5496377
+  title: Easy Pork Bánh Mì
+  domain: simplyrecipes.com
+  cuisine: vietnamese
+  category: Dinner, Lunch, Entree, Sandwich
+- url: https://www.bbcgoodfood.com/recipes/banh-mi
+  title: Bánh mì
+  domain: bbcgoodfood.com
+  cuisine: vietnamese
+  category: Dinner, Lunch
+- url: https://www.recipetineats.com/vietnamese-pho-recipe/
+  title: Vietnamese Pho recipe
+  domain: recipetineats.com
+  cuisine: vietnamese
+  category: Mains, Soup
+- url: https://www.allrecipes.com/recipe/216529/day-after-thanksgiving-turkey-pho/
+  title: Day After Thanksgiving Turkey Pho
+  domain: allrecipes.com
+  cuisine: vietnamese
+  category: Lunch
+- url: https://www.seriouseats.com/bun-cha-hanoi-recipe-8421208
+  title: Bún Chả Hanoi
+  domain: seriouseats.com
+  cuisine: vietnamese
+  category: Entree, Dinner
+- url: https://www.recipetineats.com/vietnamese-chicken-salad/
+  title: Vietnamese Chicken Salad
+  domain: recipetineats.com
+  cuisine: vietnamese
+  category: Salad meal
+- url: https://www.bbcgoodfood.com/recipes/steak-vietnamese-noodle-salad
+  title: Steak & Vietnamese noodle salad
+  domain: bbcgoodfood.com
+  cuisine: vietnamese
+  category: Dinner, Main course, Supper
+- url: https://www.recipetineats.com/lemongrass-chicken-rice-paper-rolls/
+  title: Lemongrass Chicken Rice Paper Rolls
+  domain: recipetineats.com
+  cuisine: vietnamese
+  category: Appetizer, Finger Food, Starter
+- url: https://www.allrecipes.com/vietnamese-inspired-caramelized-sardines-recipe-11985007
+  title: Vietnamese-Inspired Caramelized Sardines
+  domain: allrecipes.com
+  cuisine: vietnamese
+  category: Dinner
+- url: https://www.bbcgoodfood.com/recipes/pan-con-tomate
+  title: Pan con tomate
+  domain: bbcgoodfood.com
+  cuisine: spanish
+  category: Breakfast
+- url: https://www.recipetineats.com/spanish-churros-recipe/
+  title: Churros Recipe
+  domain: recipetineats.com
+  cuisine: spanish
+  category: Sweet
+- url: https://www.epicurious.com/recipes/food/views/paella-verde
+  title: Paella Verde
+  domain: epicurious.com
+  cuisine: spanish
+- url: https://minimalistbaker.com/simple-patatas-bravas/
+  title: Simple Patatas Bravas
+  domain: minimalistbaker.com
+  cuisine: spanish
+  category: Appetizer, Side
+- url: https://www.budgetbytes.com/green-gazpacho/
+  title: Green Gazpacho
+  domain: budgetbytes.com
+  cuisine: spanish
+- url: https://www.kingarthurbaking.com/recipes/basque-cheesecake-tarta-de-queso-recipe
+  title: Basque Cheesecake (Tarta de Queso)
+  domain: kingarthurbaking.com
+  cuisine: spanish
+- url: https://www.onceuponachef.com/recipes/churros.html
+  title: Churros
+  domain: onceuponachef.com
+  cuisine: spanish
+- url: https://cookieandkate.com/easy-romesco-sauce-recipe/
+  title: Easy Romesco Sauce
+  domain: cookieandkate.com
+  cuisine: spanish
+  category: Sauce
+- url: https://www.loveandlemons.com/gazpacho-recipe/
+  title: Gazpacho
+  domain: loveandlemons.com
+  cuisine: spanish
+  category: Appetizer, Soup
+- url: https://www.bonappetit.com/recipe/paella-de-pollo-con-verduras
+  title: Paella de Pollo con Verduras
+  domain: bonappetit.com
+  cuisine: spanish
+- url: https://www.simplyrecipes.com/seafood-paella-recipe-5101818
+  title: Seafood Paella
+  domain: simplyrecipes.com
+  cuisine: spanish
+  category: Dinner, Grill
+- url: https://minimalistbaker.com/romesco-soup-with-smashed-chickpeas/
+  title: Romesco Soup with Smashed Chickpeas
+  domain: minimalistbaker.com
+  cuisine: spanish
+  category: Entrée, Side, Soup
+- url: https://cookieandkate.com/vegetable-paella-recipe/
+  title: Vegetable Paella
+  domain: cookieandkate.com
+  cuisine: spanish
+  category: Main Dish
+- url: https://www.kingarthurbaking.com/recipes/pumpkin-basque-cheesecake-recipe
+  title: Pumpkin Basque Cheesecake
+  domain: kingarthurbaking.com
+  cuisine: spanish
+- url: https://www.budgetbytes.com/summer-gazpacho/
+  title: Summer Gazpacho
+  domain: budgetbytes.com
+  cuisine: spanish
+  category: Dinner, Lunch, Soup
+- url: https://www.onceuponachef.com/recipes/roasted-garlic-gazpacho.html
+  title: Roasted Garlic Gazpacho
+  domain: onceuponachef.com
+  cuisine: spanish
+  category: Soup
+- url: https://www.loveandlemons.com/cucumber-apple-green-gazpacho/
+  title: Cucumber Apple Green Gazpacho
+  domain: loveandlemons.com
+  cuisine: spanish
+  category: Soup
+- url: https://www.bonappetit.com/recipe/best-gazpacho-for-summer
+  title: BA's Best Gazpacho (Spanish Cold Tomato Soup; Blender Method)
+  domain: bonappetit.com
+  cuisine: spanish
+- url: https://www.bbcgoodfood.com/recipes/easy-paella
+  title: Easy paella
+  domain: bbcgoodfood.com
+  cuisine: spanish
+  category: Dinner, Main course
+- url: https://www.allrecipes.com/recipe/73337/authentic-paella-valenciana/
+  title: Authentic Paella Valenciana
+  domain: allrecipes.com
+  cuisine: spanish
+  category: Dinner
+- url: https://www.seriouseats.com/romesco-sauce-recipe
+  title: Romesco Sauce
+  domain: seriouseats.com
+  cuisine: spanish
+  category: Condiments and Sauces
+- url: https://www.recipetineats.com/easy-spanish-tapas-recipes/
+  title: 5 Easy Tapas Recipes
+  domain: recipetineats.com
+  cuisine: spanish
+  category: Appetizer
+- url: https://www.simplyrecipes.com/recipes/gazpacho/
+  title: Gazpacho
+  domain: simplyrecipes.com
+  cuisine: spanish
+  category: Soup, Dinner, Lunch, Appetizer, Cold Soup, Soup, Tomato, Tomato Soup,
+    Vegetable Soup
+- url: https://cookieandkate.com/basque-cheesecake-recipe/
+  title: Basque Cheesecake
+  domain: cookieandkate.com
+  cuisine: spanish
+  category: Dessert
+- url: https://minimalistbaker.com/easy-romesco-sauce/
+  title: Easy Romesco Sauce
+  domain: minimalistbaker.com
+  cuisine: spanish
+  category: Sauce
+- url: https://www.onceuponachef.com/recipes/golden-gazpacho.html
+  title: Golden Gazpacho
+  domain: onceuponachef.com
+  cuisine: spanish
+  category: Lunch, Side Dish, Soup
+- url: https://www.budgetbytes.com/watermelon-gazpacho/
+  title: Watermelon Gazpacho
+  domain: budgetbytes.com
+  cuisine: spanish
+  category: Soup
+- url: https://www.recipetineats.com/gazpacho/
+  title: Gazpacho
+  domain: recipetineats.com
+  cuisine: spanish
+  category: Light mains, Mains, Soup
+- url: https://www.bbcgoodfood.com/recipes/air-fryer-patatas-bravas
+  title: Air fryer patatas bravas
+  domain: bbcgoodfood.com
+  cuisine: spanish
+  category: Side dish
+- url: https://www.allrecipes.com/recipe/238588/quick-and-easy-paella/
+  title: Quick and Easy Paella
+  domain: allrecipes.com
+  cuisine: spanish
+  category: Dinner
+- url: https://www.seriouseats.com/patatas-bravas-tapas-recipe
+  title: Patatas Bravas
+  domain: seriouseats.com
+  cuisine: spanish
+  category: Side Dish, Appetizer, Sides
+- url: https://minimalistbaker.com/easy-vegan-paella-1-pan/
+  title: Easy Vegan Paella (1 Pan!)
+  domain: minimalistbaker.com
+  cuisine: spanish
+  category: Entrée
+- url: https://www.seriouseats.com/croquetas-de-jamon-recipe-11680423
+  title: Croquetas de Jamón
+  domain: seriouseats.com
+  cuisine: spanish
+  category: Dessert
+- url: https://www.recipetineats.com/spanish-paella/
+  title: Spanish Paella
+  domain: recipetineats.com
+  cuisine: spanish
+  category: Dinner
+- url: https://www.onceuponachef.com/recipes/watermelon-gazpacho.html
+  title: Watermelon Gazpacho
+  domain: onceuponachef.com
+  cuisine: spanish
+  category: Soup
+- url: https://www.seriouseats.com/pulpo-gallego-octopus-spanish-galicia-tapas-recipe
+  title: Classic Pulpo Gallego (Galician Octopus Tapa) Recipe
+  domain: seriouseats.com
+  cuisine: spanish
+  category: appetizers, dairy free, salads, side dishes, snacks, vegan, vegetarian
+- url: https://www.budgetbytes.com/salmorejo/
+  title: Salmorejo
+  domain: budgetbytes.com
+  cuisine: spanish
+  category: Appetizer, Dinner, Lunch
+- url: https://www.bbcgoodfood.com/recipes/crema-catalana
+  title: Crema Catalana
+  domain: bbcgoodfood.com
+  cuisine: spanish
+  category: Dessert
+- url: https://www.recipetineats.com/basque-cheesecake/
+  title: Basque Cheesecake
+  domain: recipetineats.com
+  cuisine: spanish
+  category: Sweet Baking
+- url: https://www.onceuponachef.com/recipes/gazpacho-andaluz.html
+  title: Gazpacho Andaluz
+  domain: onceuponachef.com
+  cuisine: spanish
+  category: Soup
+- url: https://www.bbcgoodfood.com/recipes/protein-overnight-oats
+  title: Protein overnight oats
+  domain: bbcgoodfood.com
+  cuisine: breakfast-brunch
+  category: Breakfast
+- url: https://www.budgetbytes.com/ratatouille-frittata/
+  title: Ratatouille Frittata
+  domain: budgetbytes.com
+  cuisine: breakfast-brunch
+  category: Brunch, Dinner, Lunch, Main Course
+- url: https://www.epicurious.com/recipes/food/views/creme-brulee-french-toast-15213
+  title: Crème Brûlée French Toast Casserole
+  domain: epicurious.com
+  cuisine: breakfast-brunch
+- url: https://www.onceuponachef.com/recipes/breakfast-casserole.html
+  title: Breakfast Casserole
+  domain: onceuponachef.com
+  cuisine: breakfast-brunch
+  category: Breakfast, Quiches, Casseroles, Eggs & Spreads
+- url: https://www.kingarthurbaking.com/recipes/baked-crepes-with-ham-and-mushrooms-recipe
+  title: Baked Crêpes with Ham and Mushrooms
+  domain: kingarthurbaking.com
+  cuisine: breakfast-brunch
+- url: https://minimalistbaker.com/mini-sopapilla-pancakes/
+  title: Mini Sopapilla Pancakes
+  domain: minimalistbaker.com
+  cuisine: breakfast-brunch
+  category: Breakfast, Dessert
+- url: https://cookieandkate.com/crustless-quiche/
+  title: Crustless Quiche
+  domain: cookieandkate.com
+  cuisine: breakfast-brunch
+  category: Breakfast
+- url: https://www.bonappetit.com/recipe/maple-pumpkin-overnight-oats
+  title: Maple Pumpkin Overnight Oats
+  domain: bonappetit.com
+  cuisine: breakfast-brunch
+- url: https://www.loveandlemons.com/pumpkin-overnight-oats/
+  title: Pumpkin Overnight Oats
+  domain: loveandlemons.com
+  cuisine: breakfast-brunch
+  category: Breakfast
+- url: https://www.recipetineats.com/bagels-recipe/
+  title: Bagels
+  domain: recipetineats.com
+  cuisine: breakfast-brunch
+  category: Bread
+- url: https://www.seriouseats.com/pumpkin-mochi-pancakes-recipe-12199399
+  title: Pumpkin Mochi Pancakes
+  domain: seriouseats.com
+  cuisine: breakfast-brunch
+  category: Brunch, Dessert
+- url: https://www.simplyrecipes.com/steak-and-eggs-breakfast-casserole-recipe-12202658
+  title: Steak and Eggs Casserole Is Perfect for Breakfast, Brunch, and Dinner
+  domain: simplyrecipes.com
+  cuisine: breakfast-brunch
+  category: Breakfast, Brunch
+- url: https://sallysbakingaddiction.com/glazed-cranberry-orange-scones/
+  title: Glazed Cranberry Orange Scones
+  domain: sallysbakingaddiction.com
+  cuisine: breakfast-brunch
+  category: Breakfast
+- url: https://sallysbakingaddiction.com/maple-oat-pecan-scones/
+  title: Maple Oat Pecan Scones
+  domain: sallysbakingaddiction.com
+  cuisine: breakfast-brunch
+  category: Breakfast
+- url: https://www.kingarthurbaking.com/recipes/deli-rye-english-muffins-recipe
+  title: Deli Rye English Muffins
+  domain: kingarthurbaking.com
+  cuisine: breakfast-brunch
+- url: https://minimalistbaker.com/banana-bread-granola/
+  title: Banana Bread Granola
+  domain: minimalistbaker.com
+  cuisine: breakfast-brunch
+  category: Breakfast, Dessert, Snack
+- url: https://www.onceuponachef.com/recipes/english-muffins.html
+  title: English Muffins
+  domain: onceuponachef.com
+  cuisine: breakfast-brunch
+  category: Breakfast
+- url: https://www.budgetbytes.com/english-muffins/
+  title: Homemade English Muffins Recipe
+  domain: budgetbytes.com
+  cuisine: breakfast-brunch
+  category: Breakfast, Brunch
+- url: https://www.loveandlemons.com/cottage-cheese-pancakes/
+  title: Cottage Cheese Pancakes
+  domain: loveandlemons.com
+  cuisine: breakfast-brunch
+  category: Breakfast
+- url: https://cookieandkate.com/gluten-free-pumpkin-spice-waffles/
+  title: Healthy Pumpkin Waffles
+  domain: cookieandkate.com
+  cuisine: breakfast-brunch
+  category: Breakfast
+- url: https://www.epicurious.com/recipes/food/views/belgian-buttermilk-waffles-with-glazed-bananas-232170
+  title: Belgian Buttermilk Waffles With Glazed Bananas
+  domain: epicurious.com
+  cuisine: breakfast-brunch
+- url: https://www.bbcgoodfood.com/recipes/air-fryer-cinnamon-rolls
+  title: Air fryer cinnamon rolls
+  domain: bbcgoodfood.com
+  cuisine: breakfast-brunch
+  category: Breakfast, Brunch
+- url: https://www.bonappetit.com/recipe/savory-dutch-baby
+  title: Savory Dutch Baby
+  domain: bonappetit.com
+  cuisine: breakfast-brunch
+- url: https://www.recipetineats.com/crepes/
+  title: JB's Crêpes
+  domain: recipetineats.com
+  cuisine: breakfast-brunch
+  category: Dessert, Snack
+- url: https://www.allrecipes.com/recipe/258966/deluxe-bacon-onion-omelet/
+  title: Deluxe Bacon Onion Omelet
+  domain: allrecipes.com
+  cuisine: breakfast-brunch
+  category: Breakfast
+- url: https://www.simplyrecipes.com/mississippi-sin-breakfast-casserole-recipe-12167050
+  title: Mississippi Sin Breakfast Casserole Is Perfect for Making Ahead
+  domain: simplyrecipes.com
+  cuisine: breakfast-brunch
+  category: Breakfast, Brunch
+- url: https://www.seriouseats.com/matcha-pancakes-recipe-12151209
+  title: Matcha Pancakes
+  domain: seriouseats.com
+  cuisine: breakfast-brunch
+  category: Brunch
+- url: https://www.kingarthurbaking.com/recipes/hearth-bagels-recipe
+  title: Hearth Bagels
+  domain: kingarthurbaking.com
+  cuisine: breakfast-brunch
+- url: https://www.budgetbytes.com/sheet-pan-pancakes/
+  title: Sheet Pan Pancakes
+  domain: budgetbytes.com
+  cuisine: breakfast-brunch
+  category: Breakfast, Brunch
+- url: https://sallysbakingaddiction.com/apple-cinnamon-rolls/
+  title: Apple Cinnamon Rolls
+  domain: sallysbakingaddiction.com
+  cuisine: breakfast-brunch
+  category: Breakfast
+- url: https://minimalistbaker.com/chipotle-tofu-chilaquiles/
+  title: Chipotle Tofu Chilaquiles
+  domain: minimalistbaker.com
+  cuisine: breakfast-brunch
+  category: Breakfast, Dinner, Entrée
+- url: https://cookieandkate.com/pumpkin-pancakes-recipe/
+  title: Pumpkin Pancakes
+  domain: cookieandkate.com
+  cuisine: breakfast-brunch
+  category: Breakfast
+- url: https://www.onceuponachef.com/recipes/zucchini-and-cheddar-frittata.html
+  title: Zucchini & Cheddar Frittata
+  domain: onceuponachef.com
+  cuisine: breakfast-brunch
+  category: Breakfast, Breakfast for Dinner, Quiches, Casseroles, Eggs & Spreads
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-cheesy-apple-omelet
+  title: Cheesy Apple Omelet
+  domain: epicurious.com
+  cuisine: breakfast-brunch
+- url: https://www.bbcgoodfood.com/recipes/dutch-baby-german-pancake
+  title: Dutch baby (German pancake)
+  domain: bbcgoodfood.com
+  cuisine: breakfast-brunch
+  category: Breakfast, Brunch, Dessert
+- url: https://www.bonappetit.com/recipe/blueberry-protein-pancakes
+  title: Blueberry Protein Pancakes (No Protein Powder)
+  domain: bonappetit.com
+  cuisine: breakfast-brunch
+- url: https://www.recipetineats.com/nutella-crepes-with-strawberries/
+  title: Nutella Crêpes
+  domain: recipetineats.com
+  cuisine: breakfast-brunch
+  category: Dessert, Snack
+- url: https://www.kingarthurbaking.com/recipes/raspberry-cream-cheese-scones-recipe
+  title: Raspberry Cream Cheese Scones
+  domain: kingarthurbaking.com
+  cuisine: breakfast-brunch
+- url: https://www.allrecipes.com/recipe/264986/vanilla-dutch-baby/
+  title: Vanilla Dutch Baby
+  domain: allrecipes.com
+  cuisine: breakfast-brunch
+  category: Breakfast
+- url: https://www.budgetbytes.com/lemon-blueberry-scones/
+  title: Lemon Blueberry Scones
+  domain: budgetbytes.com
+  cuisine: breakfast-brunch
+  category: Breakfast, Brunch
+- url: https://www.bbcgoodfood.com/recipes/seafood-gumbo
+  title: Seafood gumbo
+  domain: bbcgoodfood.com
+  cuisine: soups-stews
+  category: Dinner
+- url: https://www.recipetineats.com/slow-cooker-beef-stew/
+  title: A really good Slow Cooker Beef Stew
+  domain: recipetineats.com
+  cuisine: soups-stews
+  category: Main, Slow Cooked, Slow Cooker
+- url: https://minimalistbaker.com/curried-black-eyed-pea-soup/
+  title: Creamy Curried Black Eyed Pea Soup (Vegan, 1 Pot!)
+  domain: minimalistbaker.com
+  cuisine: soups-stews
+  category: Entrée, Soup
+- url: https://www.budgetbytes.com/chicken-corn-chowder/
+  title: Chicken Corn Chowder
+  domain: budgetbytes.com
+  cuisine: soups-stews
+  category: Main Course, Soup
+- url: https://www.onceuponachef.com/recipes/cioppino.html
+  title: Cioppino (Fisherman's Stew)
+  domain: onceuponachef.com
+  cuisine: soups-stews
+  category: Fish & Seafood, Main Course, Soup
+- url: https://cookieandkate.com/chickpea-tomato-soup-recipe/
+  title: Chickpea Tomato Soup
+  domain: cookieandkate.com
+  cuisine: soups-stews
+  category: Soup
+- url: https://sallysbakingaddiction.com/homemade-tomato-soup/
+  title: Homemade Tomato Soup
+  domain: sallysbakingaddiction.com
+  cuisine: soups-stews
+  category: Dinner
+- url: https://www.bonappetit.com/recipe/classic-chicken-noodle-soup
+  title: Classic Chicken Noodle Soup
+  domain: bonappetit.com
+  cuisine: soups-stews
+- url: https://www.loveandlemons.com/tomato-soup-recipe/
+  title: Homemade Tomato Soup Recipe
+  domain: loveandlemons.com
+  cuisine: soups-stews
+  category: Soup
+- url: https://www.simplyrecipes.com/thai-inspired-butternut-squash-soup-recipe-12223823
+  title: This 5-Ingredient Butternut Squash Soup Takes Just 20 Minutes
+  domain: simplyrecipes.com
+  cuisine: soups-stews
+  category: Dinner, Lunch, Soup
+- url: https://www.seriouseats.com/thick-creamy-tomato-soup-recipe
+  title: Thick and Creamy Tomato Soup
+  domain: seriouseats.com
+  cuisine: soups-stews
+  category: Soups and Stews
+- url: https://www.onceuponachef.com/recipes/potato-leek-soup.html
+  title: Potato Leek Soup (Extra Creamy)
+  domain: onceuponachef.com
+  cuisine: soups-stews
+  category: Soup
+- url: https://minimalistbaker.com/chicken-noodle-soup-1-pot/
+  title: Chicken Noodle Soup (Classic or Immune-Boosting!)
+  domain: minimalistbaker.com
+  cuisine: soups-stews
+  category: Entrée, Soup
+- url: https://cookieandkate.com/best-lentil-soup-recipe/
+  title: Best Lentil Soup
+  domain: cookieandkate.com
+  cuisine: soups-stews
+  category: Soup
+- url: https://sallysbakingaddiction.com/minestrone-soup/
+  title: Thick & Hearty Minestrone Soup
+  domain: sallysbakingaddiction.com
+  cuisine: soups-stews
+  category: Soup
+- url: https://www.budgetbytes.com/roasted-tomato-soup/
+  title: Roasted Tomato Soup
+  domain: budgetbytes.com
+  cuisine: soups-stews
+  category: Dinner, Lunch, Soup
+- url: https://www.loveandlemons.com/corn-chowder-recipe/
+  title: Corn Chowder
+  domain: loveandlemons.com
+  cuisine: soups-stews
+  category: Main dish or side dish, Soup
+- url: https://www.recipetineats.com/beef-stew/
+  title: Beef Stew
+  domain: recipetineats.com
+  cuisine: soups-stews
+  category: Mains
+- url: https://www.bbcgoodfood.com/recipes/scottish-lentil-soup
+  title: Scottish lentil soup
+  domain: bbcgoodfood.com
+  cuisine: soups-stews
+  category: Soup, Starter
+- url: https://www.allrecipes.com/recipe/15043/chicken-tortilla-soup-iv/
+  title: Chicken Tortilla Soup IV
+  domain: allrecipes.com
+  cuisine: soups-stews
+  category: Dinner
+- url: https://www.simplyrecipes.com/roasted-red-pepper-and-tomato-soup-recipe-12202283
+  title: The Cozy 4-Ingredient Soup I Make All Fall and Winter
+  domain: simplyrecipes.com
+  cuisine: soups-stews
+  category: Dinner, Lunch, Soup
+- url: https://www.seriouseats.com/easy-lentil-soup-parsley-garlic-lemon-gremolata-recipe
+  title: Easy Lentil Soup With Lemon Zest, Garlic, and Parsley Recipe
+  domain: seriouseats.com
+  cuisine: soups-stews
+  category: Soups and Stews, Soup
+- url: https://minimalistbaker.com/roasted-red-pepper-tomato-soup/
+  title: Roasted Red Pepper Tomato Soup
+  domain: minimalistbaker.com
+  cuisine: soups-stews
+  category: Entrée, Side
+- url: https://cookieandkate.com/classic-minestrone-soup-recipe/
+  title: Classic Minestrone Soup
+  domain: cookieandkate.com
+  cuisine: soups-stews
+  category: Soup
+- url: https://www.recipetineats.com/thai-red-lentil-soup/
+  title: Easy Thai Red Lentil Soup
+  domain: recipetineats.com
+  cuisine: soups-stews
+  category: Main
+- url: https://sallysbakingaddiction.com/lightened-creamy-chicken-noodle-soup/
+  title: Creamy Chicken Noodle Soup
+  domain: sallysbakingaddiction.com
+  cuisine: soups-stews
+  category: Soup
+- url: https://www.budgetbytes.com/easy-broccoli-cheddar-soup/
+  title: Broccoli Cheddar Soup
+  domain: budgetbytes.com
+  cuisine: soups-stews
+  category: Dinner, Side Dish, Soup
+- url: https://www.onceuponachef.com/recipes/gumbo.html
+  title: Gumbo with Andouille Sausage & Shrimp
+  domain: onceuponachef.com
+  cuisine: soups-stews
+  category: Main Course
+- url: https://www.loveandlemons.com/chickpea-soup/
+  title: Lemon Chickpea Soup
+  domain: loveandlemons.com
+  cuisine: soups-stews
+  category: Main Course, Soup
+- url: https://www.bbcgoodfood.com/recipes/pork-pozole
+  title: Pork pozole
+  domain: bbcgoodfood.com
+  cuisine: soups-stews
+  category: Dinner
+- url: https://www.allrecipes.com/recipe/12979/apricot-lentil-soup/
+  title: Apricot Lentil Soup
+  domain: allrecipes.com
+  cuisine: soups-stews
+  category: Soup
+- url: https://minimalistbaker.com/creamy-asparagus-and-pea-soup/
+  title: Creamy Asparagus and Pea Soup
+  domain: minimalistbaker.com
+  cuisine: soups-stews
+  category: Soup
+- url: https://www.simplyrecipes.com/dump-and-stir-white-chicken-chili-recipe-12166578
+  title: This Dump-and-Stir White Chicken Chili Could Not Be Easier
+  domain: simplyrecipes.com
+  cuisine: soups-stews
+  category: Dinner, Lunch, Soup
+- url: https://www.budgetbytes.com/smoky-black-bean-soup/
+  title: Black Bean Soup
+  domain: budgetbytes.com
+  cuisine: soups-stews
+  category: Dinner, Lunch, Soup
+- url: https://www.onceuponachef.com/recipes/guinness-lamb-stew-with-vegetables.html
+  title: Irish Lamb Stew
+  domain: onceuponachef.com
+  cuisine: soups-stews
+  category: Beef, Lamb, Veal & Pork, Main Course, Soup
+- url: https://cookieandkate.com/classic-tomato-soup-recipe/
+  title: Classic Tomato Soup
+  domain: cookieandkate.com
+  cuisine: soups-stews
+  category: Soup
+- url: https://www.recipetineats.com/lentil-soup/
+  title: Lentil Soup
+  domain: recipetineats.com
+  cuisine: soups-stews
+  category: Mains, Soup
+- url: https://www.loveandlemons.com/black-bean-soup-recipe/
+  title: Black Bean Soup
+  domain: loveandlemons.com
+  cuisine: soups-stews
+  category: Main dish or side dish, Soup
+- url: https://www.seriouseats.com/new-england-clam-chowder-recipe
+  title: New England Clam Chowder
+  domain: seriouseats.com
+  cuisine: soups-stews
+  category: Appetizer, Entree, Lunch, Dinner, Mains, Soups and Stews, Soup
+- url: https://www.bbcgoodfood.com/recipes/slow-cooker-12-plant-minestrone
+  title: Slow cooker 12-plant minestrone
+  domain: bbcgoodfood.com
+  cuisine: soups-stews
+  category: Dinner, Lunch
+- url: https://www.bbcgoodfood.com/recipes/carne-asada
+  title: Carne asada
+  domain: bbcgoodfood.com
+  cuisine: grilling-bbq
+  category: Dinner
+- url: https://minimalistbaker.com/perfect-grilled-corn-salsa/
+  title: Perfect Grilled Corn Salsa
+  domain: minimalistbaker.com
+  cuisine: grilling-bbq
+  category: Appetizer, Dip, Side
+- url: https://cookieandkate.com/best-grilled-corn-recipe/
+  title: Grilled Corn on the Cob
+  domain: cookieandkate.com
+  cuisine: grilling-bbq
+  category: Side Dish
+- url: https://www.budgetbytes.com/slow-cooker-bbq-chicken/
+  title: Slow Cooker BBQ Chicken
+  domain: budgetbytes.com
+  cuisine: grilling-bbq
+  category: Dinner, Lunch, Main Course
+- url: https://www.epicurious.com/recipes/food/views/grilled-peruvian-chicken
+  title: Grilled Peruvian Chicken With Green Sauce
+  domain: epicurious.com
+  cuisine: grilling-bbq
+- url: https://www.bonappetit.com/recipe/better-beer-can-chicken
+  title: A Better Beer Can Chicken
+  domain: bonappetit.com
+  cuisine: grilling-bbq
+- url: https://www.loveandlemons.com/grilled-corn-on-the-cob/
+  title: Grilled Corn
+  domain: loveandlemons.com
+  cuisine: grilling-bbq
+  category: Side Dish
+- url: https://www.recipetineats.com/coconut-marinated-grilled-chicken/
+  title: Coconut Marinated Chicken (Grill or Stove)
+  domain: recipetineats.com
+  cuisine: grilling-bbq
+  category: Dinner, Grilling
+- url: https://www.simplyrecipes.com/easy-slow-cooker-barbecue-chicken-recipe-12154316
+  title: The 3-Ingredient Slow Cooker Chicken I Make on Busy Weeknights
+  domain: simplyrecipes.com
+  cuisine: grilling-bbq
+  category: Dinner, Entree
+- url: https://www.onceuponachef.com/recipes/grilled-chicken-wings-with-seasoned-buffalo-sauce.html
+  title: Grilled Chicken Wings with Seasoned Buffalo Sauce
+  domain: onceuponachef.com
+  cuisine: grilling-bbq
+  category: Appetizer, Chicken, Main Course
+- url: https://www.seriouseats.com/crying-tiger-thai-style-grilled-steak-recipe-12061934
+  title: Crying Tiger (Thai-Style Grilled Steak With Dry Chili Dipping Sauce)
+  domain: seriouseats.com
+  cuisine: grilling-bbq
+  category: Mains
+- url: https://minimalistbaker.com/grilled-corn-sriracha-aioli/
+  title: Grilled Corn with Sriracha Aioli
+  domain: minimalistbaker.com
+  cuisine: grilling-bbq
+  category: Side, Snack
+- url: https://cookieandkate.com/elote-recipe/
+  title: Elote (Mexican Street Corn)
+  domain: cookieandkate.com
+  cuisine: grilling-bbq
+  category: Side Dish
+- url: https://www.onceuponachef.com/recipes/perfectly-grilled-chicken-breasts.html
+  title: Grilled Chicken Breasts (Juicy)
+  domain: onceuponachef.com
+  cuisine: grilling-bbq
+  category: Chicken, Main Course
+- url: https://www.budgetbytes.com/grilled-bbq-chicken/
+  title: Grilled BBQ Chicken Breasts
+  domain: budgetbytes.com
+  cuisine: grilling-bbq
+  category: Dinner, Main Course
+- url: https://www.loveandlemons.com/grilled-corn-poblano-tacos/
+  title: Grilled Corn & Poblano Tacos
+  domain: loveandlemons.com
+  cuisine: grilling-bbq
+  category: dinner, vegetarian
+- url: https://www.recipetineats.com/greek-kofta-kebabs/
+  title: Greek Kofta Kebabs
+  domain: recipetineats.com
+  cuisine: grilling-bbq
+  category: Mains
+- url: https://www.bbcgoodfood.com/recipes/cider-pulled-pork-with-apple-dill-slaw
+  title: Cider pulled pork with apple & dill slaw
+  domain: bbcgoodfood.com
+  cuisine: grilling-bbq
+  category: Dinner
+- url: https://www.epicurious.com/recipes/food/views/grilled-marinated-leg-of-lamb-234655
+  title: Grilled Leg of Lamb With Lemon-Garlic Marinade
+  domain: epicurious.com
+  cuisine: grilling-bbq
+- url: https://www.bonappetit.com/recipe/grilled-steak-with-spicy-peanut-dressing
+  title: Grilled Steak With Spicy Peanut Dressing
+  domain: bonappetit.com
+  cuisine: grilling-bbq
+- url: https://www.allrecipes.com/recipe/214644/juicy-grilled-corn-on-the-cob/
+  title: Best Grilled Corn On The Cob
+  domain: allrecipes.com
+  cuisine: grilling-bbq
+  category: Dinner, Side Dish
+- url: https://www.simplyrecipes.com/cajun-spiced-grilled-corn-recipe-6361297
+  title: Cajun-Spiced Grilled Corn
+  domain: simplyrecipes.com
+  cuisine: grilling-bbq
+  category: Side Dish, Dinner, Lunch
+- url: https://www.seriouseats.com/grilled-chicken-caprese-recipe-12058220
+  title: Grilled Chicken Caprese
+  domain: seriouseats.com
+  cuisine: grilling-bbq
+  category: Lunch, Dinner, Salad
+- url: https://www.recipetineats.com/charcoal-chicken-shop-chicken-skewers/
+  title: Charcoal Chicken Shop Chicken Skewers
+  domain: recipetineats.com
+  cuisine: grilling-bbq
+  category: BBQ, Grilling, Mains
+- url: https://minimalistbaker.com/grilled-corn-zucchini-salad-sun-dried-tomato-vinaigrette/
+  title: Grilled Corn & Zucchini Salad with Sun-Dried Tomato Vinaigrette
+  domain: minimalistbaker.com
+  cuisine: grilling-bbq
+  category: Entrée, Side
+- url: https://www.onceuponachef.com/recipes/pulled-pork-with-tangy-barbecue-sauce.html
+  title: Oven Pulled Pork
+  domain: onceuponachef.com
+  cuisine: grilling-bbq
+  category: Beef, Lamb, Veal & Pork, Main Course, Sandwiches, Burgers & Quesadillas
+- url: https://www.loveandlemons.com/zucchini-grilled-corn-salad/
+  title: zucchini & grilled corn salad
+  domain: loveandlemons.com
+  cuisine: grilling-bbq
+  category: appetizers, dairy free, gluten free, salads, side dishes, vegan, vegetarian
+- url: https://www.budgetbytes.com/grilled-shrimp-and-veggie-foil-pack/
+  title: Grilled Shrimp and Veggie Foil Pack
+  domain: budgetbytes.com
+  cuisine: grilling-bbq
+  category: Main Course
+- url: https://www.bbcgoodfood.com/recipes/seekh-kebab-pakistani-beef-skewers
+  title: Seekh kebab (Pakistani beef skewers)
+  domain: bbcgoodfood.com
+  cuisine: grilling-bbq
+  category: Dinner
+- url: https://www.bonappetit.com/recipe/grilled-salmon-with-dill-chimichurri
+  title: Grilled Salmon With Dill Chimichurri
+  domain: bonappetit.com
+  cuisine: grilling-bbq
+- url: https://www.epicurious.com/recipes/food/views/grilled-swordfish-steaks-with-whole-lemon-dressing
+  title: Grilled Swordfish Steaks With Whole-Lemon Dressing
+  domain: epicurious.com
+  cuisine: grilling-bbq
+- url: https://www.allrecipes.com/slow-cooker-honey-mustard-pulled-pork-recipe-8782549
+  title: Slow Cooker Honey Mustard Pulled Pork
+  domain: allrecipes.com
+  cuisine: grilling-bbq
+  category: Dinner, Entree
+- url: https://minimalistbaker.com/best-vegan-pulled-pork-sandwich/
+  title: The Best Vegan "Pulled Pork" Sandwich!
+  domain: minimalistbaker.com
+  cuisine: grilling-bbq
+  category: Entrée
+- url: https://www.onceuponachef.com/recipes/grilled-mexican-street-corn-elote.html
+  title: Grilled Mexican Street Corn (Elote)
+  domain: onceuponachef.com
+  cuisine: grilling-bbq
+  category: Side Dish, Vegetables and Sides
+- url: https://www.loveandlemons.com/grilled-veggie-skewers/
+  title: grilled veggie skewers
+  domain: loveandlemons.com
+  cuisine: grilling-bbq
+  category: dairy free, dinner, gluten free, side dishes, vegan, vegetarian
+- url: https://www.recipetineats.com/thai-grilled-chicken-gai-yang/
+  title: Thai Grilled Chicken (Gai Yang)
+  domain: recipetineats.com
+  cuisine: grilling-bbq
+  category: Barbecue, BBQ, Chicken, Grilling
+- url: https://www.simplyrecipes.com/shortcut-elote-cornbread-recipe-11774505
+  title: I Make This Shortcut Elote Cornbread on Repeat All Summer Long
+  domain: simplyrecipes.com
+  cuisine: grilling-bbq
+  category: Dinner, Side Dish, Bread
+- url: https://www.budgetbytes.com/quick-bbq-chicken/
+  title: Quick BBQ Chicken
+  domain: budgetbytes.com
+  cuisine: grilling-bbq
+  category: Dinner, Lunch, Main Course
+- url: https://www.seriouseats.com/five-minute-grilled-chicken-cutlet-rosemary-garlic-lemon-recipe
+  title: Five-Minute Grilled Chicken Cutlets With Rosemary, Garlic, and Lemon Recipe
+  domain: seriouseats.com
+  cuisine: grilling-bbq
+  category: Entree, Mains, Quick Dinners
+- url: https://www.bonappetit.com/recipe/grilled-shrimp-with-chimichurri
+  title: Easy Grilled Shrimp With Chimichurri
+  domain: bonappetit.com
+  cuisine: grilling-bbq
+- url: https://www.bbcgoodfood.com/recipes/veggie-chickpea-one-pot
+  title: Veggie chickpea one pot
+  domain: bbcgoodfood.com
+  cuisine: weeknight-30min
+  category: Dinner
+- url: https://www.recipetineats.com/baked-macaroni-cheese-with-chicken-broccoli-one-pot/
+  title: One Pot Broccoli Chicken Mac and Cheese
+  domain: recipetineats.com
+  cuisine: weeknight-30min
+  category: Dinner, One Pot, Pasta
+- url: https://minimalistbaker.com/20-minute-tofu-stir-fry/
+  title: 20-Minute Tofu Stir-Fry
+  domain: minimalistbaker.com
+  cuisine: weeknight-30min
+  category: Entrée
+- url: https://www.onceuponachef.com/recipes/smash-burgers.html
+  title: Smash Burger Recipe (Extra Crispy)
+  domain: onceuponachef.com
+  cuisine: weeknight-30min
+  category: Beef, Lamb, Veal & Pork, Main Course, Sandwiches, Burgers & Quesadillas
+- url: https://www.epicurious.com/recipes/food/views/one-pan-tomato-gnocchi
+  title: One-Pan Tomato Gnocchi With Asparagus
+  domain: epicurious.com
+  cuisine: weeknight-30min
+- url: https://www.kingarthurbaking.com/recipes/weeknight-neapolitan-style-pizza-recipe
+  title: Weeknight Neapolitan-Style Pizza
+  domain: kingarthurbaking.com
+  cuisine: weeknight-30min
+- url: https://www.budgetbytes.com/creamy-chicken-and-tortellini-skillet/
+  title: Creamy Chicken and Tortellini Skillet
+  domain: budgetbytes.com
+  cuisine: weeknight-30min
+  category: Main Course
+- url: https://sallysbakingaddiction.com/quick-healthy-dinner-20-minute-honey-garlic-shrimp/
+  title: 20 Minute Honey Garlic Shrimp
+  domain: sallysbakingaddiction.com
+  cuisine: weeknight-30min
+  category: Dinner
+- url: https://www.bonappetit.com/recipe/herby-sheet-pan-meatballs-feta
+  title: Herby Sheet-Pan Meatballs With Feta
+  domain: bonappetit.com
+  cuisine: weeknight-30min
+- url: https://www.seriouseats.com/30-minute-tuscan-white-bean-soup-recipe
+  title: 30-Minute Tuscan White Bean Soup
+  domain: seriouseats.com
+  cuisine: weeknight-30min
+  category: Soups and Stews, Soup
+- url: https://minimalistbaker.com/greek-goddess-bowl-30-minutes/
+  title: Greek Goddess Bowl (30 Minutes!)
+  domain: minimalistbaker.com
+  cuisine: weeknight-30min
+  category: Entrée
+- url: https://www.kingarthurbaking.com/recipes/weeknight-detroit-pizza-recipe
+  title: Weeknight Detroit Pizza
+  domain: kingarthurbaking.com
+  cuisine: weeknight-30min
+- url: https://www.onceuponachef.com/recipes/restaurant-style-pan-seared-salmon.html
+  title: Pan-Seared Salmon (Restaurant Style)
+  domain: onceuponachef.com
+  cuisine: weeknight-30min
+  category: Fish & Seafood, Main Course
+- url: https://www.budgetbytes.com/one-pot-chicken-and-rice/
+  title: One Pot Chicken and Rice
+  domain: budgetbytes.com
+  cuisine: weeknight-30min
+  category: Dinner, Main Course
+- url: https://www.recipetineats.com/one-pan-chicken-and-gravy-with-potatoes-and-vegetables/
+  title: One-Pan Chicken and Gravy with Potatoes and Vegetables
+  domain: recipetineats.com
+  cuisine: weeknight-30min
+  category: Mains
+- url: https://www.loveandlemons.com/sheet-pan-pizza/
+  title: Sheet Pan Pizza
+  domain: loveandlemons.com
+  cuisine: weeknight-30min
+  category: Main Course
+- url: https://www.bbcgoodfood.com/recipes/smash-burgers
+  title: Smash burgers
+  domain: bbcgoodfood.com
+  cuisine: weeknight-30min
+  category: Dinner
+- url: https://www.epicurious.com/recipes/food/views/one-pot-shrimp-and-rice
+  title: One-Pot Spiced Shrimp and Rice
+  domain: epicurious.com
+  cuisine: weeknight-30min
+- url: https://www.bonappetit.com/recipe/sheet-pan-hot-honey-chicken-peaches
+  title: Sheet-Pan Hot Honey Chicken and Peaches
+  domain: bonappetit.com
+  cuisine: weeknight-30min
+- url: https://www.allrecipes.com/recipe/234272/one-pot-easy-cheesy-vegetables-and-rice/
+  title: One Pot Easy Cheesy Vegetables and Rice
+  domain: allrecipes.com
+  cuisine: weeknight-30min
+  category: Dinner
+- url: https://www.seriouseats.com/one-pan-chicken-thighs-sweet-potatoes-apples-recipe-12163221
+  title: One-Pan Fall Chicken With Sweet Potatoes and Apples
+  domain: seriouseats.com
+  cuisine: weeknight-30min
+  category: Dinner
+- url: https://www.simplyrecipes.com/one-pan-shawarma-style-chicken-and-rice-recipe-12147239
+  title: This One-Pan Chicken and Rice Brings the Halal Cart to My Kitchen
+  domain: simplyrecipes.com
+  cuisine: weeknight-30min
+  category: Dinner
+- url: https://minimalistbaker.com/the-ultimate-salmon-burger-30-minutes/
+  title: The Ultimate Salmon Burger (30 Minutes!)
+  domain: minimalistbaker.com
+  cuisine: weeknight-30min
+  category: Entrée, Sandwich
+- url: https://www.kingarthurbaking.com/recipes/gluten-free-sheet-pan-pizza-recipe
+  title: Gluten-Free Sheet Pan Pizza
+  domain: kingarthurbaking.com
+  cuisine: weeknight-30min
+- url: https://www.onceuponachef.com/recipes/sheet-pan-sausage-and-vegetables.html
+  title: Sheet Pan Sausage and Veggies
+  domain: onceuponachef.com
+  cuisine: weeknight-30min
+  category: Beef, Lamb, Veal & Pork, Main Course
+- url: https://www.loveandlemons.com/sheet-pan-gnocchi/
+  title: Sheet Pan Gnocchi
+  domain: loveandlemons.com
+  cuisine: weeknight-30min
+  category: Main Course
+- url: https://www.bbcgoodfood.com/recipes/one-pot-garlicky-chicken-thighs-giant-cous-cous
+  title: One-pot garlicky chicken thighs & giant cous cous
+  domain: bbcgoodfood.com
+  cuisine: weeknight-30min
+  category: Dinner
+- url: https://www.epicurious.com/recipes/food/views/spring-sheet-pan-salmon-with-artichokes
+  title: Spring Sheet-Pan Salmon Dinner
+  domain: epicurious.com
+  cuisine: weeknight-30min
+- url: https://www.bonappetit.com/recipe/sheet-pan-shawarma-spiced-chicken
+  title: Sheet-Pan Shawarma-Spiced Chicken
+  domain: bonappetit.com
+  cuisine: weeknight-30min
+- url: https://www.recipetineats.com/whipped-ricotta-one-pot-chicken-pasta/
+  title: Whipped ricotta one pot chicken pasta
+  domain: recipetineats.com
+  cuisine: weeknight-30min
+  category: Main
+- url: https://www.allrecipes.com/recipe/256551/one-pan-sriracha-chicken-and-veggies/
+  title: One-Pan Sriracha Chicken and Veggies
+  domain: allrecipes.com
+  cuisine: weeknight-30min
+  category: Dinner
+- url: https://minimalistbaker.com/15-minute-miso-soup-with-greens-and-tofu/
+  title: 15-Minute Miso Soup with Greens and Tofu
+  domain: minimalistbaker.com
+  cuisine: weeknight-30min
+  category: Appetizer, Entrée, Side
+- url: https://www.onceuponachef.com/recipes/sheet-pan-chicken-nachos.html
+  title: Sheet Pan Chicken Nachos
+  domain: onceuponachef.com
+  cuisine: weeknight-30min
+  category: Appetizer, Chicken, Main Course
+- url: https://www.seriouseats.com/sweet-and-sour-sheet-pan-chicken-recipe-12151774
+  title: Sweet and Sour Sheet-Pan Chicken
+  domain: seriouseats.com
+  cuisine: weeknight-30min
+  category: Dinner
+- url: https://www.budgetbytes.com/sheet-pan-chicken-thighs/
+  title: Sheet Pan Chicken Thighs
+  domain: budgetbytes.com
+  cuisine: weeknight-30min
+  category: Main Course
+- url: https://www.recipetineats.com/one-pan-mongolian-beef-noodles-with-broccoli/
+  title: One-Pan Mongolian Beef Noodles with broccoli
+  domain: recipetineats.com
+  cuisine: weeknight-30min
+  category: Mains
+- url: https://www.simplyrecipes.com/one-pot-spiced-lentils-recipe-11817677
+  title: The 4-Ingredient One-Pot Dinner I Make on Repeat
+  domain: simplyrecipes.com
+  cuisine: weeknight-30min
+  category: Dinner, Entree, Lunch
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-one-pan-herbed-chicken-and-biscuits
+  title: One-Pan Herbed Chicken and Biscuits
+  domain: epicurious.com
+  cuisine: weeknight-30min
+- url: https://www.bbcgoodfood.com/recipes/aromatic-prawn-smash-burgers
+  title: Aromatic prawn smash burgers
+  domain: bbcgoodfood.com
+  cuisine: weeknight-30min
+  category: Dinner
+- url: https://www.bonappetit.com/recipe/maple-mustard-sheet-pan-salmon
+  title: Maple-Mustard Sheet-Pan Salmon
+  domain: bonappetit.com
+  cuisine: weeknight-30min
+- url: https://www.bbcgoodfood.com/recipes/christmas-margarita
+  title: Christmas margarita
+  domain: bbcgoodfood.com
+  cuisine: drinks-cocktails
+  category: Drink
+- url: https://www.recipetineats.com/espresso-martini/
+  title: Espresso Martini
+  domain: recipetineats.com
+  cuisine: drinks-cocktails
+  category: Cocktails
+- url: https://www.epicurious.com/recipes/food/views/jungle-bird-cocktail-rum-amaro
+  title: Jungle Bird
+  domain: epicurious.com
+  cuisine: drinks-cocktails
+- url: https://minimalistbaker.com/instant-chai-latte-mix/
+  title: Instant Chai Latte Mix (Dairy-Free)
+  domain: minimalistbaker.com
+  cuisine: drinks-cocktails
+  category: Beverage
+- url: https://www.budgetbytes.com/mixed-berry-smoothie/
+  title: Mixed Berry Smoothie
+  domain: budgetbytes.com
+  cuisine: drinks-cocktails
+  category: Breakfast, Snack
+- url: https://www.onceuponachef.com/recipes/mulled-wine.html
+  title: Mulled Wine
+  domain: onceuponachef.com
+  cuisine: drinks-cocktails
+  category: Drinks
+- url: https://sallysbakingaddiction.com/berry-purple-power-smoothie/
+  title: Berry Purple Power Smoothie
+  domain: sallysbakingaddiction.com
+  cuisine: drinks-cocktails
+  category: Drinks
+- url: https://www.loveandlemons.com/apple-cider-margarita/
+  title: Apple Cider Margarita
+  domain: loveandlemons.com
+  cuisine: drinks-cocktails
+  category: Beverage
+- url: https://www.bonappetit.com/recipe/practical-magic-midnight-margarita-cocktail
+  title: Magical Midnight Margarita
+  domain: bonappetit.com
+  cuisine: drinks-cocktails
+- url: https://www.seriouseats.com/martinez-cocktail-gin-cocktail-recipe
+  title: Martinez Cocktail
+  domain: seriouseats.com
+  cuisine: drinks-cocktails
+  category: Gin, Cocktail
+- url: https://www.onceuponachef.com/recipes/french-75.html
+  title: French 75
+  domain: onceuponachef.com
+  cuisine: drinks-cocktails
+  category: Drinks
+- url: https://sallysbakingaddiction.com/honey-sweetened-strawberry-lemonade/
+  title: Honey Sweetened Strawberry Lemonade
+  domain: sallysbakingaddiction.com
+  cuisine: drinks-cocktails
+  category: Drinks
+- url: https://www.budgetbytes.com/homemade-lemonade/
+  title: Homemade Lemonade Recipe
+  domain: budgetbytes.com
+  cuisine: drinks-cocktails
+  category: Drinks
+- url: https://minimalistbaker.com/frozen-peach-daiquiri/
+  title: Frozen Peach Daiquiri (2 Ways!)
+  domain: minimalistbaker.com
+  cuisine: drinks-cocktails
+  category: Beverage
+- url: https://www.loveandlemons.com/espresso-martini/
+  title: Espresso Martini
+  domain: loveandlemons.com
+  cuisine: drinks-cocktails
+  category: Beverage
+- url: https://www.recipetineats.com/dirty-martini/
+  title: Dirty Martini
+  domain: recipetineats.com
+  cuisine: drinks-cocktails
+  category: Cocktail
+- url: https://www.bonappetit.com/recipe/french-75-cocktail
+  title: French 75
+  domain: bonappetit.com
+  cuisine: drinks-cocktails
+- url: https://www.bbcgoodfood.com/recipes/mango-lassi-inspired-breakfast-smoothie
+  title: Mango lassi-inspired breakfast smoothie
+  domain: bbcgoodfood.com
+  cuisine: drinks-cocktails
+- url: https://www.epicurious.com/recipes/food/views/naked-and-famous-cocktail
+  title: Naked and Famous
+  domain: epicurious.com
+  cuisine: drinks-cocktails
+- url: https://www.allrecipes.com/tom-yum-cocktail-recipe-12237928
+  title: Tom Yum Cocktail
+  domain: allrecipes.com
+  cuisine: drinks-cocktails
+  category: Cocktail
+- url: https://www.seriouseats.com/cocktails-milk-punch-recipe
+  title: Milk Punch
+  domain: seriouseats.com
+  cuisine: drinks-cocktails
+  category: Brandy and Cognac, Rum, Whiskey, Cocktail
+- url: https://www.budgetbytes.com/avocado-margarita/
+  title: Avocado Margarita Recipe
+  domain: budgetbytes.com
+  cuisine: drinks-cocktails
+  category: Drinks
+- url: https://sallysbakingaddiction.com/honeycrisp-apple-sangria/
+  title: Honeycrisp Apple Red Sangria
+  domain: sallysbakingaddiction.com
+  cuisine: drinks-cocktails
+  category: Drinks
+- url: https://www.onceuponachef.com/recipes/paloma.html
+  title: Paloma
+  domain: onceuponachef.com
+  cuisine: drinks-cocktails
+  category: Drinks
+- url: https://cookieandkate.com/fresh-margaritas/
+  title: Skinny Margaritas
+  domain: cookieandkate.com
+  cuisine: drinks-cocktails
+  category: Cocktail
+- url: https://www.recipetineats.com/kir-royale-french-champagne-cocktail/
+  title: Kir Royale (French champagne cocktail)
+  domain: recipetineats.com
+  cuisine: drinks-cocktails
+  category: Cocktails
+- url: https://www.bonappetit.com/recipe/salt-and-smoke-mezcal-lemon-margarita
+  title: Salt and Smoke Margarita With Mezcal and Lemon
+  domain: bonappetit.com
+  cuisine: drinks-cocktails
+- url: https://www.bbcgoodfood.com/recipes/venom-cocktail
+  title: Venom cocktail
+  domain: bbcgoodfood.com
+  cuisine: drinks-cocktails
+- url: https://www.allrecipes.com/recipe/82502/cranberry-martini/
+  title: Cranberry Martini
+  domain: allrecipes.com
+  cuisine: drinks-cocktails
+  category: Drink, Cocktail
+- url: https://www.budgetbytes.com/green-smoothie/
+  title: Green Smoothie
+  domain: budgetbytes.com
+  cuisine: drinks-cocktails
+  category: Breakfast, Lunch, Snack
+- url: https://sallysbakingaddiction.com/glowing-skin-smoothie/
+  title: Glowing Skin Smoothie
+  domain: sallysbakingaddiction.com
+  cuisine: drinks-cocktails
+  category: Drinks
+- url: https://www.onceuponachef.com/recipes/pomegranate-margaritas.html
+  title: Pomegranate Margaritas
+  domain: onceuponachef.com
+  cuisine: drinks-cocktails
+- url: https://www.seriouseats.com/black-sesame-horchata-recipe-12025455
+  title: Black Sesame Horchata With Ube and Coconut
+  domain: seriouseats.com
+  cuisine: drinks-cocktails
+  category: Side Dish
+- url: https://www.loveandlemons.com/matcha-smoothie-vanilla/
+  title: Matcha Smoothie
+  domain: loveandlemons.com
+  cuisine: drinks-cocktails
+  category: Beverage
+- url: https://minimalistbaker.com/easy-homemade-strawberry-lemonade/
+  title: Easy Homemade Strawberry Lemonade
+  domain: minimalistbaker.com
+  cuisine: drinks-cocktails
+  category: Beverage
+- url: https://www.simplyrecipes.com/americano-cocktail-recipe-6748155
+  title: Americano Cocktail
+  domain: simplyrecipes.com
+  cuisine: drinks-cocktails
+  category: Cocktail
+- url: https://www.recipetineats.com/how-to-make-mimosas/
+  title: How to make Mimosas
+  domain: recipetineats.com
+  cuisine: drinks-cocktails
+  category: Cocktails
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-spicy-blackberry-margarita
+  title: Mora Picosa (Spicy Blackberry Margarita)
+  domain: epicurious.com
+  cuisine: drinks-cocktails
+- url: https://www.bbcgoodfood.com/recipes/baileys-tiramisu-martini
+  title: Baileys tiramisu martini
+  domain: bbcgoodfood.com
+  cuisine: drinks-cocktails
+- url: https://www.budgetbytes.com/brazilian-lemonade/
+  title: Brazilian Lemonade
+  domain: budgetbytes.com
+  cuisine: drinks-cocktails
+  category: Drinks
