@@ -359,13 +359,13 @@ func TestProductionConfigsSourcesYAML(t *testing.T) {
 		}
 	}
 
-	if enabledCount != 14 {
-		t.Errorf("enabled sources count = %d, want 14", enabledCount)
+	if enabledCount != 28 {
+		t.Errorf("enabled sources count = %d, want 28", enabledCount)
 	}
 	if disabledCount != 2 {
 		t.Errorf("disabled sources count = %d, want 2", disabledCount)
 	}
-	if len(reg.Sources) != 16 {
-		t.Errorf("total sources count = %d, want 16", len(reg.Sources))
+	if len(reg.Sources) != 30 {
+		t.Errorf("total sources count = %d, want 30", len(reg.Sources))
 	}
 }
