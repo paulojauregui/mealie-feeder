@@ -1,0 +1,9 @@
+bin/
+dist/
+*.out
+coverage.txt
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store
+AUTONOMOUS_PROMPT*.md

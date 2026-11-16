@@ -1,0 +1,126 @@
+name: CI / CD Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+  packages: write
+  id-token: write
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  quality:
+    name: Lint, Validate & Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check project artifacts
+        id: lang
+        run: |
+          [ -f go.mod ] && echo "has_go=true" >> "$GITHUB_OUTPUT" || echo "has_go=false" >> "$GITHUB_OUTPUT"
+          [ -f Dockerfile ] && echo "has_docker=true" >> "$GITHUB_OUTPUT" || echo "has_docker=false" >> "$GITHUB_OUTPUT"
+
+      - name: Validate YAML seeds and configs
+        run: |
+          pip install pyyaml
+          python3 -c '
+          import glob, sys, yaml
+          files = sorted(glob.glob("seeds/**/*.yaml", recursive=True) + glob.glob("configs/**/*.yaml", recursive=True))
+          for path in files:
+              with open(path, "r", encoding="utf-8") as f:
+                  yaml.safe_load(f)
+              print(f"Valid YAML: {path}")
+          '
+
+      - name: Set up Go
+        if: steps.lang.outputs.has_go == 'true'
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.27.4'
+
+      - name: Run Go Format, Vet & Race Tests
+        if: steps.lang.outputs.has_go == 'true'
+        run: |
+          test -z "$(gofmt -l .)"
+          go mod verify
+          go vet ./...
+          go test -v -race -cover ./...
+
+  build-and-push:
+    name: Build & Push Container Image
+    needs: quality
+    if: ${{ hashFiles('Dockerfile') != '' }}
+    runs-on: ubuntu-latest
+    env:
+      DOCKER_METADATA_PR_HEAD_SHA: true
+    outputs:
+      image_tag: ${{ steps.tag.outputs.tag }}
+      image_digest: ${{ steps.build-push.outputs.digest }}
+    steps:
+      - name: Determine immutable image tag
+        id: tag
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            COMMIT_SHA="${{ github.event.pull_request.head.sha }}"
+          else
+            COMMIT_SHA="${GITHUB_SHA}"
+          fi
+          echo "tag=sha-${COMMIT_SHA::7}" >> $GITHUB_OUTPUT
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract Docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          tags: |
+            type=sha,prefix=sha-,format=short
+            type=raw,value=latest,enable=${{ github.ref == 'refs/heads/main' }}
+
+      - name: Build and push container image
+        id: build-push
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          platforms: linux/amd64
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+
+      - name: Run Trivy Vulnerability Scanner
+        if: github.ref == 'refs/heads/main'
+        uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          image-ref: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.tag.outputs.tag }}
+          format: 'table'
+          exit-code: '0'
+          ignore-unfixed: true
+          vuln-type: 'os,library'
+          severity: 'CRITICAL'
