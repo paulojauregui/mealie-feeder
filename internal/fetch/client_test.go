@@ -408,4 +408,47 @@ func TestClientFetchErrorsAndRetries(t *testing.T) {
 			t.Errorf("expected nil for empty domain, got %v", err)
 		}
 	})
+
+	t.Run("streaming body completes without premature context cancellation", func(t *testing.T) {
+		t.Parallel()
+		srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			flusher, ok := w.(http.Flusher)
+			w.WriteHeader(http.StatusOK)
+			_, _ = w.Write([]byte("part1-"))
+			if ok {
+				flusher.Flush()
+			}
+			select {
+			case <-r.Context().Done():
+				return
+			case <-time.After(15 * time.Millisecond):
+			}
+			_, _ = w.Write([]byte("part2"))
+		}))
+		defer srv.Close()
+
+		client := NewClientWithTransport(NewDomainLimiter(0, nil), srv.Client().Transport, nil)
+		resp, err := client.Fetch(context.Background(), srv.URL+"/stream", RequestOptions{})
+		if err != nil {
+			t.Fatalf("Fetch failed on streaming body: %v", err)
+		}
+		if string(resp.Body) != "part1-part2" {
+			t.Errorf("Body = %q, want %q", string(resp.Body), "part1-part2")
+		}
+	})
+
+	t.Run("403 without challenge markers returns ErrPaywallDetected", func(t *testing.T) {
+		t.Parallel()
+		srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			w.WriteHeader(http.StatusForbidden)
+			_, _ = w.Write([]byte("access denied"))
+		}))
+		defer srv.Close()
+
+		client := NewClientWithTransport(NewDomainLimiter(0, nil), srv.Client().Transport, nil)
+		_, err := client.Fetch(context.Background(), srv.URL+"/forbidden", RequestOptions{MaxRetries: 2})
+		if !errors.Is(err, ErrPaywallDetected) {
+			t.Errorf("err = %v, want ErrPaywallDetected", err)
+		}
+	})
 }

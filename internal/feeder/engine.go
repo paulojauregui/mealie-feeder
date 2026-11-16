@@ -376,16 +376,18 @@ func (e *Engine) Sync(ctx context.Context, opts SyncOptions) (*RunReport, error)
 				e.limiter.SetFloor(src.Domain, outcome.RobotsCrawlDelay)
 			}
 
-			// Save updated cursors
-			for _, cur := range outcome.UpdatedCursors {
-				_ = e.store.SaveFeedCursor(gCtx, ledger.FeedCursor{
-					FeedURL:             cur.FeedURL,
-					Domain:              src.Domain,
-					ETag:                cur.ETag,
-					LastModified:        cur.LastModified,
-					LastItemPublishedAt: cur.LastItemPublishedAt,
-					LastCheckedAt:       cur.LastCheckedAt,
-				})
+			// Save updated cursors (only on non-dry-run executions)
+			if !opts.DryRun {
+				for _, cur := range outcome.UpdatedCursors {
+					_ = e.store.SaveFeedCursor(gCtx, ledger.FeedCursor{
+						FeedURL:             cur.FeedURL,
+						Domain:              src.Domain,
+						ETag:                cur.ETag,
+						LastModified:        cur.LastModified,
+						LastItemPublishedAt: cur.LastItemPublishedAt,
+						LastCheckedAt:       cur.LastCheckedAt,
+					})
+				}
 			}
 
 			// Upsert discovered candidates

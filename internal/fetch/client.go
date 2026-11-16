@@ -301,13 +301,22 @@ func (t *utlsTransport) RoundTrip(req *http.Request) (*http.Response, error) {
 		return clientConn.RoundTrip(req)
 	}
 
-	// HTTP/1.1 fallback
+	// HTTP/1.1 fallback (single-connection transport; disable keep-alives so the ephemeral transport does not leak idle goroutines)
 	h1Transport := &http.Transport{
+		DisableKeepAlives: true,
 		DialTLSContext: func(ctx context.Context, network, a string) (net.Conn, error) {
 			return uConn, nil
 		},
 	}
 	return h1Transport.RoundTrip(req)
+}
+
+type attemptOutcome struct {
+	response    *Response
+	cooldown    time.Duration
+	hasCooldown bool
+	retryable   bool
+	err         error
 }
 
 // Fetch executes a polite HTTP fetch following redirects, rate limiting, and challenge verification.
@@ -341,7 +350,6 @@ func (c *Client) Fetch(ctx context.Context, rawURL string, opts RequestOptions) 
 	rt := c.getTransport(opts.TLSMode)
 
 	var lastErr error
-	currentURL := rawURL
 
 	for attempt := 0; attempt <= maxRetries; attempt++ {
 		if err := ctx.Err(); err != nil {
@@ -355,96 +363,121 @@ func (c *Client) Fetch(ctx context.Context, rawURL string, opts RequestOptions) 
 			}
 		}
 
-		fetchCtx, cancel := context.WithTimeout(ctx, timeout)
-		resp, finalURL, redirectErr := c.doWithRedirects(fetchCtx, rt, currentURL, opts, maxBodyBytes)
-		cancel()
+		out := c.fetchAttempt(ctx, rt, rawURL, domain, opts, timeout, maxBodyBytes)
+		if out.err == nil {
+			return out.response, nil
+		}
+		lastErr = out.err
 
-		if redirectErr != nil {
-			lastErr = redirectErr
-			// Check if challenge was detected during redirects
-			if errors.Is(redirectErr, ErrChallengeDetected) || errors.Is(redirectErr, ErrPaywallDetected) || errors.Is(redirectErr, ErrPermanentHTTP) || errors.Is(redirectErr, ErrBodyTooLarge) {
-				return nil, redirectErr
-			}
-			// Transient network failure -> retry
-			if attempt < maxRetries {
-				c.backoffSleep(ctx, attempt)
-				continue
-			}
-			return nil, fmt.Errorf("fetch: failed after %d attempts: %w", attempt+1, lastErr)
+		if !out.retryable {
+			return nil, out.err
 		}
 
-		// Inspect status and challenge markers
-		if err := c.evaluateChallengeOrPaywall(resp); err != nil {
-			_ = resp.Body.Close()
-			return nil, err // Fail-closed immediately! Never retry challenges or paywalls.
-		}
-
-		status := resp.StatusCode
-
-		// Permanent failure: 404, 410
-		if status == http.StatusNotFound || status == http.StatusGone {
-			_ = resp.Body.Close()
-			return nil, fmt.Errorf("%w: status %d on %s", ErrPermanentHTTP, status, finalURL)
-		}
-
-		// 429 Too Many Requests: cooldown and retry
-		if status == http.StatusTooManyRequests {
-			retryAfterHeader := resp.Header.Get("Retry-After")
-			_ = resp.Body.Close()
-
-			if delay, ok := ParseRetryAfter(retryAfterHeader, c.clock(), 120*time.Second); ok {
-				if c.limiter != nil {
-					c.limiter.SetCooldown(domain, c.clock().Add(delay))
-				}
-				if attempt < maxRetries {
+		if attempt < maxRetries {
+			if out.hasCooldown {
+				if out.cooldown > 0 {
 					select {
-					case <-time.After(delay):
+					case <-time.After(out.cooldown):
 					case <-ctx.Done():
 						return nil, ctx.Err()
 					}
-					continue
 				}
-			} else if attempt < maxRetries {
+			} else {
 				c.backoffSleep(ctx, attempt)
-				continue
 			}
-			return nil, fmt.Errorf("%w: 429 too many requests on %s", ErrRetryableHTTP, finalURL)
+			continue
 		}
 
-		// 5xx Server Errors
-		if status >= 500 && status <= 599 {
-			_ = resp.Body.Close()
-			if attempt < maxRetries {
-				c.backoffSleep(ctx, attempt)
-				continue
-			}
-			return nil, fmt.Errorf("%w: status %d on %s", ErrRetryableHTTP, status, finalURL)
+		if out.hasCooldown {
+			return nil, out.err
 		}
-
-		// Success (200 OK, 304 Not Modified, etc.)
-		bodyBytes, err := readBoundedBody(resp.Body, maxBodyBytes)
-		_ = resp.Body.Close()
-		if err != nil {
-			return nil, err
-		}
-
-		// Inspect body for embedded challenge markers
-		if err := inspectBodyForChallenges(bodyBytes); err != nil {
-			return nil, err
-		}
-
-		return &Response{
-			FinalURL:   finalURL,
-			StatusCode: status,
-			Header:     resp.Header,
-			Body:       bodyBytes,
-		}, nil
+		return nil, fmt.Errorf("fetch: failed after %d attempts: %w", attempt+1, lastErr)
 	}
 
 	if lastErr != nil {
 		return nil, lastErr
 	}
 	return nil, ErrRetryableHTTP
+}
+
+// fetchAttempt keeps fetchCtx alive through reading and closing resp.Body before deferring cancel.
+func (c *Client) fetchAttempt(ctx context.Context, rt http.RoundTripper, rawURL, domain string, opts RequestOptions, timeout time.Duration, maxBodyBytes int64) attemptOutcome {
+	fetchCtx, cancel := context.WithTimeout(ctx, timeout)
+	defer cancel()
+
+	resp, finalURL, redirectErr := c.doWithRedirects(fetchCtx, rt, rawURL, opts, maxBodyBytes)
+	if redirectErr != nil {
+		nonRetryable := errors.Is(redirectErr, ErrChallengeDetected) ||
+			errors.Is(redirectErr, ErrPaywallDetected) ||
+			errors.Is(redirectErr, ErrPermanentHTTP) ||
+			errors.Is(redirectErr, ErrBodyTooLarge)
+		return attemptOutcome{retryable: !nonRetryable, err: redirectErr}
+	}
+	defer func() { _ = resp.Body.Close() }()
+
+	if err := c.evaluateChallengeOrPaywall(resp); err != nil {
+		return attemptOutcome{retryable: false, err: err}
+	}
+
+	status := resp.StatusCode
+
+	if status == http.StatusNotFound || status == http.StatusGone {
+		return attemptOutcome{
+			retryable: false,
+			err:       fmt.Errorf("%w: status %d on %s", ErrPermanentHTTP, status, finalURL),
+		}
+	}
+
+	if status == http.StatusTooManyRequests {
+		retryAfterHeader := resp.Header.Get("Retry-After")
+		if delay, ok := ParseRetryAfter(retryAfterHeader, c.clock(), 120*time.Second); ok {
+			if c.limiter != nil {
+				c.limiter.SetCooldown(domain, c.clock().Add(delay))
+			}
+			return attemptOutcome{
+				cooldown:    delay,
+				hasCooldown: true,
+				retryable:   true,
+				err:         fmt.Errorf("%w: 429 too many requests on %s", ErrRetryableHTTP, finalURL),
+			}
+		}
+		return attemptOutcome{
+			retryable: true,
+			err:       fmt.Errorf("%w: 429 too many requests on %s", ErrRetryableHTTP, finalURL),
+		}
+	}
+
+	if status >= 500 && status <= 599 {
+		return attemptOutcome{
+			retryable: true,
+			err:       fmt.Errorf("%w: status %d on %s", ErrRetryableHTTP, status, finalURL),
+		}
+	}
+
+	bodyBytes, err := readBoundedBody(resp.Body, maxBodyBytes)
+	if err != nil {
+		return attemptOutcome{retryable: true, err: err}
+	}
+
+	if err := inspectBodyForChallenges(bodyBytes); err != nil {
+		return attemptOutcome{retryable: false, err: err}
+	}
+
+	if status == http.StatusUnauthorized || status == http.StatusForbidden {
+		return attemptOutcome{
+			retryable: false,
+			err:       fmt.Errorf("%w: status %d on %s", ErrPaywallDetected, status, finalURL),
+		}
+	}
+
+	return attemptOutcome{
+		response: &Response{
+			FinalURL:   finalURL,
+			StatusCode: status,
+			Header:     resp.Header,
+			Body:       bodyBytes,
+		},
+	}
 }
 
 // doWithRedirects executes an HTTP request following up to maxRedirectHops while applying headers.
