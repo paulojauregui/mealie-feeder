@@ -26,8 +26,8 @@ recipes:
   title: Hotteok (Korean Sweet Pancakes)
   domain: kingarthurbaking.com
   cuisine: korean
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-korean-street-toast-breakfast-sandwich
-  title: Korean Street Toast Breakfast Sandwich
+- url: https://www.epicurious.com/recipes/food/views/grilled-pork-belly-and-kimchi
+  title: Grilled Pork Belly and Kimchi
   domain: epicurious.com
   cuisine: korean
 - url: https://www.budgetbytes.com/kimchi-fried-rice/
@@ -93,8 +93,8 @@ recipes:
   domain: bbcgoodfood.com
   cuisine: korean
   category: Side dish
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-korean-style-stuffed-peppers
-  title: Korean-Style Stuffed Peppers
+- url: https://www.epicurious.com/recipes/food/views/angel-hair-bibimguksu
+  title: Angel Hair Bibimguksu
   domain: epicurious.com
   cuisine: korean
 - url: https://www.bonappetit.com/recipe/tteokbokki
@@ -208,8 +208,8 @@ recipes:
   domain: onceuponachef.com
   cuisine: vietnamese
   category: Chicken, Lunch, Main Course, Salad
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-nuoc-cham-chicken-salad
-  title: Nuoc Cham Chicken Salad
+- url: https://www.epicurious.com/recipes/food/views/stir-fried-pho-noodles-with-beef
+  title: Stir-Fried Phở Noodles With Beef
   domain: epicurious.com
   cuisine: vietnamese
 - url: https://www.loveandlemons.com/vegan-pho/
@@ -246,8 +246,8 @@ recipes:
   domain: onceuponachef.com
   cuisine: vietnamese
   category: Appetizer, Fish & Seafood
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-grilled-lemongrass-chicken-thighs
-  title: Grilled Lemongrass Chicken Thighs
+- url: https://www.epicurious.com/recipes/food/views/hanoi-grilled-chicken-banh-mi
+  title: Hanoi Grilled Chicken Banh Mi
   domain: epicurious.com
   cuisine: vietnamese
 - url: https://www.bbcgoodfood.com/recipes/leftover-roast-pork-belly-banh-mi
@@ -393,8 +393,8 @@ recipes:
   domain: recipetineats.com
   cuisine: spanish
   category: Sweet
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-paella-de-pollo-con-verduras
-  title: Paella de Pollo con Verduras
+- url: https://www.epicurious.com/recipes/food/views/paella-verde
+  title: Paella Verde
   domain: epicurious.com
   cuisine: spanish
 - url: https://minimalistbaker.com/simple-patatas-bravas/
@@ -587,8 +587,8 @@ recipes:
   domain: budgetbytes.com
   cuisine: breakfast-brunch
   category: Brunch, Dinner, Lunch, Main Course
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-maple-pumpkin-overnight-oats
-  title: Maple Pumpkin Overnight Oats
+- url: https://www.epicurious.com/recipes/food/views/creme-brulee-french-toast-15213
+  title: Crème Brûlée French Toast Casserole
   domain: epicurious.com
   cuisine: breakfast-brunch
 - url: https://www.onceuponachef.com/recipes/breakfast-casserole.html
@@ -673,8 +673,8 @@ recipes:
   domain: cookieandkate.com
   cuisine: breakfast-brunch
   category: Breakfast
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-blueberry-protein-pancakes
-  title: Blueberry Protein Pancakes (No Protein Powder)
+- url: https://www.epicurious.com/recipes/food/views/belgian-buttermilk-waffles-with-glazed-bananas-232170
+  title: Belgian Buttermilk Waffles With Glazed Bananas
   domain: epicurious.com
   cuisine: breakfast-brunch
 - url: https://www.bbcgoodfood.com/recipes/air-fryer-cinnamon-rolls
@@ -986,8 +986,8 @@ recipes:
   domain: budgetbytes.com
   cuisine: grilling-bbq
   category: Dinner, Lunch, Main Course
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-better-beer-can-chicken
-  title: A Better Beer Can Chicken
+- url: https://www.epicurious.com/recipes/food/views/grilled-peruvian-chicken
+  title: Grilled Peruvian Chicken With Green Sauce
   domain: epicurious.com
   cuisine: grilling-bbq
 - url: https://www.bonappetit.com/recipe/better-beer-can-chicken
@@ -1054,8 +1054,8 @@ recipes:
   domain: bbcgoodfood.com
   cuisine: grilling-bbq
   category: Dinner
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-grilled-steak-with-spicy-peanut-dressing
-  title: Grilled Steak With Spicy Peanut Dressing
+- url: https://www.epicurious.com/recipes/food/views/grilled-marinated-leg-of-lamb-234655
+  title: Grilled Leg of Lamb With Lemon-Garlic Marinade
   domain: epicurious.com
   cuisine: grilling-bbq
 - url: https://www.bonappetit.com/recipe/grilled-steak-with-spicy-peanut-dressing
@@ -1111,8 +1111,8 @@ recipes:
   title: Grilled Salmon With Dill Chimichurri
   domain: bonappetit.com
   cuisine: grilling-bbq
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-grilled-salmon-with-dill-chimichurri
-  title: Grilled Salmon With Dill Chimichurri
+- url: https://www.epicurious.com/recipes/food/views/grilled-swordfish-steaks-with-whole-lemon-dressing
+  title: Grilled Swordfish Steaks With Whole-Lemon Dressing
   domain: epicurious.com
   cuisine: grilling-bbq
 - url: https://www.allrecipes.com/slow-cooker-honey-mustard-pulled-pork-recipe-8782549
@@ -1179,8 +1179,8 @@ recipes:
   domain: onceuponachef.com
   cuisine: weeknight-30min
   category: Beef, Lamb, Veal & Pork, Main Course, Sandwiches, Burgers & Quesadillas
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-sheet-pan-hot-honey-chicken-peaches
-  title: Sheet-Pan Hot Honey Chicken and Peaches
+- url: https://www.epicurious.com/recipes/food/views/one-pan-tomato-gnocchi
+  title: One-Pan Tomato Gnocchi With Asparagus
   domain: epicurious.com
   cuisine: weeknight-30min
 - url: https://www.kingarthurbaking.com/recipes/weeknight-neapolitan-style-pizza-recipe
@@ -1240,8 +1240,8 @@ recipes:
   domain: bbcgoodfood.com
   cuisine: weeknight-30min
   category: Dinner
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-sheet-pan-shawarma-spiced-chicken
-  title: Sheet-Pan Shawarma-Spiced Chicken
+- url: https://www.epicurious.com/recipes/food/views/one-pot-shrimp-and-rice
+  title: One-Pot Spiced Shrimp and Rice
   domain: epicurious.com
   cuisine: weeknight-30min
 - url: https://www.bonappetit.com/recipe/sheet-pan-hot-honey-chicken-peaches
@@ -1287,8 +1287,8 @@ recipes:
   domain: bbcgoodfood.com
   cuisine: weeknight-30min
   category: Dinner
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-maple-mustard-sheet-pan-salmon
-  title: Maple-Mustard Sheet-Pan Salmon
+- url: https://www.epicurious.com/recipes/food/views/spring-sheet-pan-salmon-with-artichokes
+  title: Spring Sheet-Pan Salmon Dinner
   domain: epicurious.com
   cuisine: weeknight-30min
 - url: https://www.bonappetit.com/recipe/sheet-pan-shawarma-spiced-chicken
@@ -1358,8 +1358,8 @@ recipes:
   domain: recipetineats.com
   cuisine: drinks-cocktails
   category: Cocktails
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-magical-midnight-margarita
-  title: Magical Midnight Margarita
+- url: https://www.epicurious.com/recipes/food/views/jungle-bird-cocktail-rum-amaro
+  title: Jungle Bird
   domain: epicurious.com
   cuisine: drinks-cocktails
 - url: https://minimalistbaker.com/instant-chai-latte-mix/
@@ -1434,8 +1434,8 @@ recipes:
   title: Mango lassi-inspired breakfast smoothie
   domain: bbcgoodfood.com
   cuisine: drinks-cocktails
-- url: https://www.epicurious.com/recipes/food/views/ba-syn-salt-and-smoke-mezcal-lemon-margarita
-  title: Salt and Smoke Margarita With Mezcal and Lemon
+- url: https://www.epicurious.com/recipes/food/views/naked-and-famous-cocktail
+  title: Naked and Famous
   domain: epicurious.com
   cuisine: drinks-cocktails
 - url: https://www.allrecipes.com/tom-yum-cocktail-recipe-12237928

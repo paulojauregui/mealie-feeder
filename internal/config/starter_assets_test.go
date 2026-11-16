@@ -196,7 +196,7 @@ func TestStarterAssetsContract(t *testing.T) {
 // Pre-conditions: configs/sources.yaml, seeds/greatest-hits.yaml, and seeds/greatest-hits-vol2.yaml exist on disk and are readable.
 // Post-conditions: Asserts strict YAML decoding, total recipe count (320), exact 8 gap-fill cuisines (40 recipes each),
 // resolution to enabled sources, allow/deny regex compliance, zero URL overlap with Volume 1, zero internal duplicates,
-// and complete absence of emoji characters.
+// complete absence of emoji characters, and zero Condé Nast ba-syn slug or title collisions with bonappetit.com.
 func TestVol2SeedsContract(t *testing.T) {
 	sourcesPath := resolveAssetPath("configs/sources.yaml")
 	vol1Path := resolveAssetPath("seeds/greatest-hits.yaml")
@@ -230,6 +230,19 @@ func TestVol2SeedsContract(t *testing.T) {
 		return strings.ToLower(host + path)
 	}
 
+	lastPathSegment := func(rawURL string) string {
+		u, parseErr := url.Parse(strings.TrimSpace(rawURL))
+		if parseErr != nil {
+			return ""
+		}
+		p := strings.TrimRight(u.Path, "/")
+		idx := strings.LastIndex(p, "/")
+		if idx >= 0 {
+			return p[idx+1:]
+		}
+		return p
+	}
+
 	vol1Exact := make(map[string]bool, len(vol1Manifest.Recipes))
 	vol1Canon := make(map[string]bool, len(vol1Manifest.Recipes))
 	for _, r := range vol1Manifest.Recipes {
@@ -249,6 +262,26 @@ func TestVol2SeedsContract(t *testing.T) {
 	if len(vol2Manifest.Recipes) != 320 {
 		t.Fatalf("expected 320 recipes in Volume 2, got %d", len(vol2Manifest.Recipes))
 	}
+
+	// Index all bonappetit.com entries across Volume 1 and Volume 2 for cross-syndication checks
+	baSlugs := make(map[string]string)
+	baTitles := make(map[string]string)
+	indexBA := func(recipes []config.SeedEntry) {
+		for _, r := range recipes {
+			if config.NormalizeDomain(r.Domain) == "bonappetit.com" || strings.Contains(r.URL, "bonappetit.com") {
+				slug := strings.ToLower(lastPathSegment(r.URL))
+				if slug != "" {
+					baSlugs[slug] = r.URL
+				}
+				normTitle := strings.ToLower(strings.TrimSpace(r.Title))
+				if normTitle != "" {
+					baTitles[normTitle] = r.URL
+				}
+			}
+		}
+	}
+	indexBA(vol1Manifest.Recipes)
+	indexBA(vol2Manifest.Recipes)
 
 	// 4. Verify each recipe entry in Volume 2
 	seenURLs := make(map[string]bool, len(vol2Manifest.Recipes))
@@ -321,6 +354,23 @@ func TestVol2SeedsContract(t *testing.T) {
 		}
 		if hasEmojiOrInvalidUTF8(recipe.Category) {
 			t.Errorf("recipe [%d] category contains emojis or invalid UTF-8: %q", i, recipe.Category)
+		}
+
+		// Verify zero Condé Nast cross-syndication collisions between epicurious.com ba-syn-* and bonappetit.com
+		if config.NormalizeDomain(recipe.Domain) == "epicurious.com" {
+			seg := lastPathSegment(recipe.URL)
+			if strings.HasPrefix(seg, "ba-syn-") {
+				stripped := strings.ToLower(strings.TrimPrefix(seg, "ba-syn-"))
+				if baURL, collides := baSlugs[stripped]; collides {
+					t.Errorf("recipe [%d] (%s) epicurious ba-syn slug %q collides with bonappetit entry: %s",
+						i, recipe.URL, stripped, baURL)
+				}
+				normTitle := strings.ToLower(strings.TrimSpace(recipe.Title))
+				if baURL, collides := baTitles[normTitle]; collides {
+					t.Errorf("recipe [%d] (%s) epicurious ba-syn title %q collides with bonappetit entry: %s",
+						i, recipe.URL, recipe.Title, baURL)
+				}
+			}
 		}
 
 		// Verify domain resolves to an enabled, non-excluded source
