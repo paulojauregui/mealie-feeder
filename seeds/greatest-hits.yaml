@@ -1,0 +1,1534 @@
+version: 1
+description: Curated live-verified iconic recipes across 10 culinary traditions
+recipes:
+- url: https://www.allrecipes.com/recipe/7192/real-southern-cornbread/
+  title: Real Southern Cornbread
+  domain: allrecipes.com
+  cuisine: american-comfort-weeknight
+  category: Side Dish
+- url: https://www.bbcgoodfood.com/recipes/classic-waffles
+  title: Classic waffles
+  domain: bbcgoodfood.com
+  cuisine: american-comfort-weeknight
+  category: Breakfast
+- url: https://www.bbcgoodfood.com/recipes/fresh-tomato-soup-cheesy-cornbread
+  title: Fresh tomato soup with cheesy cornbread
+  domain: bbcgoodfood.com
+  cuisine: american-comfort-weeknight
+  category: Soup
+- url: https://www.bonappetit.com/recipe/epi-syn-air-fryer-buttermilk-fried-chicken
+  title: Air-Fryer Fried Chicken
+  domain: bonappetit.com
+  cuisine: american-comfort-weeknight
+- url: https://www.bonappetit.com/recipe/epi-syn-biscuits-and-gravy
+  title: Biscuits and Gravy
+  domain: bonappetit.com
+  cuisine: american-comfort-weeknight
+- url: https://www.bonappetit.com/recipe/pickle-coleslaw
+  title: Pickle Coleslaw
+  domain: bonappetit.com
+  cuisine: american-comfort-weeknight
+- url: https://www.budgetbytes.com/beef-stew/
+  title: Beef Stew
+  domain: budgetbytes.com
+  cuisine: american-comfort-weeknight
+  category: Main Course
+- url: https://www.budgetbytes.com/shrimp-and-grits/
+  title: Shrimp and Grits
+  domain: budgetbytes.com
+  cuisine: american-comfort-weeknight
+  category: Breakfast
+- url: https://cookieandkate.com/caesar-salad-recipe/
+  title: Homemade Caesar Salad
+  domain: cookieandkate.com
+  cuisine: american-comfort-weeknight
+  category: Salad
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-creamed-spinach-stuffed-meatloaf
+  title: Creamed-Spinach-Stuffed Meatloaf
+  domain: epicurious.com
+  cuisine: american-comfort-weeknight
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-tandoori-buffalo-wings
+  title: Hot & Tangy Tandoori Buffalo Wings
+  domain: epicurious.com
+  cuisine: american-comfort-weeknight
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-roast-chicken-with-cognac-sauce
+  title: Roast Chicken With Cognac Sauce
+  domain: epicurious.com
+  cuisine: american-comfort-weeknight
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-white-chicken-chili-recipe
+  title: White Chicken Chili
+  domain: epicurious.com
+  cuisine: american-comfort-weeknight
+- url: https://www.kingarthurbaking.com/recipes/chicken-pot-pie-with-biscuits-recipe
+  title: Chicken Pot Pie with Biscuits
+  domain: kingarthurbaking.com
+  cuisine: american-comfort-weeknight
+- url: https://www.kingarthurbaking.com/recipes/classic-chicken-pot-pie-recipe
+  title: Classic Chicken Pot Pie
+  domain: kingarthurbaking.com
+  cuisine: american-comfort-weeknight
+- url: https://www.kingarthurbaking.com/recipes/creamy-tomato-soup-recipe
+  title: Creamy Tomato Soup
+  domain: kingarthurbaking.com
+  cuisine: american-comfort-weeknight
+- url: https://www.kingarthurbaking.com/recipes/pulled-pork-recipe
+  title: Pulled Pork
+  domain: kingarthurbaking.com
+  cuisine: american-comfort-weeknight
+- url: https://www.loveandlemons.com/baked-ziti/
+  title: Easy Baked Ziti
+  domain: loveandlemons.com
+  cuisine: american-comfort-weeknight
+  category: Main dish
+- url: https://www.loveandlemons.com/vegan-cobb-salad-w-coconut-bacon/
+  title: Vegan Cobb Salad with Coconut Bacon
+  domain: loveandlemons.com
+  cuisine: american-comfort-weeknight
+  category: dairy free
+- url: https://minimalistbaker.com/vegan-lentil-nut-meatloaf/
+  title: Vegan Lentil Nut Meat Loaf
+  domain: minimalistbaker.com
+  cuisine: american-comfort-weeknight
+  category: Entrée
+- url: https://www.onceuponachef.com/recipes/baby-back-ribs-smoker-or-oven.html
+  title: Baby Back Ribs (Oven or Smoker)
+  domain: onceuponachef.com
+  cuisine: american-comfort-weeknight
+  category: Beef
+- url: https://www.onceuponachef.com/recipes/classic-beef-chili.html
+  title: Classic Beef Chili
+  domain: onceuponachef.com
+  cuisine: american-comfort-weeknight
+  category: Beef
+- url: https://www.onceuponachef.com/recipes/meatloaf.html
+  title: Meatloaf (Family-Style or Mini Loaves)
+  domain: onceuponachef.com
+  cuisine: american-comfort-weeknight
+  category: Beef, Lamb, Veal & Pork, Main Course
+- url: https://www.recipetineats.com/jambalaya-recipe/
+  title: Jambalaya Recipe (easy)
+  domain: recipetineats.com
+  cuisine: american-comfort-weeknight
+  category: Mains
+- url: https://sallysbakingaddiction.com/buttermilk-pancakes-recipe/
+  title: Buttermilk Pancakes
+  domain: sallysbakingaddiction.com
+  cuisine: american-comfort-weeknight
+  category: Breakfast
+- url: https://sallysbakingaddiction.com/easy-baked-macaroni-and-cheese/
+  title: Easy Baked Macaroni and Cheese
+  domain: sallysbakingaddiction.com
+  cuisine: american-comfort-weeknight
+  category: Dinner
+- url: https://www.seriouseats.com/creole-gumbo-recipe-11906420
+  title: Creole Gumbo With Shrimp, Chicken, and Andouille
+  domain: seriouseats.com
+  cuisine: american-comfort-weeknight
+  category: Dinner
+- url: https://www.seriouseats.com/perfect-roast-chicken-recipe-8384377
+  title: How to Roast a Perfect Chicken
+  domain: seriouseats.com
+  cuisine: american-comfort-weeknight
+  category: Dinner, Ingredient
+- url: https://www.simplyrecipes.com/classic-new-england-clam-chowder-recipe-6828227
+  title: Classic New England Clam Chowder
+  domain: simplyrecipes.com
+  cuisine: american-comfort-weeknight
+  category: Side Dish
+- url: https://www.simplyrecipes.com/smashburger-recipe-5189533
+  title: Smashburger
+  domain: simplyrecipes.com
+  cuisine: american-comfort-weeknight
+  category: Dinner, Lunch, Entree, Sandwich
+- url: https://www.onceuponachef.com/recipes/sloppy-joes.html
+  title: Homemade Sloppy Joes
+  domain: onceuponachef.com
+  cuisine: american-comfort-weeknight
+  category: Main Course, Sandwiches
+- url: https://www.allrecipes.com/recipe/26460/quick-and-easy-chicken-noodle-soup/
+  title: Quick and Easy Chicken Noodle Soup
+  domain: allrecipes.com
+  cuisine: american-comfort-weeknight
+  category: Soup
+- url: https://www.allrecipes.com/recipe/16722/fudgy-brownies-i/
+  title: Fudgy Brownies
+  domain: allrecipes.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://www.allrecipes.com/recipe/10264/oatmeal-raisin-cookies-i/
+  title: Oatmeal Raisin Cookies
+  domain: allrecipes.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://www.bbcgoodfood.com/recipes/strawberry-shortcake-slice
+  title: Strawberry shortcake slice
+  domain: bbcgoodfood.com
+  cuisine: baking-pastry-desserts
+  category: Afternoon tea
+- url: https://www.bonappetit.com/recipe/bourbon-caramel-apple-pie
+  title: Bourbon Caramel Apple Pie
+  domain: bonappetit.com
+  cuisine: baking-pastry-desserts
+- url: https://www.bonappetit.com/recipe/brown-butter-and-toffee-chocolate-chip-cookies
+  title: Brown Butter Chocolate Chip Cookies
+  domain: bonappetit.com
+  cuisine: baking-pastry-desserts
+- url: https://www.bonappetit.com/recipe/epi-syn-make-ahead-dinner-rolls
+  title: Make-Ahead Dinner Rolls
+  domain: bonappetit.com
+  cuisine: baking-pastry-desserts
+- url: https://www.budgetbytes.com/sugar-cookies/
+  title: Sugar Cookies
+  domain: budgetbytes.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://cookieandkate.com/almond-flour-scones/
+  title: Almond Flour Scones (Gluten Free)
+  domain: cookieandkate.com
+  cuisine: baking-pastry-desserts
+  category: Breakfast
+- url: https://cookieandkate.com/naturally-sweetened-pecan-pie-recipe/
+  title: Naturally Sweetened Pecan Pie
+  domain: cookieandkate.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://www.epicurious.com/recipes/food/views/brown-sugar-buttermilk-biscuits
+  title: Brown Sugar Buttermilk Biscuits
+  domain: epicurious.com
+  cuisine: baking-pastry-desserts
+- url: https://www.epicurious.com/recipes/food/views/vegan-chocolate-cake
+  title: Easy Vegan Chocolate Cake
+  domain: epicurious.com
+  cuisine: baking-pastry-desserts
+- url: https://www.epicurious.com/recipes/food/views/naturally-leavened-brioche
+  title: Naturally Leavened Brioche
+  domain: epicurious.com
+  cuisine: baking-pastry-desserts
+- url: https://www.kingarthurbaking.com/recipes/sourdough-boule-recipe
+  title: Sourdough Boule
+  domain: kingarthurbaking.com
+  cuisine: baking-pastry-desserts
+- url: https://www.loveandlemons.com/peach-cobbler/
+  title: Easy Peach Cobbler
+  domain: loveandlemons.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://www.loveandlemons.com/lemon-bars-recipe/
+  title: Lemon Bars
+  domain: loveandlemons.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://minimalistbaker.com/1-bowl-gluten-free-vegan-blueberry-muffins/
+  title: 1-Bowl Gluten-Free Blueberry Muffins (Vegan)
+  domain: minimalistbaker.com
+  cuisine: baking-pastry-desserts
+  category: Breakfast
+- url: https://minimalistbaker.com/flaky-gluten-free-pie-crust-vegan/
+  title: Flaky Gluten-Free Pie Crust (Vegan)
+  domain: minimalistbaker.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://www.onceuponachef.com/recipes/chocolate-fudge-crinkles.html
+  title: Chocolate Crinkle Cookies
+  domain: onceuponachef.com
+  cuisine: baking-pastry-desserts
+  category: Cookies & Candy
+- url: https://www.onceuponachef.com/recipes/homemade-cinnamon-rolls.html
+  title: Cinnamon Rolls
+  domain: onceuponachef.com
+  cuisine: baking-pastry-desserts
+  category: Breads
+- url: https://www.onceuponachef.com/recipes/montreal-bagels.html
+  title: Montreal Bagels
+  domain: onceuponachef.com
+  cuisine: baking-pastry-desserts
+  category: Breads
+- url: https://www.recipetineats.com/carrot-cake-cupcakes/
+  title: Carrot Cake Cupcakes with Cream Cheese Frosting
+  domain: recipetineats.com
+  cuisine: baking-pastry-desserts
+  category: Cupcakes
+- url: https://www.recipetineats.com/choc-chip-peanut-butter-cookies/
+  title: Choc chip Peanut Butter Cookies
+  domain: recipetineats.com
+  cuisine: baking-pastry-desserts
+  category: Sweet Baking
+- url: https://sallysbakingaddiction.com/vanilla-cake/
+  title: Best Vanilla Cake
+  domain: sallysbakingaddiction.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://sallysbakingaddiction.com/pavlova/
+  title: Pavlova
+  domain: sallysbakingaddiction.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://www.seriouseats.com/croissants-recipe-11863500
+  title: Buttery, Flaky Croissants
+  domain: seriouseats.com
+  cuisine: baking-pastry-desserts
+  category: Breakfast, Snack, Bread
+- url: https://www.seriouseats.com/bavarian-style-soft-pretzels-recipe-7967998
+  title: Laugenbrezel (Bavarian-Style Soft Pretzels)
+  domain: seriouseats.com
+  cuisine: baking-pastry-desserts
+  category: Snack
+- url: https://www.seriouseats.com/whole-wheat-no-knead-bread-recipe-11912697
+  title: No-Knead Whole Wheat Bread
+  domain: seriouseats.com
+  cuisine: baking-pastry-desserts
+  category: Bread
+- url: https://www.seriouseats.com/chocolate-babka-recipe-8711555
+  title: Rich and Tender Chocolate Babka
+  domain: seriouseats.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://www.simplyrecipes.com/flourless-chocolate-cake-recipe-6504181
+  title: Flourless Chocolate Cake
+  domain: simplyrecipes.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://www.simplyrecipes.com/pumpkin-snickerdoodles-recipe-7775402
+  title: Pumpkin Snickerdoodles
+  domain: simplyrecipes.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://www.kingarthurbaking.com/recipes/shortbread-recipe
+  title: Shortbread Cookies
+  domain: kingarthurbaking.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://www.bbcgoodfood.com/recipes/new-york-cheesecake
+  title: New York Cheesecake
+  domain: bbcgoodfood.com
+  cuisine: baking-pastry-desserts
+  category: Dessert
+- url: https://www.allrecipes.com/recipe/13185/chinese-spicy-hot-and-sour-soup/
+  title: Chinese Spicy Hot And Sour Soup
+  domain: allrecipes.com
+  cuisine: chinese
+  category: Soup
+- url: https://www.allrecipes.com/recipe/247349/spicy-szechuan-green-beans/
+  title: Spicy Szechuan Green Beans
+  domain: allrecipes.com
+  cuisine: chinese
+  category: Side Dish
+- url: https://www.bbcgoodfood.com/recipes/beef-broccoli
+  title: Beef & broccoli
+  domain: bbcgoodfood.com
+  cuisine: chinese
+  category: Dinner
+- url: https://www.bbcgoodfood.com/recipes/mongolian-beef
+  title: Mongolian beef
+  domain: bbcgoodfood.com
+  cuisine: chinese
+  category: Dinner
+- url: https://www.bbcgoodfood.com/recipes/taiwanese-style-chicken-chow-mein
+  title: Taiwanese-style chicken chow mein
+  domain: bbcgoodfood.com
+  cuisine: chinese
+  category: Dinner
+- url: https://www.bonappetit.com/recipe/epi-syn-rotisserie-chicken-congee
+  title: Rotisserie Chicken Congee
+  domain: bonappetit.com
+  cuisine: chinese
+- url: https://www.bonappetit.com/recipe/smashed-cucumber-and-melon-salad
+  title: Smashed Cucumber and Melon Salad
+  domain: bonappetit.com
+  cuisine: chinese
+- url: https://www.bonappetit.com/recipe/wonton-soup-recipe
+  title: Wonton Soup
+  domain: bonappetit.com
+  cuisine: chinese
+- url: https://www.budgetbytes.com/dan-dan-noodles/
+  title: Dan Dan Noodles
+  domain: budgetbytes.com
+  cuisine: chinese
+  category: Main Course
+- url: https://www.budgetbytes.com/easy-egg-drop-soup/
+  title: Easy Egg Drop Soup
+  domain: budgetbytes.com
+  cuisine: chinese
+  category: Soup
+- url: https://cookieandkate.com/kung-pao-brussels-sprouts-recipe/
+  title: Kung Pao Brussels Sprouts
+  domain: cookieandkate.com
+  cuisine: chinese
+  category: Side
+- url: https://cookieandkate.com/veggie-sesame-noodles-recipe/
+  title: Veggie Sesame Noodles
+  domain: cookieandkate.com
+  cuisine: chinese
+  category: Side Dish
+- url: https://www.kingarthurbaking.com/recipes/steamed-pork-buns-xian-rou-bao-recipe
+  title: Steamed Pork Buns (Xian Rou Bao)
+  domain: kingarthurbaking.com
+  cuisine: chinese
+- url: https://www.loveandlemons.com/cauliflower-fried-rice/
+  title: Cauliflower Fried Rice
+  domain: loveandlemons.com
+  cuisine: chinese
+  category: Main dish or side dish
+- url: https://www.loveandlemons.com/cold-sesame-noodles-kale-shiitakes/
+  title: Cold Sesame Noodles with Kale & Shiitakes
+  domain: loveandlemons.com
+  cuisine: chinese
+  category: Salad
+- url: https://www.loveandlemons.com/steamed-dumplings/
+  title: Steamed Dumplings
+  domain: loveandlemons.com
+  cuisine: chinese
+  category: Appetizer, Main dish
+- url: https://minimalistbaker.com/general-tsos-cauliflower/
+  title: General Tso’s Cauliflower
+  domain: minimalistbaker.com
+  cuisine: chinese
+  category: Entrée
+- url: https://www.onceuponachef.com/recipes/beef-and-broccoli.html
+  title: Beef and Broccoli
+  domain: onceuponachef.com
+  cuisine: chinese
+  category: Beef
+- url: https://www.onceuponachef.com/recipes/char-siu-chicken.html
+  title: Char Siu Chicken
+  domain: onceuponachef.com
+  cuisine: chinese
+  category: Chicken
+- url: https://www.onceuponachef.com/recipes/chicken-chow-mein.html
+  title: Chicken Chow Mein
+  domain: onceuponachef.com
+  cuisine: chinese
+  category: Chicken
+- url: https://www.onceuponachef.com/recipes/general-tsos-chicken.html
+  title: "General Tso's Chicken"
+  domain: onceuponachef.com
+  cuisine: chinese
+  category: Chicken
+- url: https://www.onceuponachef.com/recipes/orange-chicken.html
+  title: Orange Chicken
+  domain: onceuponachef.com
+  cuisine: chinese
+  category: Chicken
+- url: https://www.onceuponachef.com/recipes/stir-fried-szechuan-green-beans-shiitake-mushrooms.html
+  title: Szechuan Green Beans & Shiitake Mushrooms
+  domain: onceuponachef.com
+  cuisine: chinese
+  category: Side Dish
+- url: https://www.recipetineats.com/egg-fried-rice/
+  title: Fried Rice
+  domain: recipetineats.com
+  cuisine: chinese
+  category: Side
+- url: https://www.recipetineats.com/kung-pao-chicken/
+  title: Kung Pao Chicken
+  domain: recipetineats.com
+  cuisine: chinese
+  category: Dinner
+- url: https://www.recipetineats.com/lo-mein-noodles/
+  title: Lo Mein Noodles
+  domain: recipetineats.com
+  cuisine: chinese
+  category: Mains
+- url: https://www.recipetineats.com/mapo-tofu/
+  title: Mapo Tofu
+  domain: recipetineats.com
+  cuisine: chinese
+  category: Mains
+- url: https://www.recipetineats.com/taiwanese-three-cup-chicken/
+  title: Taiwanese Three Cup Chicken
+  domain: recipetineats.com
+  cuisine: chinese
+  category: Main
+- url: https://www.seriouseats.com/chinese-eggplant-salad-recipe-6265702
+  title: Chinese Eggplant Salad
+  domain: seriouseats.com
+  cuisine: chinese
+  category: Side Dish
+- url: https://www.recipetineats.com/bok-choy-in-ginger-sauce/
+  title: Bok Choy in Ginger Sauce
+  domain: recipetineats.com
+  cuisine: chinese
+  category: Side Dish
+- url: https://www.onceuponachef.com/recipes/fried-rice.html
+  title: Fried Rice
+  domain: onceuponachef.com
+  cuisine: chinese
+  category: Main Course, Side Dish
+- url: https://www.recipetineats.com/potstickers-chinese-pan-fried-dumplings/
+  title: Chinese Dumplings (Potstickers)
+  domain: recipetineats.com
+  cuisine: chinese
+  category: Mains
+- url: https://www.allrecipes.com/recipe/21742/steamed-mussels-ii/
+  title: Steamed Mussels II
+  domain: allrecipes.com
+  cuisine: french-classic-european
+  category: Dinner
+- url: https://www.allrecipes.com/recipe/147109/tortilla-espanola-spanish-tortilla/
+  title: Tortilla Española (Spanish Tortilla)
+  domain: allrecipes.com
+  cuisine: french-classic-european
+  category: Appetizer
+- url: https://www.bbcgoodfood.com/recipes/mini-croque-monsieurs
+  title: Mini croque monsieurs
+  domain: bbcgoodfood.com
+  cuisine: french-classic-european
+  category: Buffet
+- url: https://www.bbcgoodfood.com/recipes/ultimate-gratin-dauphinois
+  title: Ultimate gratin dauphinois
+  domain: bbcgoodfood.com
+  cuisine: french-classic-european
+  category: Buffet
+- url: https://www.budgetbytes.com/bangers-and-mash/
+  title: Bangers and Mash
+  domain: budgetbytes.com
+  cuisine: french-classic-european
+  category: Main Course
+- url: https://www.budgetbytes.com/chocolate-mousse/
+  title: Chocolate Mousse
+  domain: budgetbytes.com
+  cuisine: french-classic-european
+  category: Dessert
+- url: https://cookieandkate.com/ultimate-gazpacho-recipe/
+  title: Ultimate Gazpacho
+  domain: cookieandkate.com
+  cuisine: french-classic-european
+  category: Soup
+- url: https://www.kingarthurbaking.com/recipes/chocolate-madeleines-recipe
+  title: Chocolate Madeleines
+  domain: kingarthurbaking.com
+  cuisine: french-classic-european
+- url: https://www.kingarthurbaking.com/recipes/chocolate-mousse-cake-with-raspberries-recipe
+  title: Chocolate Mousse Cake with Raspberries
+  domain: kingarthurbaking.com
+  cuisine: french-classic-european
+- url: https://www.kingarthurbaking.com/recipes/classic-apple-tarte-tatin-recipe
+  title: Classic Apple Tarte Tatin
+  domain: kingarthurbaking.com
+  cuisine: french-classic-european
+- url: https://www.kingarthurbaking.com/recipes/classic-creme-brulee-recipe
+  title: Classic Crème Brûlée
+  domain: kingarthurbaking.com
+  cuisine: french-classic-european
+- url: https://www.kingarthurbaking.com/recipes/gougeres-recipe
+  title: Gougères
+  domain: kingarthurbaking.com
+  cuisine: french-classic-european
+- url: https://www.kingarthurbaking.com/recipes/quiche-lorraine-recipe
+  title: Quiche Lorraine
+  domain: kingarthurbaking.com
+  cuisine: french-classic-european
+- url: https://www.loveandlemons.com/chickpea-nicoise-salad-roasted-potatoes/
+  title: Chickpea Nicoise Salad
+  domain: loveandlemons.com
+  cuisine: french-classic-european
+  category: dairy free
+- url: https://www.loveandlemons.com/creamy-roasted-tomato-gazpacho/
+  title: creamy roasted tomato gazpacho
+  domain: loveandlemons.com
+  cuisine: french-classic-european
+  category: appetizers
+- url: https://www.loveandlemons.com/crepes-recipe/
+  title: Crepe
+  domain: loveandlemons.com
+  cuisine: french-classic-european
+  category: Breakfast
+- url: https://www.loveandlemons.com/french-onion-soup/
+  title: French Onion Soup
+  domain: loveandlemons.com
+  cuisine: french-classic-european
+  category: Appetizer
+- url: https://minimalistbaker.com/1-pot-french-onion-soup-vegan/
+  title: 1-Pot French Onion Soup (Vegan!)
+  domain: minimalistbaker.com
+  cuisine: french-classic-european
+  category: Entrée
+- url: https://minimalistbaker.com/creamy-potato-leek-soup-vegan/
+  title: Creamy Vegan Potato Leek Soup
+  domain: minimalistbaker.com
+  cuisine: french-classic-european
+  category: Side
+- url: https://www.onceuponachef.com/recipes/coq-au-vin.html
+  title: Coq au Vin
+  domain: onceuponachef.com
+  cuisine: french-classic-european
+  category: Chicken, Main Course
+- url: https://www.onceuponachef.com/recipes/ratatouille.html
+  title: Ratatouille
+  domain: onceuponachef.com
+  cuisine: french-classic-european
+  category: Side Dish, Vegetables and Sides
+- url: https://www.recipetineats.com/beef-bourguignon-beef-burgundy/
+  title: Beef Bourguignon (Beef Burgundy)
+  domain: recipetineats.com
+  cuisine: french-classic-european
+  category: Main, Stew
+- url: https://www.recipetineats.com/poulet-roti-french-roast-chicken/
+  title: Poulet Rôti - French Roast Chicken
+  domain: recipetineats.com
+  cuisine: french-classic-european
+  category: Main Course
+- url: https://sallysbakingaddiction.com/make-crepes/
+  title: Homemade Crepes
+  domain: sallysbakingaddiction.com
+  cuisine: french-classic-european
+  category: Breakfast
+- url: https://sallysbakingaddiction.com/vegetarian-shepherds-pie/
+  title: "Vegetarian Shepherd's Pie"
+  domain: sallysbakingaddiction.com
+  cuisine: french-classic-european
+  category: Dinner
+- url: https://www.seriouseats.com/beef-bourguignon-pot-pie-recipe-11869202
+  title: Beef Bourguignon Pot Pie
+  domain: seriouseats.com
+  cuisine: french-classic-european
+  category: Entree
+- url: https://www.seriouseats.com/fish-and-chips-recipe-11690853
+  title: Classic British Fish and Chips
+  domain: seriouseats.com
+  cuisine: french-classic-european
+  category: Entree
+- url: https://www.seriouseats.com/wiener-schnitzel-recipe-11849886
+  title: Wiener Schnitzel
+  domain: seriouseats.com
+  cuisine: french-classic-european
+  category: Entree
+- url: https://www.simplyrecipes.com/recipes/bouillabaisse/
+  title: Bouillabaisse
+  domain: simplyrecipes.com
+  cuisine: french-classic-european
+  category: Soup
+- url: https://www.simplyrecipes.com/easy-cassoulet-recipe-5217552
+  title: Easy Cassoulet
+  domain: simplyrecipes.com
+  cuisine: french-classic-european
+  category: Entree
+- url: https://www.bbcgoodfood.com/recipes/beef-wellington
+  title: Beef Wellington
+  domain: bbcgoodfood.com
+  cuisine: french-classic-european
+  category: Dinner
+- url: https://www.bbcgoodfood.com/recipes/next-level-steak-frites
+  title: Next Level Steak Frites
+  domain: bbcgoodfood.com
+  cuisine: french-classic-european
+  category: Dinner
+- url: https://www.allrecipes.com/recipe/210530/kheema-malai-kofta/
+  title: Kheema Malai Kofta
+  domain: allrecipes.com
+  cuisine: indian-south-asian
+  category: Dinner
+- url: https://www.allrecipes.com/recipe/285906/my-pav-bhaji/
+  title: Pav Bhaji
+  domain: allrecipes.com
+  cuisine: indian-south-asian
+  category: Dinner
+- url: https://www.allrecipes.com/recipe/212366/rajma-kidney-bean-curry/
+  title: Rajma (Kidney Bean Curry)
+  domain: allrecipes.com
+  cuisine: indian-south-asian
+  category: Dinner
+- url: https://www.bbcgoodfood.com/recipes/gluten-free-naan-bread
+  title: Gluten-free naan bread
+  domain: bbcgoodfood.com
+  cuisine: indian-south-asian
+  category: Side dish
+- url: https://www.bbcgoodfood.com/recipes/keema-curry-raita
+  title: Keema curry & raita
+  domain: bbcgoodfood.com
+  cuisine: indian-south-asian
+  category: Main course
+- url: https://www.bbcgoodfood.com/recipes/indian-rice-pudding-kheer
+  title: Kheer
+  domain: bbcgoodfood.com
+  cuisine: indian-south-asian
+- url: https://www.bbcgoodfood.com/recipes/slow-cooker-chicken-korma
+  title: Slow-cooker chicken korma
+  domain: bbcgoodfood.com
+  cuisine: indian-south-asian
+  category: Main course
+- url: https://www.bonappetit.com/recipe/adai-dosas
+  title: Adai (Quick Lentil Dosas)
+  domain: bonappetit.com
+  cuisine: indian-south-asian
+- url: https://www.bonappetit.com/recipe/ajwaini-paneer-tikka-skewers
+  title: Paneer Tikka
+  domain: bonappetit.com
+  cuisine: indian-south-asian
+- url: https://www.budgetbytes.com/easy-puff-pastry-samosas/
+  title: Easy Puff Pastry Samosas
+  domain: budgetbytes.com
+  cuisine: indian-south-asian
+  category: Side Dish
+- url: https://www.budgetbytes.com/slow-cooker-chicken-tikka-masala/
+  title: Slow Cooker Chicken Tikka Masala
+  domain: budgetbytes.com
+  cuisine: indian-south-asian
+- url: https://cookieandkate.com/quick-dal-makhani-recipe/
+  title: Quick Dal Makhani
+  domain: cookieandkate.com
+  cuisine: indian-south-asian
+  category: Stew
+- url: https://www.kingarthurbaking.com/recipes/gulab-jamun-recipe
+  title: Gulab Jamun
+  domain: kingarthurbaking.com
+  cuisine: indian-south-asian
+- url: https://www.loveandlemons.com/aloo-gobi/
+  title: Aloo Gobi
+  domain: loveandlemons.com
+  cuisine: indian-south-asian
+  category: Main dish
+- url: https://minimalistbaker.com/1-pot-cauliflower-rice-kitchari/
+  title: 1-Pot Cauliflower Rice Kitchari
+  domain: minimalistbaker.com
+  cuisine: indian-south-asian
+  category: Entrée
+- url: https://minimalistbaker.com/easy-jeera-rice-instant-pot-or-stovetop/
+  title: Easy Jeera Rice (Instant Pot or Stovetop)
+  domain: minimalistbaker.com
+  cuisine: indian-south-asian
+  category: Side
+- url: https://www.onceuponachef.com/recipes/chicken-tikka-masala.html
+  title: Chicken Tikka Masala
+  domain: onceuponachef.com
+  cuisine: indian-south-asian
+  category: Chicken
+- url: https://www.onceuponachef.com/recipes/butter-chicken.html
+  title: Easy Butter Chicken
+  domain: onceuponachef.com
+  cuisine: indian-south-asian
+  category: Chicken
+- url: https://www.onceuponachef.com/recipes/crispy-tandoori-chicken-drumsticks-mango-chutney.html
+  title: Tandoori Chicken
+  domain: onceuponachef.com
+  cuisine: indian-south-asian
+  category: Chicken
+- url: https://www.recipetineats.com/samosa-recipe/
+  title: Samosa Recipe
+  domain: recipetineats.com
+  cuisine: indian-south-asian
+  category: Appetiser, Starter
+- url: https://www.recipetineats.com/vindaloo/
+  title: Vindaloo
+  domain: recipetineats.com
+  cuisine: indian-south-asian
+  category: curries
+- url: https://www.seriouseats.com/chana-masala-recipe-8665080
+  title: 10-Minute Chana Masala
+  domain: seriouseats.com
+  cuisine: indian-south-asian
+  category: Dinner
+- url: https://www.seriouseats.com/apple-raita-recipe-12113062
+  title: Apple Raita
+  domain: seriouseats.com
+  cuisine: indian-south-asian
+  category: Side Dish
+- url: https://www.seriouseats.com/biryani-style-roast-chicken-recipe-8661770
+  title: Biryani-Style Roast Chicken
+  domain: seriouseats.com
+  cuisine: indian-south-asian
+  category: Dinner
+- url: https://www.seriouseats.com/dal-makhani-recipe-8770680
+  title: Dal Makhani (Punjabi Black Gram and Kidney Beans)
+  domain: seriouseats.com
+  cuisine: indian-south-asian
+  category: Entree
+- url: https://www.seriouseats.com/garlic-naan-recipe-8784140
+  title: Easy Garlic Naan
+  domain: seriouseats.com
+  cuisine: indian-south-asian
+  category: Side Dish
+- url: https://www.seriouseats.com/palak-paneer-recipe-5705785
+  title: Palak Paneer
+  domain: seriouseats.com
+  cuisine: indian-south-asian
+  category: Side Dish
+- url: https://www.simplyrecipes.com/delicata-squash-pakoras-recipe-6751917
+  title: Delicata Squash Pakoras
+  domain: simplyrecipes.com
+  cuisine: indian-south-asian
+  category: Side Dish
+- url: https://www.bbcgoodfood.com/recipes/chicken-vindaloo
+  title: Chicken Vindaloo
+  domain: bbcgoodfood.com
+  cuisine: indian-south-asian
+  category: Dinner, Main Course
+- url: https://www.allrecipes.com/recipe/23595/crispy-vegetable-pakoras/
+  title: Crispy Vegetable Pakoras
+  domain: allrecipes.com
+  cuisine: indian-south-asian
+  category: Dinner, Appetizer
+- url: https://www.bbcgoodfood.com/recipes/mango-lassi
+  title: Mango Lassi
+  domain: bbcgoodfood.com
+  cuisine: indian-south-asian
+  category: Drink
+- url: https://www.recipetineats.com/rogan-josh/
+  title: Rogan Josh (Indian Lamb Curry)
+  domain: recipetineats.com
+  cuisine: indian-south-asian
+  category: Mains
+- url: https://www.allrecipes.com/chef-john-s-chicken-saltimbocca-recipe-8642251
+  title: Chicken Saltimbocca
+  domain: allrecipes.com
+  cuisine: italian
+  category: Entree
+- url: https://www.allrecipes.com/recipe/13009/pasta-fagioli/
+  title: Pasta e Fagioli (Pasta and Beans)
+  domain: allrecipes.com
+  cuisine: italian
+  category: Side Dish
+- url: https://www.bbcgoodfood.com/recipes/green-bean-minestrone
+  title: Green bean minestrone
+  domain: bbcgoodfood.com
+  cuisine: italian
+  category: Main course
+- url: https://www.bbcgoodfood.com/recipes/italian-meatballs-orzo
+  title: Italian meatballs with orzo
+  domain: bbcgoodfood.com
+  cuisine: italian
+  category: Main course
+- url: https://www.bonappetit.com/recipe/mozzarella-arancini-stuffed-rice-balls
+  title: Arancini (Stuffed Italian Rice Balls)
+  domain: bonappetit.com
+  cuisine: italian
+- url: https://www.bonappetit.com/recipe/cacio-e-pepe
+  title: Cacio e Pepe (Classic Roman Cheese and Pepper Pasta)
+  domain: bonappetit.com
+  cuisine: italian
+- url: https://www.bonappetit.com/recipe/rigatoni-with-easy-vodka-sauce
+  title: Pasta Alla Vodka
+  domain: bonappetit.com
+  cuisine: italian
+- url: https://www.bonappetit.com/recipe/sofrito-bolognese
+  title: Sofrito Bolognese
+  domain: bonappetit.com
+  cuisine: italian
+- url: https://www.budgetbytes.com/almond-apricot-biscotti/
+  title: Almond Apricot Biscotti
+  domain: budgetbytes.com
+  cuisine: italian
+- url: https://www.budgetbytes.com/calzones/
+  title: Calzone
+  domain: budgetbytes.com
+  cuisine: italian
+  category: Main Course
+- url: https://www.budgetbytes.com/cheesy-gnocchi-skillet/
+  title: Cheesy Gnocchi Skillet
+  domain: budgetbytes.com
+  cuisine: italian
+- url: https://cookieandkate.com/vegetable-goat-cheese-polenta-recipe/
+  title: Goat Cheese Polenta with Roasted Vegetables
+  domain: cookieandkate.com
+  cuisine: italian
+  category: Breakfast
+- url: https://cookieandkate.com/spinach-artichoke-lasagna-recipe/
+  title: Spinach Artichoke Lasagna
+  domain: cookieandkate.com
+  cuisine: italian
+  category: Main
+- url: https://cookieandkate.com/vegan-spaghetti-alla-puttanesca/
+  title: Vegan Spaghetti alla Puttanesca
+  domain: cookieandkate.com
+  cuisine: italian
+  category: Pasta
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-cacio-e-pepe-focaccia
+  title: Cacio e Pepe Focaccia
+  domain: epicurious.com
+  cuisine: italian
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-linguine-meyer-lemon-pasta
+  title: Linguine With Meyer Lemon
+  domain: epicurious.com
+  cuisine: italian
+- url: https://www.kingarthurbaking.com/recipes/homemade-cheese-ravioli-recipe
+  title: Homemade Cheese Ravioli
+  domain: kingarthurbaking.com
+  cuisine: italian
+- url: https://www.loveandlemons.com/cauliflower-alfredo-sauce/
+  title: Cauliflower Alfredo Sauce
+  domain: loveandlemons.com
+  cuisine: italian
+  category: cooking component
+- url: https://www.loveandlemons.com/margherita-pizza/
+  title: Margherita Pizza
+  domain: loveandlemons.com
+  cuisine: italian
+  category: Main dish
+- url: https://minimalistbaker.com/crispy-gluten-free-eggplant-parmesan/
+  title: Crispy Gluten-Free Eggplant Parmesan
+  domain: minimalistbaker.com
+  cuisine: italian
+  category: Entrée
+- url: https://minimalistbaker.com/easy-cherry-tomato-bruschetta/
+  title: Easy Cherry Tomato Bruschetta
+  domain: minimalistbaker.com
+  cuisine: italian
+  category: Appetizer
+- url: https://www.onceuponachef.com/recipes/caprese-salad-balsamic-glaze.html
+  title: Caprese Salad with Balsamic Glaze
+  domain: onceuponachef.com
+  cuisine: italian
+  category: Appetizer
+- url: https://www.onceuponachef.com/recipes/easy-chicken-parmesan.html
+  title: Chicken Parmesan
+  domain: onceuponachef.com
+  cuisine: italian
+  category: Main Course
+- url: https://www.recipetineats.com/carbonara/
+  title: Carbonara (real)
+  domain: recipetineats.com
+  cuisine: italian
+  category: Mains
+- url: https://www.recipetineats.com/chicken-and-mushroom-risotto/
+  title: Chicken & Mushroom Risotto
+  domain: recipetineats.com
+  cuisine: italian
+  category: Dinner
+- url: https://www.recipetineats.com/panna-cotta/
+  title: Panna Cotta
+  domain: recipetineats.com
+  cuisine: italian
+  category: Dessert
+- url: https://sallysbakingaddiction.com/garlic-rosemary-herb-focaccia/
+  title: Garlic Rosemary Herb Focaccia
+  domain: sallysbakingaddiction.com
+  cuisine: italian
+  category: Appetizer
+- url: https://sallysbakingaddiction.com/ciabatta-bread-recipe/
+  title: Homemade Ciabatta Bread
+  domain: sallysbakingaddiction.com
+  cuisine: italian
+  category: Bread
+- url: https://sallysbakingaddiction.com/tiramisu/
+  title: Tiramisu
+  domain: sallysbakingaddiction.com
+  cuisine: italian
+  category: Dessert
+- url: https://www.simplyrecipes.com/easy-tuscan-ribollita-recipe-8581964
+  title: Easy Tuscan Ribollita Soup
+  domain: simplyrecipes.com
+  cuisine: italian
+  category: Entree
+- url: https://www.recipetineats.com/osso-buco/
+  title: Osso Buco
+  domain: recipetineats.com
+  cuisine: italian
+  category: Mains
+- url: https://www.bonappetit.com/recipe/bucatini-all-amatriciana
+  title: "Bucatini all'Amatriciana"
+  domain: bonappetit.com
+  cuisine: italian
+  category: Dinner
+- url: https://www.allrecipes.com/recipe/8465165/chef-johns-shrimp-tempura/
+  title: Chef John’s Shrimp Tempura
+  domain: allrecipes.com
+  cuisine: japanese
+  category: Appetizer
+- url: https://www.allrecipes.com/recipe/258032/karaage-japanese-fried-chicken-with-honey-mayoster-sauce/
+  title: Karaage (Japanese Fried Chicken) with Honey Mayoster Sauce
+  domain: allrecipes.com
+  cuisine: japanese
+  category: Dinner
+- url: https://www.allrecipes.com/recipe/144299/nikujaga-japanese-style-meat-and-potatoes/
+  title: Nikujaga (Japanese-Style Meat and Potatoes)
+  domain: allrecipes.com
+  cuisine: japanese
+  category: Dinner
+- url: https://www.allrecipes.com/recipe/260848/tonkatsu-japanese-style-crispy-fried-pork-cutlets/
+  title: Tonkatsu (Japanese-Style Crispy Fried Pork Cutlets)
+  domain: allrecipes.com
+  cuisine: japanese
+  category: Entree
+- url: https://www.bbcgoodfood.com/recipes/japanese-ramen-noodle-soup
+  title: "Cheat's ramen noodle soup"
+  domain: bbcgoodfood.com
+  cuisine: japanese
+  category: Main course
+- url: https://www.bbcgoodfood.com/recipes/chicken-katsu-curry
+  title: Healthy chicken katsu curry
+  domain: bbcgoodfood.com
+  cuisine: japanese
+  category: Main course
+- url: https://www.bbcgoodfood.com/recipes/japanese-tofu-noodle-bowl
+  title: Japanese tofu noodle bowl
+  domain: bbcgoodfood.com
+  cuisine: japanese
+  category: Main course
+- url: https://www.bonappetit.com/recipe/japanese-cheesecake
+  title: Japanese Cheesecake
+  domain: bonappetit.com
+  cuisine: japanese
+- url: https://www.bonappetit.com/recipe/pork-and-asparagus-soba
+  title: Pork and Asparagus Soba
+  domain: bonappetit.com
+  cuisine: japanese
+- url: https://www.budgetbytes.com/chicken-yakisoba/
+  title: Homemade Chicken Yakisoba
+  domain: budgetbytes.com
+  cuisine: japanese
+- url: https://www.budgetbytes.com/teriyaki-salmon-recipe/
+  title: Teriyaki Salmon with Sriracha Mayo
+  domain: budgetbytes.com
+  cuisine: japanese
+  category: Main Course
+- url: https://cookieandkate.com/almond-sesame-soba-zoodles-recipe/
+  title: Almond-Sesame Soba Zoodles with Quick-Pickled Veggies
+  domain: cookieandkate.com
+  cuisine: japanese
+  category: Entree
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-okonomiyaki
+  title: Okonomiyaki
+  domain: epicurious.com
+  cuisine: japanese
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-salmon-teriyaki-onigiri
+  title: Salmon Teriyaki Onigiri
+  domain: epicurious.com
+  cuisine: japanese
+- url: https://www.epicurious.com/recipes/food/views/tuna-mayo-onigiri
+  title: Tuna-Mayo Onigiri
+  domain: epicurious.com
+  cuisine: japanese
+- url: https://www.kingarthurbaking.com/recipes/glazed-matcha-cookies-recipe
+  title: Glazed Matcha Cookies
+  domain: kingarthurbaking.com
+  cuisine: japanese
+- url: https://www.loveandlemons.com/miso-soup/
+  title: Miso Soup
+  domain: loveandlemons.com
+  cuisine: japanese
+  category: Soup
+- url: https://minimalistbaker.com/kabocha-chickpea-miso-soup/
+  title: 1-Pot Kabocha Chickpea Miso Soup
+  domain: minimalistbaker.com
+  cuisine: japanese
+  category: Entrée or Side
+- url: https://www.recipetineats.com/gyoza-japanese-dumplings-potstickers/
+  title: Japanese GYOZA (Dumplings)
+  domain: recipetineats.com
+  cuisine: japanese
+  category: Appetizer
+- url: https://www.recipetineats.com/teriyaki-salmon-noodles/
+  title: Teriyaki Salmon Noodles
+  domain: recipetineats.com
+  cuisine: japanese
+  category: Mains
+- url: https://sallysbakingaddiction.com/slow-cooker-honey-teriyaki-chicken/
+  title: Slow Cooker Honey Teriyaki Chicken
+  domain: sallysbakingaddiction.com
+  cuisine: japanese
+  category: Dinner
+- url: https://www.seriouseats.com/miso-butter-ramen-recipe-11924497
+  title: 15-Minute Miso Butter Ramen
+  domain: seriouseats.com
+  cuisine: japanese
+  category: Dinner
+- url: https://www.seriouseats.com/air-fryer-chicken-katsu-recipe-8645406
+  title: Air-Fryer Chicken Katsu
+  domain: seriouseats.com
+  cuisine: japanese
+  category: Dinner
+- url: https://www.seriouseats.com/gyudon-japanese-simmered-beef-and-rice-bowl-recipe-2
+  title: Gyudon (Japanese Simmered Beef and Rice Bowls)
+  domain: seriouseats.com
+  cuisine: japanese
+  category: Mains
+- url: https://www.simplyrecipes.com/california-roll-recipe-6361878
+  title: California Rolls
+  domain: simplyrecipes.com
+  cuisine: japanese
+  category: Entree
+- url: https://www.simplyrecipes.com/chirashi-sushi-recipe-6361879
+  title: Homemade Chirashi
+  domain: simplyrecipes.com
+  cuisine: japanese
+  category: Entree
+- url: https://www.simplyrecipes.com/microwave-oyakodon-japanese-chicken-and-egg-rice-bowl-recipe-7105509
+  title: Microwave Oyakodon (Japanese Chicken and Egg Rice Bowl)
+  domain: simplyrecipes.com
+  cuisine: japanese
+  category: Entree
+- url: https://www.simplyrecipes.com/tamagoyaki-recipe-5272304
+  title: Tamagoyaki
+  domain: simplyrecipes.com
+  cuisine: japanese
+  category: Breakfast
+- url: https://www.bbcgoodfood.com/recipes/yaki-udon
+  title: Yaki Udon
+  domain: bbcgoodfood.com
+  cuisine: japanese
+  category: Dinner, Lunch
+- url: https://www.bbcgoodfood.com/recipes/miso-ramen
+  title: Miso Ramen
+  domain: bbcgoodfood.com
+  cuisine: japanese
+  category: Dinner, Soup
+- url: https://www.allrecipes.com/recipe/129467/crispy-shrimp-tempura/
+  title: Crispy Shrimp Tempura
+  domain: allrecipes.com
+  cuisine: japanese
+  category: Dinner
+- url: https://www.allrecipes.com/recipe/276781/chicken-udon-noodle-soup/
+  title: Chicken Udon Noodle Soup
+  domain: allrecipes.com
+  cuisine: japanese
+  category: Dinner
+- url: https://www.allrecipes.com/easy-doner-style-gyros-recipe-11948932
+  title: Easy Doner-Style Gyros
+  domain: allrecipes.com
+  cuisine: mediterranean-middle-eastern
+  category: Entree
+- url: https://www.allrecipes.com/recipe/219817/turkish-red-lentil-soup-with-mint/
+  title: Turkish Red Lentil Soup with Mint
+  domain: allrecipes.com
+  cuisine: mediterranean-middle-eastern
+  category: Soup
+- url: https://www.bbcgoodfood.com/recipes/lamb-koftas
+  title: Lamb koftas
+  domain: bbcgoodfood.com
+  cuisine: mediterranean-middle-eastern
+  category: Main course
+- url: https://www.bbcgoodfood.com/recipes/roasted-squash-salad-creamy-homemade-labneh
+  title: Roasted squash salad with creamy homemade labneh
+  domain: bbcgoodfood.com
+  cuisine: mediterranean-middle-eastern
+  category: Starter
+- url: https://www.bonappetit.com/recipe/baklava-cookie-recipe
+  title: Baklava Sugar Cookies
+  domain: bonappetit.com
+  cuisine: mediterranean-middle-eastern
+- url: https://www.bonappetit.com/recipe/epi-syn-easy-canned-chickpea-hummus
+  title: Easy Hummus With Canned Chickpeas
+  domain: bonappetit.com
+  cuisine: mediterranean-middle-eastern
+- url: https://www.bonappetit.com/recipe/fattoush-salad
+  title: Fattoush Salad With Crispy Pita and Sumac
+  domain: bonappetit.com
+  cuisine: mediterranean-middle-eastern
+- url: https://www.bonappetit.com/recipe/shawarma-ish-short-rib-kebabs
+  title: Shawarma-ish Short Rib Kebabs
+  domain: bonappetit.com
+  cuisine: mediterranean-middle-eastern
+- url: https://www.budgetbytes.com/harissa-roasted-vegetables/
+  title: Harissa Roasted Vegetables
+  domain: budgetbytes.com
+  cuisine: mediterranean-middle-eastern
+- url: https://www.budgetbytes.com/tzatziki-greek-yogurt-sauce/
+  title: Tzatziki Sauce
+  domain: budgetbytes.com
+  cuisine: mediterranean-middle-eastern
+  category: Dip
+- url: https://cookieandkate.com/foolproof-shakshuka-recipe/
+  title: Easy Shakshuka
+  domain: cookieandkate.com
+  cuisine: mediterranean-middle-eastern
+  category: Main Dish
+- url: https://cookieandkate.com/mujaddara-recipe/
+  title: Mujadara (Lentils and Rice with Caramelized Onions)
+  domain: cookieandkate.com
+  cuisine: mediterranean-middle-eastern
+  category: Main Dish
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-easy-to-love-chicken-thighs-and-couscous
+  title: Easy-to-Love Chicken Thighs and Couscous
+  domain: epicurious.com
+  cuisine: mediterranean-middle-eastern
+- url: https://www.kingarthurbaking.com/recipes/golden-pita-bread-recipe
+  title: Golden Pita Bread
+  domain: kingarthurbaking.com
+  cuisine: mediterranean-middle-eastern
+- url: https://www.loveandlemons.com/baba-ganoush/
+  title: Baba Ganoush
+  domain: loveandlemons.com
+  cuisine: mediterranean-middle-eastern
+  category: Appetizer
+- url: https://minimalistbaker.com/1-pot-chickpea-shakshuka/
+  title: 1-Pot Chickpea Shakshuka
+  domain: minimalistbaker.com
+  cuisine: mediterranean-middle-eastern
+  category: Entrée
+- url: https://minimalistbaker.com/chicken-kofta-kebabs/
+  title: Chicken Kofta Kebabs (Middle Eastern-Inspired)
+  domain: minimalistbaker.com
+  cuisine: mediterranean-middle-eastern
+  category: Entrée
+- url: https://minimalistbaker.com/grain-free-tabbouleh-salad-6-ingredients/
+  title: Grain-Free Tabbouleh Salad (6 Ingredients!)
+  domain: minimalistbaker.com
+  cuisine: mediterranean-middle-eastern
+  category: Salad
+- url: https://minimalistbaker.com/easy-vegan-moussaka/
+  title: The BEST Vegan Moussaka
+  domain: minimalistbaker.com
+  cuisine: mediterranean-middle-eastern
+  category: Entrée
+- url: https://www.onceuponachef.com/recipes/avgolemono-chicken-soup-with-rice.html
+  title: Avgolemono Chicken Soup with Rice
+  domain: onceuponachef.com
+  cuisine: mediterranean-middle-eastern
+  category: Chicken
+- url: https://www.onceuponachef.com/recipes/greek-salad.html
+  title: Greek Salad
+  domain: onceuponachef.com
+  cuisine: mediterranean-middle-eastern
+  category: Salad
+- url: https://www.onceuponachef.com/recipes/moroccan-chicken-tagine.html
+  title: Moroccan Chicken Tagine
+  domain: onceuponachef.com
+  cuisine: mediterranean-middle-eastern
+  category: Chicken
+- url: https://www.recipetineats.com/crispy-shredded-halloumi-salad-with-kale/
+  title: Crispy Shredded Halloumi Salad (with kale)
+  domain: recipetineats.com
+  cuisine: mediterranean-middle-eastern
+  category: Light mains
+- url: https://www.recipetineats.com/falafel-recipe/
+  title: Falafel
+  domain: recipetineats.com
+  cuisine: mediterranean-middle-eastern
+  category: Mains, Sides
+- url: https://www.recipetineats.com/pastitsio-greek-beef-pasta-bake/
+  title: Pastitsio (Greek Pasta Bake)
+  domain: recipetineats.com
+  cuisine: mediterranean-middle-eastern
+  category: Main
+- url: https://www.recipetineats.com/white-bean-tabbouleh-salad/
+  title: Tabbouleh White Bean Salad
+  domain: recipetineats.com
+  cuisine: mediterranean-middle-eastern
+  category: Side Dish
+- url: https://www.seriouseats.com/beef-shawarma-recipe-11825269
+  title: Beef Shawarma
+  domain: seriouseats.com
+  cuisine: mediterranean-middle-eastern
+  category: Dinner
+- url: https://www.seriouseats.com/muhammara-recipe-11725275
+  title: Muhammara (Syrian Red Bell Pepper Dip)
+  domain: seriouseats.com
+  cuisine: mediterranean-middle-eastern
+  category: Appetizer
+- url: https://www.seriouseats.com/armenian-rice-stuffed-grape-leaves-yalanchi-sarma-recipe-8661320
+  title: Yalanchi Sarma (Armenian Rice Stuffed Grape Leaves)
+  domain: seriouseats.com
+  cuisine: mediterranean-middle-eastern
+  category: Appetizer
+- url: https://www.simplyrecipes.com/recipes/spanakopita/
+  title: Spanakopita
+  domain: simplyrecipes.com
+  cuisine: mediterranean-middle-eastern
+  category: Brunch
+- url: https://www.simplyrecipes.com/tahdig-recipe-6832562
+  title: Tahdig (Persian Crispy Rice)
+  domain: simplyrecipes.com
+  cuisine: mediterranean-middle-eastern
+  category: Side Dish
+- url: https://www.onceuponachef.com/recipes/fattoush-middle-eastern-bread-salad.html
+  title: Fattoush (Middle Eastern Bread Salad)
+  domain: onceuponachef.com
+  cuisine: mediterranean-middle-eastern
+  category: Salad
+- url: https://www.allrecipes.com/pozole-verde-with-chicken-recipe-11860684
+  title: Pozole Verde with Chicken
+  domain: allrecipes.com
+  cuisine: mexican-latin
+  category: Entree
+- url: https://www.allrecipes.com/recipe/166823/slow-cooker-pernil-pork/
+  title: Slow Cooker Pernil Pork
+  domain: allrecipes.com
+  cuisine: mexican-latin
+  category: Dinner
+- url: https://www.bbcgoodfood.com/recipes/black-eye-bean-mole-salsa
+  title: Black-eyed bean mole with salsa
+  domain: bbcgoodfood.com
+  cuisine: mexican-latin
+  category: Lunch
+- url: https://www.bonappetit.com/recipe/chicken-quesadillas
+  title: Chicken Quesadillas
+  domain: bonappetit.com
+  cuisine: mexican-latin
+- url: https://www.bonappetit.com/recipe/easy-fish-tacos
+  title: Easy Fish Tacos With Spicy Sauce
+  domain: bonappetit.com
+  cuisine: mexican-latin
+- url: https://www.budgetbytes.com/arroz-con-pollo/
+  title: Arroz Con Pollo (Puerto Rican Chicken and Rice)
+  domain: budgetbytes.com
+  cuisine: mexican-latin
+  category: Main Course
+- url: https://www.budgetbytes.com/chicken-enchiladas/
+  title: Chicken Enchiladas
+  domain: budgetbytes.com
+  cuisine: mexican-latin
+  category: Main Course
+- url: https://www.budgetbytes.com/guacamole/
+  title: Guacamole
+  domain: budgetbytes.com
+  cuisine: mexican-latin
+  category: Appetizer, condiment, Side Dish
+- url: https://www.budgetbytes.com/slow-cooker-chicken-ropa-vieja/
+  title: Slow Cooker Chicken Ropa Vieja
+  domain: budgetbytes.com
+  cuisine: mexican-latin
+- url: https://cookieandkate.com/vegan-citrus-ceviche-recipe/
+  title: Avocado & Citrus Ceviche
+  domain: cookieandkate.com
+  cuisine: mexican-latin
+  category: Appetizer
+- url: https://cookieandkate.com/chilaquiles-verdes-recipe/
+  title: Chilaquiles Verdes with Baked Tortilla Chips
+  domain: cookieandkate.com
+  cuisine: mexican-latin
+  category: Breakfast
+- url: https://cookieandkate.com/vegetarian-tortilla-soup/
+  title: Vegetarian Tortilla Soup
+  domain: cookieandkate.com
+  cuisine: mexican-latin
+  category: Soup
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-easy-chicken-al-pastor
+  title: Easy Chicken Al Pastor
+  domain: epicurious.com
+  cuisine: mexican-latin
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-creamiest-flan
+  title: The Creamiest Flan
+  domain: epicurious.com
+  cuisine: mexican-latin
+- url: https://www.kingarthurbaking.com/recipes/chicken-and-apple-empanadas-recipe
+  title: Chicken and Apple Empanadas
+  domain: kingarthurbaking.com
+  cuisine: mexican-latin
+- url: https://www.kingarthurbaking.com/recipes/tamales-tapatios-chicken-tamales-from-jalisco-recipe
+  title: Tamales Tapatios (Chicken Tamales from Jalisco)
+  domain: kingarthurbaking.com
+  cuisine: mexican-latin
+- url: https://www.loveandlemons.com/elote-recipe/
+  title: Elote Recipe (Grilled Mexican Street Corn)
+  domain: loveandlemons.com
+  cuisine: mexican-latin
+  category: Appetizer
+- url: https://www.loveandlemons.com/enchiladas-verdes/
+  title: Enchiladas Verdes
+  domain: loveandlemons.com
+  cuisine: mexican-latin
+  category: Main Course
+- url: https://www.onceuponachef.com/recipes/carne-asada.html
+  title: Carne Asada
+  domain: onceuponachef.com
+  cuisine: mexican-latin
+  category: Beef
+- url: https://www.onceuponachef.com/recipes/chicken-fajitas.html
+  title: Chicken Fajitas
+  domain: onceuponachef.com
+  cuisine: mexican-latin
+  category: Chicken
+- url: https://www.recipetineats.com/birria-tacos/
+  title: Birria Tacos
+  domain: recipetineats.com
+  cuisine: mexican-latin
+  category: Mains
+- url: https://www.recipetineats.com/pork-carnitas-mexican-slow-cooker-pulled-pork/
+  title: Carnitas (Mexican Slow Cooker Pulled Pork)
+  domain: recipetineats.com
+  cuisine: mexican-latin
+  category: Slow cooking
+- url: https://www.recipetineats.com/skirt-steak-with-chimichurri-sauce/
+  title: Chimichurri Steak
+  domain: recipetineats.com
+  cuisine: mexican-latin
+  category: Sauce
+- url: https://www.recipetineats.com/pico-de-gallo-authentic/
+  title: Pico de Gallo (Authentic)
+  domain: recipetineats.com
+  cuisine: mexican-latin
+  category: Sides
+- url: https://www.seriouseats.com/arroz-rojo-mexican-red-rice-recipe-11723710
+  title: Arroz Rojo (Mexican Red Rice)
+  domain: seriouseats.com
+  cuisine: mexican-latin
+  category: Side Dish
+- url: https://www.seriouseats.com/birria-de-res-beef-birria-recipe-8362004
+  title: Birria de Res (Beef Birria)
+  domain: seriouseats.com
+  cuisine: mexican-latin
+  category: Dinner
+- url: https://www.seriouseats.com/gringas-al-pastor-quesadillas-recipe-11977903
+  title: Gringas (Al Pastor Quesadillas)
+  domain: seriouseats.com
+  cuisine: mexican-latin
+  category: Dinner
+- url: https://www.seriouseats.com/mole-blanco-recipe-11780991
+  title: Mole Blanco
+  domain: seriouseats.com
+  cuisine: mexican-latin
+  category: Sauce
+- url: https://www.seriouseats.com/churros-recipe-11680433
+  title: Truly Great Churros
+  domain: seriouseats.com
+  cuisine: mexican-latin
+  category: Dessert
+- url: https://www.seriouseats.com/xo-elotes-recipe-11724775
+  title: XO Elotes
+  domain: seriouseats.com
+  cuisine: mexican-latin
+  category: Side Dish
+- url: https://www.simplyrecipes.com/arepas-con-queso-recipe-5220266
+  title: Arepas con Queso
+  domain: simplyrecipes.com
+  cuisine: mexican-latin
+  category: Breakfast
+- url: https://www.kingarthurbaking.com/recipes/churros-recipe
+  title: Churros
+  domain: kingarthurbaking.com
+  cuisine: mexican-latin
+  category: Dessert
+- url: https://www.allrecipes.com/recipe/107366/my-chicken-pho-recipe/
+  title: Chicken Pho
+  domain: allrecipes.com
+  cuisine: thai-southeast-asian
+  category: Soup
+- url: https://www.allrecipes.com/recipe/245123/khao-soi-soup/
+  title: Khao Soi Soup
+  domain: allrecipes.com
+  cuisine: thai-southeast-asian
+  category: Dinner
+- url: https://www.allrecipes.com/recipe/233419/thai-fried-rice-with-pineapple-and-chicken/
+  title: Thai Fried Rice with Pineapple and Chicken
+  domain: allrecipes.com
+  cuisine: thai-southeast-asian
+  category: Dinner
+- url: https://www.bbcgoodfood.com/recipes/cheeky-chicken-satay
+  title: Chicken satay
+  domain: bbcgoodfood.com
+  cuisine: thai-southeast-asian
+  category: Main course
+- url: https://www.bbcgoodfood.com/recipes/vietnamese-prawn-summer-rolls
+  title: Vietnamese prawn summer rolls
+  domain: bbcgoodfood.com
+  cuisine: thai-southeast-asian
+  category: Starter
+- url: https://www.bonappetit.com/recipe/epi-syn-pad-prik-khing-pla-tort-dry-red-curry-of-crispy-salmon
+  title: Pad Prik Khing Pla Tort (Dry Red Curry of Crispy Salmon)
+  domain: bonappetit.com
+  cuisine: thai-southeast-asian
+- url: https://www.bonappetit.com/recipe/som-tam-style-chicken-salad
+  title: Som-Tam-Style Chicken Salad
+  domain: bonappetit.com
+  cuisine: thai-southeast-asian
+- url: https://www.budgetbytes.com/banh-mi-bowls/
+  title: Bánh Mì Bowls
+  domain: budgetbytes.com
+  cuisine: thai-southeast-asian
+- url: https://www.budgetbytes.com/bun-cha/
+  title: Bún chả
+  domain: budgetbytes.com
+  cuisine: thai-southeast-asian
+  category: Main Course
+- url: https://cookieandkate.com/fresh-spring-rolls-recipe/
+  title: Fresh Spring Rolls with Peanut Sauce
+  domain: cookieandkate.com
+  cuisine: thai-southeast-asian
+  category: Appetizer
+- url: https://cookieandkate.com/thai-green-curry-with-spring-vegetables/
+  title: Thai Green Curry with Spring Vegetables
+  domain: cookieandkate.com
+  cuisine: thai-southeast-asian
+  category: Entree
+- url: https://cookieandkate.com/thai-panang-curry-recipe/
+  title: Thai Panang Curry with Vegetables
+  domain: cookieandkate.com
+  cuisine: thai-southeast-asian
+  category: Main Dish
+- url: https://cookieandkate.com/thai-red-curry-recipe/
+  title: Thai Red Curry with Vegetables
+  domain: cookieandkate.com
+  cuisine: thai-southeast-asian
+  category: Entree
+- url: https://cookieandkate.com/vegetarian-pho-recipe/
+  title: Vegetarian Pho
+  domain: cookieandkate.com
+  cuisine: thai-southeast-asian
+  category: Soup
+- url: https://www.epicurious.com/recipes/food/views/ba-syn-tempeh-larb-coconut
+  title: Coconut Tempeh Larb
+  domain: epicurious.com
+  cuisine: thai-southeast-asian
+- url: https://www.epicurious.com/recipes/food/views/laab-moo
+  title: Laab Moo
+  domain: epicurious.com
+  cuisine: thai-southeast-asian
+- url: https://www.kingarthurbaking.com/recipes/banh-xeo-vietnamese-crispy-crepes-recipe
+  title: Bánh Xèo (Vietnamese Crispy Crêpes)
+  domain: kingarthurbaking.com
+  cuisine: thai-southeast-asian
+- url: https://www.loveandlemons.com/banh-mi/
+  title: Banh Mi Sandwich
+  domain: loveandlemons.com
+  cuisine: thai-southeast-asian
+  category: Main dish
+- url: https://www.loveandlemons.com/green-papaya-salad/
+  title: Green Papaya Salad
+  domain: loveandlemons.com
+  cuisine: thai-southeast-asian
+  category: dairy free
+- url: https://minimalistbaker.com/easy-1-pot-massaman-curry/
+  title: Easy 1-Pot Massaman Curry
+  domain: minimalistbaker.com
+  cuisine: thai-southeast-asian
+  category: Entrée
+- url: https://minimalistbaker.com/lazy-1-pot-vegan-tom-yum-soup/
+  title: Lazy 1-Pot Vegan Tom Yum Soup
+  domain: minimalistbaker.com
+  cuisine: thai-southeast-asian
+  category: Entrée
+- url: https://minimalistbaker.com/tom-kha-gai-butternut-squash-soup/
+  title: Tom Kha Gai Butternut Squash Soup
+  domain: minimalistbaker.com
+  cuisine: thai-southeast-asian
+  category: Entrée
+- url: https://www.onceuponachef.com/recipes/chicken-nasi-goreng-indonesian-fried-rice.html
+  title: Chicken Nasi Goreng (Indonesian Fried Rice)
+  domain: onceuponachef.com
+  cuisine: thai-southeast-asian
+  category: Main Course
+- url: https://www.onceuponachef.com/recipes/pad-thai.html
+  title: Pad Thai
+  domain: onceuponachef.com
+  cuisine: thai-southeast-asian
+  category: Fish & Seafood
+- url: https://www.onceuponachef.com/recipes/panang-curry.html
+  title: Panang Curry
+  domain: onceuponachef.com
+  cuisine: thai-southeast-asian
+  category: Chicken
+- url: https://www.recipetineats.com/lamb-shanks-in-massaman-curry/
+  title: Lamb Shanks Massaman Curry
+  domain: recipetineats.com
+  cuisine: thai-southeast-asian
+  category: Mains
+- url: https://www.recipetineats.com/thai-stir-fried-noodles-pad-see-ew/
+  title: Pad See Ew - Thai Stir Fried Noodles
+  domain: recipetineats.com
+  cuisine: thai-southeast-asian
+  category: Noodles
+- url: https://www.recipetineats.com/thai-basil-chicken-stir-fry/
+  title: Thai Chilli Basil Chicken
+  domain: recipetineats.com
+  cuisine: thai-southeast-asian
+  category: Stir Fry
+- url: https://www.seriouseats.com/asam-laksa-fish-noodle-soup-recipe-8551167
+  title: Asam Laksa (Spicy and Sour Noodle Soup)
+  domain: seriouseats.com
+  cuisine: thai-southeast-asian
+  category: Soup
+- url: https://www.seriouseats.com/curry-laksa-recipe-11796414
+  title: Curry Laksa
+  domain: seriouseats.com
+  cuisine: thai-southeast-asian
+  category: Dinner
+- url: https://www.bbcgoodfood.com/recipes/hainanese-chicken-rice
+  title: Hainanese Chicken Rice
+  domain: bbcgoodfood.com
+  cuisine: thai-southeast-asian
+  category: Dinner
+- url: https://www.recipetineats.com/tom-yum-soup-thai/
+  title: Tom Yum Soup
+  domain: recipetineats.com
+  cuisine: thai-southeast-asian
+  category: Mains, Starter
