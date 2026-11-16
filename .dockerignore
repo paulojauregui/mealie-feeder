@@ -1,0 +1,6 @@
+.git
+.github
+*.db
+*.sqlite
+*.log
+docs/

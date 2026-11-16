@@ -1,0 +1,333 @@
+version: 1
+
+defaults:
+  tls_mode: chrome_auto
+  schema_mode: jsonld
+  min_interval: 2s
+  timeout: 20s
+  max_retries: 2
+  max_per_run: 25
+  allow_url_fallback: false
+
+excluded_domains:
+  - domain: foodnetwork.com
+    reason: "Akamai Bot Manager returns HTTP 403 on plain requests; excluded from automated crawling."
+  - domain: food52.com
+    reason: "Aggressive rate mitigation returns HTTP 429; excluded from automated crawling."
+  - domain: cooking.nytimes.com
+    reason: "Subscriber paywall gates recipe bodies behind authenticated sessions."
+  - domain: americastestkitchen.com
+    reason: "Subscriber paywall gates full recipe catalog behind login wrappers."
+
+sources:
+  # --- Group A: WordPress / Yoast Sitemaps + Active RSS ---
+  - domain: recipetineats.com
+    canonical_host: www.recipetineats.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.recipetineats.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://www.recipetineats.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?recipetineats\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?recipetineats\.com/(?:category|tag|author|about|contact|shop|collections?|page|blog)/'
+
+  - domain: budgetbytes.com
+    canonical_host: www.budgetbytes.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.budgetbytes.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://www.budgetbytes.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?budgetbytes\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?budgetbytes\.com/(?:category|tag|author|about|contact|shop|page|meal-plans?|kitchen-basics)/'
+
+  - domain: sallysbakingaddiction.com
+    canonical_host: sallysbakingaddiction.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://sallysbakingaddiction.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://sallysbakingaddiction.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?sallysbakingaddiction\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?sallysbakingaddiction\.com/(?:category|tag|author|about|contact|shop|page|baking-basics|recent-posts)/'
+
+  - domain: onceuponachef.com
+    canonical_host: www.onceuponachef.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.onceuponachef.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://www.onceuponachef.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?onceuponachef\.com/recipes/[a-z0-9-]+\.html$'
+    deny_patterns:
+      - '^https?://(?:www\.)?onceuponachef\.com/(?:category|tag|author|about|contact|shop|page|inspiration)/'
+
+  - domain: minimalistbaker.com
+    canonical_host: minimalistbaker.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://minimalistbaker.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://minimalistbaker.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?minimalistbaker\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?minimalistbaker\.com/(?:recipe-index|category|tag|author|about|contact|shop|page|r|ecourse|university)/'
+
+  - domain: cookieandkate.com
+    canonical_host: cookieandkate.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://cookieandkate.com/sitemap_index.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://cookieandkate.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?cookieandkate\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?cookieandkate\.com/(?:category|tag|author|about|contact|shop|page|monthly-seasonal-produce-guides)/'
+
+  - domain: smittenkitchen.com
+    canonical_host: smittenkitchen.com
+    enabled: false
+    tier: wordpress_microdata
+    tls_mode: chrome_auto
+    schema_mode: microdata
+    min_interval: 4s
+    max_per_run: 10
+    sitemap_urls:
+      - https://smittenkitchen.com/sitemap.xml
+    rss_urls:
+      - https://smittenkitchen.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?smittenkitchen\.com/\d{4}/\d{2}/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?smittenkitchen\.com/(?:category|tag|author|about|contact|recipes|events|page)/'
+    notes: "Disabled by default: upstream recipe-scrapers 15.12.0/15.13.0 under Mealie v3.25.1-v3.31.0 RecipeScraperPackage parses 0 instructions/steps from Schema.org Microdata. Uses Schema.org Microdata (not JSON-LD); robots.txt has malformed http:///sitemap.xml so explicit sitemap_urls takes precedence; conservative 4s interval avoids Cloudflare hashcash mitigation."
+
+  - domain: loveandlemons.com
+    canonical_host: www.loveandlemons.com
+    enabled: true
+    tier: wordpress_yoast
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.loveandlemons.com/sitemap.xml
+    sitemap_include_patterns:
+      - 'post-sitemap\d*\.xml$'
+    rss_urls:
+      - https://www.loveandlemons.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?loveandlemons\.com/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?loveandlemons\.com/(?:category|tag|author|about|contact|shop|page|meal-plan)/'
+
+  # --- Group B: Publisher Path-Filtered Sitemaps ---
+  - domain: bonappetit.com
+    canonical_host: www.bonappetit.com
+    enabled: true
+    tier: publisher_path_filtered
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2500ms
+    max_per_run: 20
+    sitemap_urls:
+      - https://www.bonappetit.com/sitemap.xml
+    sitemap_include_patterns:
+      - 'sitemap-\d{4}-\d{2}\.xml$'
+    rss_urls:
+      - https://www.bonappetit.com/feed/rss
+    allow_patterns:
+      - '^https?://(?:www\.)?bonappetit\.com/recipe/[a-z0-9-]+$'
+    deny_patterns:
+      - '^https?://(?:www\.)?bonappetit\.com/(?:story|gallery|shopping|video|contributor|tag)/'
+
+  - domain: epicurious.com
+    canonical_host: www.epicurious.com
+    enabled: true
+    tier: publisher_path_filtered
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2500ms
+    max_per_run: 20
+    sitemap_urls:
+      - https://www.epicurious.com/sitemap.xml
+    sitemap_include_patterns:
+      - 'sitemap-\d{4}-\d{2}\.xml$'
+    rss_urls:
+      - https://www.epicurious.com/feed/rss
+    allow_patterns:
+      - '^https?://(?:www\.)?epicurious\.com/recipes/food/views/[a-z0-9-]+$'
+      - '^https?://(?:www\.)?epicurious\.com/recipe/[a-z0-9-]+$'
+    deny_patterns:
+      - '^https?://(?:www\.)?epicurious\.com/(?:story|gallery|shopping|expert-advice|video|contributor|tag)/'
+
+  - domain: kingarthurbaking.com
+    canonical_host: www.kingarthurbaking.com
+    enabled: true
+    tier: publisher_path_filtered
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.kingarthurbaking.com/sitemap.xml
+    sitemap_include_patterns:
+      - 'sitemap\.xml\?page=[23]$'
+    rss_urls:
+      - https://www.kingarthurbaking.com/rss.xml
+    allow_patterns:
+      - '^https?://(?:www\.)?kingarthurbaking\.com/recipes/[a-z0-9-]+-recipe$'
+    deny_patterns:
+      - '^https?://(?:www\.)?kingarthurbaking\.com/(?:recipes/collections|recipes/resources|blog|videos|author|learn)/'
+
+  - domain: bbcgoodfood.com
+    canonical_host: www.bbcgoodfood.com
+    enabled: true
+    tier: publisher_path_filtered
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 2500ms
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.bbcgoodfood.com/sitemap.xml
+    sitemap_include_patterns:
+      - '\d{4}-Q[1-4]-recipe\.xml$'
+    rss_urls:
+      - https://www.bbcgoodfood.com/feed/
+    allow_patterns:
+      - '^https?://(?:www\.)?bbcgoodfood\.com/recipes/[a-z0-9-]+$'
+    deny_patterns:
+      - '^https?://(?:www\.)?bbcgoodfood\.com/(?:premium|review|howto|collection|glossary|user)/'
+
+  # --- Group C: Dotdash Meredith (Cloudflare uTLS + Sitemap Only) ---
+  - domain: seriouseats.com
+    canonical_host: www.seriouseats.com
+    enabled: true
+    tier: dotdash_meredith
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 3s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.seriouseats.com/sitemap.xml
+    sitemap_include_patterns:
+      - 'sitemap_\d+\.xml$'
+    rss_urls: []
+    allow_patterns:
+      - '^https?://(?:www\.)?seriouseats\.com/[a-z0-9-]+-recipe-\d+$'
+      - '^https?://(?:www\.)?seriouseats\.com/[a-z0-9-]+-recipe$'
+    deny_patterns:
+      - '^https?://(?:www\.)?seriouseats\.com/.*-recipes-\d+$'
+      - '^https?://(?:www\.)?seriouseats\.com/(?:roundups?|equipment|reviews?|techniques?|best-.*|how-to-.*|editors-favorite-.*)'
+
+  - domain: allrecipes.com
+    canonical_host: www.allrecipes.com
+    enabled: true
+    tier: dotdash_meredith
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 3s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.allrecipes.com/sitemap.xml
+    sitemap_include_patterns:
+      - 'sitemap_\d+\.xml$'
+    rss_urls: []
+    allow_patterns:
+      - '^https?://(?:www\.)?allrecipes\.com/[a-z0-9-]+-recipe-\d+$'
+      - '^https?://(?:www\.)?allrecipes\.com/recipe/\d+/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?allrecipes\.com/(?:gallery|article|cook)/'
+      - '^https?://(?:www\.)?allrecipes\.com/.*-recipes-\d+$'
+
+  - domain: simplyrecipes.com
+    canonical_host: www.simplyrecipes.com
+    enabled: true
+    tier: dotdash_meredith
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 3s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.simplyrecipes.com/sitemap.xml
+    sitemap_include_patterns:
+      - 'sitemap_\d+\.xml$'
+    rss_urls: []
+    allow_patterns:
+      - '^https?://(?:www\.)?simplyrecipes\.com/[a-z0-9-]+-recipe-\d+$'
+      - '^https?://(?:www\.)?simplyrecipes\.com/recipes/[a-z0-9-]+/?$'
+    deny_patterns:
+      - '^https?://(?:www\.)?simplyrecipes\.com/.*-(?:review|recipes)-\d+$'
+      - '^https?://(?:www\.)?simplyrecipes\.com/(?:about-us|author)/'
+
+  - domain: thespruceeats.com
+    canonical_host: www.thespruceeats.com
+    enabled: false
+    tier: dotdash_meredith
+    tls_mode: chrome_auto
+    schema_mode: jsonld
+    min_interval: 3s
+    max_per_run: 25
+    sitemap_urls:
+      - https://www.thespruceeats.com/sitemap.xml
+    sitemap_include_patterns:
+      - 'sitemap_\d+\.xml$'
+    rss_urls: []
+    allow_patterns:
+      - '^https?://(?:www\.)?thespruceeats\.com/[a-z0-9-]+-recipe-\d+$'
+      - '^https?://(?:www\.)?thespruceeats\.com/recipe-for-[a-z0-9-]+-\d+$'
+    deny_patterns:
+      - '^https?://(?:www\.)?thespruceeats\.com/.*-recipes-\d+$'
+      - '^https?://(?:www\.)?thespruceeats\.com/(?:best-.*|about-us/|author/)'
+    notes: "Disabled by default: upstream recipe-scrapers 15.12.0/15.13.0 TheSpruceEats.ingredients() relies on stale selector li.structured-ingredients__list-item p returning empty [] and Mealie clean_scraper() try_get_default checks value == [''] rather than not value, ingesting 0 ingredients under Mealie v3.25.1-v3.31.0."
