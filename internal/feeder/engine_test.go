@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"sync/atomic"
 	"testing"
+	"time"
 
 	"github.com/paulojauregui/mealie-feeder/internal/config"
 	"github.com/paulojauregui/mealie-feeder/internal/fetch"
@@ -405,5 +406,122 @@ func TestEngineInspectAndStatus(t *testing.T) {
 	}
 	if stat.Reconciled != 1 {
 		t.Errorf("Reconciled = %d, want 1", stat.Reconciled)
+	}
+}
+
+func TestEngineSeedIgnoresUnrelatedSitemapDiscovered(t *testing.T) {
+	t.Parallel()
+	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	defer cancel()
+
+	validRecipeHTML := `
+<script type="application/ld+json">
+{
+  "@type": "Recipe",
+  "name": "Teriyaki Chicken Meatballs",
+  "recipeIngredient": ["ground chicken", "soy sauce"],
+  "recipeInstructions": ["mix", "bake"]
+}
+</script>`
+
+	store, err := ledger.OpenSQLite(ctx, ":memory:")
+	if err != nil {
+		t.Fatalf("OpenSQLite failed: %v", err)
+	}
+	defer store.Close()
+
+	// Earlier unrelated sitemap row + overlapping target seed row without title/cuisine.
+	t0 := time.Date(2026, 11, 16, 10, 0, 0, 0, time.UTC)
+	if _, err := store.UpsertDiscovered(ctx, ledger.RecipeRecord{
+		CanonicalURL:    "https://www.recipetineats.com/unrelated-older-sitemap-post/",
+		Domain:          "recipetineats.com",
+		DiscoverySource: ledger.DiscoverySitemap,
+		DiscoveredAt:    t0,
+	}); err != nil {
+		t.Fatalf("insert unrelated sitemap row failed: %v", err)
+	}
+	targetURL := "https://www.recipetineats.com/teriyaki-chicken-meatballs/"
+	if _, err := store.UpsertDiscovered(ctx, ledger.RecipeRecord{
+		CanonicalURL:    targetURL,
+		Domain:          "recipetineats.com",
+		DiscoverySource: ledger.DiscoverySitemap,
+		DiscoveredAt:    t0.Add(time.Minute),
+	}); err != nil {
+		t.Fatalf("insert overlapping sitemap row failed: %v", err)
+	}
+
+	registry := &config.SourceRegistry{
+		Version: 1,
+		Sources: []config.SourceConfig{
+			{
+				Domain:     "recipetineats.com",
+				Enabled:    true,
+				TLSMode:    config.TLSModeChromeAuto,
+				SchemaMode: config.SchemaModeJSONLD,
+				MaxPerRun:  10,
+			},
+		},
+	}
+	registry.ApplyDefaults()
+
+	seeds := &config.SeedManifest{
+		Version: 1,
+		Recipes: []config.SeedEntry{
+			{
+				URL:     targetURL,
+				Title:   "Teriyaki Chicken Meatballs",
+				Domain:  "recipetineats.com",
+				Cuisine: "japanese-deep-cuts",
+			},
+		},
+	}
+
+	fetcher := &mockFetcher{
+		responses: map[string]*fetch.Response{
+			targetURL: {
+				StatusCode: http.StatusOK,
+				FinalURL:   targetURL,
+				Body:       []byte(validRecipeHTML),
+			},
+		},
+	}
+	mealieMock := &mockMealie{createdSlug: "teriyaki-chicken-meatballs"}
+
+	engine, err := NewEngine(Dependencies{
+		Registry: registry,
+		Seeds:    seeds,
+		Store:    store,
+		Fetcher:  fetcher,
+		Mealie:   mealieMock,
+	}, nil)
+	if err != nil {
+		t.Fatalf("NewEngine failed: %v", err)
+	}
+
+	report, err := engine.Seed(ctx, SeedOptions{})
+	if err != nil {
+		t.Fatalf("Seed failed: %v", err)
+	}
+	if report.Imported != 1 {
+		t.Errorf("Imported = %d, want 1", report.Imported)
+	}
+	if mealieMock.createCount != 1 {
+		t.Errorf("mealie.createCount = %d, want 1", mealieMock.createCount)
+	}
+
+	unrelated, ok, err := store.GetByCanonicalURL(ctx, "https://www.recipetineats.com/unrelated-older-sitemap-post/")
+	if err != nil || !ok {
+		t.Fatalf("lookup unrelated row failed: ok=%v err=%v", ok, err)
+	}
+	if unrelated.State != ledger.StateDiscovered {
+		t.Errorf("unrelated sitemap row state = %q, want %q", unrelated.State, ledger.StateDiscovered)
+	}
+
+	seeded, ok, err := store.GetByCanonicalURL(ctx, targetURL)
+	if err != nil || !ok {
+		t.Fatalf("lookup seeded row failed: ok=%v err=%v", ok, err)
+	}
+	if seeded.State != ledger.StateImported {
+		t.Errorf("seeded row state = %q, want %q", seeded.State, ledger.StateImported)
 	}
 }
