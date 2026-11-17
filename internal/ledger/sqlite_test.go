@@ -437,3 +437,57 @@ func TestConcurrentAccessUnderRace(t *testing.T) {
 		t.Errorf("TotalRecipes = %d, want %d", summary.TotalRecipes, expectedTotal)
 	}
 }
+
+func TestUpsertDiscoveredBackfillNoDeadlock(t *testing.T) {
+	t.Parallel()
+	ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
+	defer cancel()
+
+	store, err := OpenSQLite(ctx, ":memory:")
+	if err != nil {
+		t.Fatalf("OpenSQLite failed: %v", err)
+	}
+	defer store.Close()
+
+	// Pre-populate unrelated row plus target sitemap-discovered row missing title and cuisine.
+	if _, err := store.UpsertDiscovered(ctx, RecipeRecord{
+		CanonicalURL:    "https://www.recipetineats.com/unrelated-sitemap-entry/",
+		Domain:          "recipetineats.com",
+		DiscoverySource: DiscoverySitemap,
+	}); err != nil {
+		t.Fatalf("insert unrelated row failed: %v", err)
+	}
+
+	targetURL := "https://www.recipetineats.com/teriyaki-chicken-meatballs/"
+	inserted, err := store.UpsertDiscovered(ctx, RecipeRecord{
+		CanonicalURL:    targetURL,
+		Domain:          "recipetineats.com",
+		DiscoverySource: DiscoverySitemap,
+	})
+	if err != nil || !inserted {
+		t.Fatalf("insert target row failed: inserted=%v err=%v", inserted, err)
+	}
+
+	// Re-upserting with title/cuisine and trailing-slash/www alias must backfill without deadlocking MaxOpenConns(1).
+	inserted, err = store.UpsertDiscovered(ctx, RecipeRecord{
+		CanonicalURL:    "https://recipetineats.com/teriyaki-chicken-meatballs",
+		Domain:          "recipetineats.com",
+		DiscoverySource: DiscoverySeed,
+		Title:           "Teriyaki Chicken Meatballs",
+		Cuisine:         "japanese-deep-cuts",
+	})
+	if err != nil {
+		t.Fatalf("backfill UpsertDiscovered failed: %v", err)
+	}
+	if inserted {
+		t.Error("expected inserted=false when backfilling existing discovered row")
+	}
+
+	rec, found, err := store.GetByCanonicalURL(ctx, "https://recipetineats.com/teriyaki-chicken-meatballs")
+	if err != nil || !found {
+		t.Fatalf("GetByCanonicalURL alias lookup failed: found=%v err=%v", found, err)
+	}
+	if rec.Title != "Teriyaki Chicken Meatballs" || rec.Cuisine != "japanese-deep-cuts" {
+		t.Errorf("backfilled metadata mismatch: Title=%q Cuisine=%q", rec.Title, rec.Cuisine)
+	}
+}

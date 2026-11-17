@@ -210,14 +210,27 @@ func (e *Engine) Seed(ctx context.Context, opts SeedOptions) (*RunReport, error)
 				}
 			}
 
-			pending, err := e.store.ListPendingByDomain(gCtx, dom, e.clock(), maxPerRun)
-			if err != nil {
-				return nil
-			}
+			now := e.clock()
+			seenSeedURLs := make(map[string]bool, len(seedsByDomain[dom]))
 
-			for _, rec := range pending {
+			for _, s := range seedsByDomain[dom] {
 				if gCtx.Err() != nil {
 					return gCtx.Err()
+				}
+
+				rec, found, lookupErr := e.store.GetByCanonicalURL(gCtx, s.URL)
+				if lookupErr != nil || !found {
+					continue
+				}
+				if seenSeedURLs[rec.CanonicalURL] {
+					continue
+				}
+				seenSeedURLs[rec.CanonicalURL] = true
+
+				isEligible := rec.State == ledger.StateDiscovered ||
+					(rec.State == ledger.StateFailedRetryable && !rec.NextRetryAt.After(now))
+				if !isEligible {
+					continue
 				}
 
 				mu.Lock()

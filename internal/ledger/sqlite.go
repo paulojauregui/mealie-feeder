@@ -189,6 +189,109 @@ func parseTime(s string) time.Time {
 // UpsertDiscovered attempts to insert a newly discovered candidate URL into recipes_ledger.
 // Pre-conditions: rec.CanonicalURL must be a valid URL; ctx must not be nil.
 // Post-conditions: Returns (true, nil) if inserted; returns (false, nil) if already present or matched via DedupeKey.
+func scanRecipeRecord(scanner interface{ Scan(dest ...any) error }) (RecipeRecord, error) {
+	var rec RecipeRecord
+	var discSrc, st string
+	var nextRetryStr, discStr, updStr string
+
+	err := scanner.Scan(
+		&rec.ID,
+		&rec.CanonicalURL,
+		&rec.SourceURL,
+		&rec.Domain,
+		&discSrc,
+		&rec.Cuisine,
+		&rec.Title,
+		&st,
+		&rec.MealieSlug,
+		&rec.HTTPStatus,
+		&rec.Attempts,
+		&rec.LastError,
+		&nextRetryStr,
+		&discStr,
+		&updStr,
+	)
+	if err != nil {
+		return RecipeRecord{}, err
+	}
+
+	rec.DiscoverySource = DiscoverySource(discSrc)
+	rec.State = State(st)
+	rec.NextRetryAt = parseTime(nextRetryStr)
+	rec.DiscoveredAt = parseTime(discStr)
+	rec.UpdatedAt = parseTime(updStr)
+	return rec, nil
+}
+
+// findMatchingRecipeLocked locates a recipe by exact canonical_url index or normalized DedupeKey within domain.
+// Pre-conditions: Caller holds s.mu; normURL is canonicalized via NormalizeURL.
+// Post-conditions: Closes any SQL cursor before returning so single-connection pools never deadlock on follow-up writes.
+func (s *SQLiteStore) findMatchingRecipeLocked(ctx context.Context, normURL, domain string) (RecipeRecord, bool, error) {
+	const selectCols = `
+		SELECT id, canonical_url, source_url, domain, discovery_source, cuisine, title,
+		       state, mealie_slug, http_status, attempts, last_error, next_retry_at,
+		       discovered_at, updated_at
+		FROM recipes_ledger`
+
+	exactRow := s.db.QueryRowContext(ctx, selectCols+` WHERE canonical_url = ?`, normURL)
+	rec, err := scanRecipeRecord(exactRow)
+	if err == nil {
+		return rec, true, nil
+	}
+	if !errors.Is(err, sql.ErrNoRows) {
+		return RecipeRecord{}, false, fmt.Errorf("ledger: check exact url: %w", err)
+	}
+
+	dedupeKey, err := DedupeKey(normURL)
+	if err != nil {
+		return RecipeRecord{}, false, fmt.Errorf("ledger: dedupe key for %q: %w", normURL, err)
+	}
+	if domain == "" {
+		if parsedDomain, dErr := ExtractDomain(normURL); dErr == nil {
+			domain = parsedDomain
+		}
+	}
+
+	rows, err := s.db.QueryContext(ctx, selectCols+` WHERE domain = ?`, domain)
+	if err != nil {
+		return RecipeRecord{}, false, fmt.Errorf("ledger: check existing url: %w", err)
+	}
+
+	var matched RecipeRecord
+	var found bool
+	var scanErr error
+	for rows.Next() {
+		candidate, rErr := scanRecipeRecord(rows)
+		if rErr != nil {
+			scanErr = fmt.Errorf("ledger: scan row: %w", rErr)
+			break
+		}
+		if candidate.CanonicalURL == normURL {
+			matched = candidate
+			found = true
+			break
+		}
+		if existingKey, kErr := DedupeKey(candidate.CanonicalURL); kErr == nil && existingKey == dedupeKey {
+			matched = candidate
+			found = true
+			break
+		}
+	}
+	iterErr := rows.Err()
+	_ = rows.Close()
+
+	if scanErr != nil {
+		return RecipeRecord{}, false, scanErr
+	}
+	if iterErr != nil {
+		return RecipeRecord{}, false, fmt.Errorf("ledger: rows iterate: %w", iterErr)
+	}
+	return matched, found, nil
+}
+
+// UpsertDiscovered inserts a new recipe record in StateDiscovered or backfills metadata on an existing discovered entry.
+// Pre-conditions: rec.CanonicalURL must be a valid http/https URL; ctx must not be nil.
+// Post-conditions: Deduplicates against normalized URLs; returns true iff a new row was inserted.
 func (s *SQLiteStore) UpsertDiscovered(ctx context.Context, rec RecipeRecord) (bool, error) {
 	s.mu.Lock()
 	defer s.mu.Unlock()
@@ -207,74 +310,31 @@ func (s *SQLiteStore) UpsertDiscovered(ctx context.Context, rec RecipeRecord) (b
 		rec.Domain = domain
 	}
 
-	dedupeKey, err := DedupeKey(normURL)
+	existing, matchFound, err := s.findMatchingRecipeLocked(ctx, normURL, rec.Domain)
 	if err != nil {
-		return false, fmt.Errorf("ledger: dedupe key for %q: %w", normURL, err)
-	}
-
-	// Check if exact canonical_url or any matching dedupe key exists for this domain
-	rows, err := s.db.QueryContext(ctx, `
-		SELECT id, canonical_url, state, title, cuisine
-		FROM recipes_ledger
-		WHERE domain = ?
-	`, rec.Domain)
-	if err != nil {
-		return false, fmt.Errorf("ledger: check existing url: %w", err)
-	}
-	defer rows.Close()
-
-	var existingID int64
-	var existingState State
-	var existingTitle, existingCuisine string
-	var matchFound bool
-
-	for rows.Next() {
-		var id int64
-		var cURL string
-		var st State
-		var tit, cuis string
-		if err := rows.Scan(&id, &cURL, &st, &tit, &cuis); err != nil {
-			return false, fmt.Errorf("ledger: scan row: %w", err)
-		}
-		if cURL == normURL {
-			existingID = id
-			existingState = st
-			existingTitle = tit
-			existingCuisine = cuis
-			matchFound = true
-			break
-		}
-		existingDedupeKey, err := DedupeKey(cURL)
-		if err == nil && existingDedupeKey == dedupeKey {
-			existingID = id
-			existingState = st
-			existingTitle = tit
-			existingCuisine = cuis
-			matchFound = true
-			break
-		}
-	}
-	if err := rows.Err(); err != nil {
-		return false, fmt.Errorf("ledger: rows iterate: %w", err)
+		return false, err
 	}
 
 	if matchFound {
 		// If in discovered state and incoming record has missing title/cuisine, backfill them
-		if existingState == StateDiscovered && (existingTitle == "" || existingCuisine == "") {
-			newTitle := existingTitle
+		if existing.State == StateDiscovered && (existing.Title == "" || existing.Cuisine == "") {
+			newTitle := existing.Title
 			if newTitle == "" {
 				newTitle = rec.Title
 			}
-			newCuisine := existingCuisine
+			newCuisine := existing.Cuisine
 			if newCuisine == "" {
 				newCuisine = rec.Cuisine
 			}
-			if newTitle != existingTitle || newCuisine != existingCuisine {
-				_, _ = s.db.ExecContext(ctx, `
+			if newTitle != existing.Title || newCuisine != existing.Cuisine {
+				_, err = s.db.ExecContext(ctx, `
 					UPDATE recipes_ledger
 					SET title = ?, cuisine = ?, updated_at = ?
 					WHERE id = ?
-				`, newTitle, newCuisine, formatTime(time.Now()), existingID)
+				`, newTitle, newCuisine, formatTime(time.Now()), existing.ID)
+				if err != nil {
+					return false, fmt.Errorf("ledger: backfill discovered metadata: %w", err)
+				}
 			}
 		}
 		return false, nil
@@ -326,7 +386,7 @@ func (s *SQLiteStore) UpsertDiscovered(ctx context.Context, rec RecipeRecord) (b
 	return true, nil
 }
 
-// GetByCanonicalURL retrieves a RecipeRecord by its exact canonical URL.
+// GetByCanonicalURL retrieves a RecipeRecord by its canonical URL or DedupeKey alias.
 // Pre-conditions: canonicalURL must be non-empty; ctx must not be nil.
 // Post-conditions: Returns (record, true, nil) if found; (zero, false, nil) if absent.
 func (s *SQLiteStore) GetByCanonicalURL(ctx context.Context, canonicalURL string) (RecipeRecord, bool, error) {
@@ -338,49 +398,8 @@ func (s *SQLiteStore) GetByCanonicalURL(ctx context.Context, canonicalURL string
 		return RecipeRecord{}, false, fmt.Errorf("ledger: normalize url %q: %w", canonicalURL, err)
 	}
 
-	row := s.db.QueryRowContext(ctx, `
-		SELECT id, canonical_url, source_url, domain, discovery_source, cuisine, title,
-		       state, mealie_slug, http_status, attempts, last_error, next_retry_at,
-		       discovered_at, updated_at
-		FROM recipes_ledger
-		WHERE canonical_url = ?
-	`, normURL)
-
-	var rec RecipeRecord
-	var discSrc, st string
-	var nextRetryStr, discStr, updStr string
-
-	err = row.Scan(
-		&rec.ID,
-		&rec.CanonicalURL,
-		&rec.SourceURL,
-		&rec.Domain,
-		&discSrc,
-		&rec.Cuisine,
-		&rec.Title,
-		&st,
-		&rec.MealieSlug,
-		&rec.HTTPStatus,
-		&rec.Attempts,
-		&rec.LastError,
-		&nextRetryStr,
-		&discStr,
-		&updStr,
-	)
-	if err != nil {
-		if errors.Is(err, sql.ErrNoRows) {
-			return RecipeRecord{}, false, nil
-		}
-		return RecipeRecord{}, false, fmt.Errorf("ledger: scan recipe: %w", err)
-	}
-
-	rec.DiscoverySource = DiscoverySource(discSrc)
-	rec.State = State(st)
-	rec.NextRetryAt = parseTime(nextRetryStr)
-	rec.DiscoveredAt = parseTime(discStr)
-	rec.UpdatedAt = parseTime(updStr)
-
-	return rec, true, nil
+	domain, _ := ExtractDomain(normURL)
+	return s.findMatchingRecipeLocked(ctx, normURL, domain)
 }
 
 // ReconcileMealieOrgURLs reconciles Mealie existing inventory with recipes_ledger in a single transaction.
